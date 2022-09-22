@@ -1,0 +1,121 @@
+@mixin mp {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin mpb {
+    @include mp;
+    box-sizing: border-box;
+}
+
+@mixin defaultbutton {
+    padding: 24px 44px;
+    font-size: 18px;
+    line-height: 1.389em;
+    color: $white;
+    @extend .font;
+    @include transition;
+    text-decoration: none;
+    border-radius: 80px;
+    @include respond(lphone) {
+        font-size: 16px;
+        line-height: 1.125em;
+    }
+}
+
+@mixin secondarybutton {
+    background: transparent;
+    @include border($white);
+    &:hover {
+        color: $orange;
+        transform: translateY(-5px);
+        @include border($orange);
+    }
+}
+
+@mixin primarybtn {
+    background: $blue;
+    &:hover {
+        color: $orange;
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, .05);
+    }
+}
+
+@mixin iconhover {
+    transform: scale(1.1);
+    @include purple(.8, c);
+}
+
+@mixin border($color) {
+    border: 1px solid $color;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: $dark;
+}
+
+@mixin flex($what) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @if $what=="yes" {
+        flex-direction: column;
+    }
+}
+
+@mixin transition {
+    transition: all 0.3s ease;
+}
+
+@mixin listMain {
+    list-style-type: none;
+    @include lang;
+    @include light;
+    cursor: pointer;
+    padding: 10px 23px;
+}
+
+.font {
+    font-family: regular;
+}
+
+.font-weight {
+    font-weight: 700;
+}
+
+@mixin linkhover {
+    color: $orange;
+    transition: all 0.5s ease;
+}
+
+@mixin respond ($breakpoint) {
+    @if $breakpoint==phone {
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+            @content;
+        }
+    }
+    @if $breakpoint==lphone {
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tab {
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $breakpoint==laptop {
+        @media screen and (min-width: 1920px) {
+            @content;
+        }
+    }
+}
+
+$grey: #6F7278;
+$dark: #292C32;
+$blue: #343472;
+$white: #fff;
+$orange: #FFD3B9;
+$greyback: #FBF9F8;
