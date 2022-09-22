@@ -202,7 +202,7 @@ nav div.container-fluid {
     align-items: center; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     nav div.container-fluid {
-      padding: 25px 24px; } }
+      padding: 20px 24px; } }
   nav div.container-fluid div.responsive-nav {
     display: flex;
     justify-content: center;
