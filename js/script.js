@@ -29,7 +29,7 @@ const app = Vue.createApp({
 
             //home page data
             //home her0 section
-            backgroundimg: "https://res.cloudinary.com/abdulameen/image/upload/v1663852324/homebackground_ofbvfw.png",
+            backgroundimg: "./images/homebackground.png",
             subtitle: "Packaging company",
             header: "Packaging is our bussiness. We are Polysmart",
             aboutext: "We are a packaging and shopping bags production company. Best Quality Always! Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
