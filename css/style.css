@@ -200,6 +200,9 @@ nav div.container-fluid {
     display: flex;
     justify-content: center;
     align-items: center; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    nav div.container-fluid {
+      padding: 25px 24px; } }
   nav div.container-fluid div.responsive-nav {
     display: flex;
     justify-content: center;

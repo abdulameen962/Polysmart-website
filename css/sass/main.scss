@@ -65,6 +65,9 @@ nav {
             @include flex(no);
         }
         padding: 34px 24px;
+        @include respond(tab) {
+            padding: 25px 24px;
+        }
         div.responsive-nav {
             @include flex(no);
             justify-content: space-between;
