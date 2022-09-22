@@ -250,6 +250,6 @@ div.hero {
       div.hero div.container-hero > div > div div.subtitle-line {
         background: #fff; }
     div.hero div.container-hero > div div.buttons {
-      margin: 25px 0px; }
+      padding: 0px 0px; }
       div.hero div.container-hero > div div.buttons a.secondary-button {
         margin-left: 25px; }
