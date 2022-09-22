@@ -40,6 +40,7 @@ const app = Vue.createApp({
         const head = document.querySelector(".headtag");
         html.appendChild(head);
         html.insertBefore(head, html.children[0]);
+        AOS.init();
     },
     methods: {
 
