@@ -89,19 +89,27 @@ nav {
                 }
             }
         }
-        a.contact1 {
-            display: none;
-            margin-right: 35px;
-            @include respond(tab) {
-                display: block;
-            }
-            @include respond(phone) {
+        a {
+            &.contact1 {
                 display: none;
+                margin-right: 35px;
+                @include respond(tab) {
+                    display: block;
+                }
+                @include respond(phone) {
+                    display: none;
+                }
             }
-        }
-        a.contact2 {
-            @include respond(tab) {
+            &.contact2 {
+                @include respond(tab) {
+                    display: none;
+                }
+            }
+            &.contact-responsive {
                 display: none;
+                @include respond(phone) {
+                    display: inline-block;
+                }
             }
         }
     }
@@ -140,8 +148,10 @@ div.hero {
                 }
             }
             div.buttons {
-                @include flex(yes);
                 padding: 0px 0px;
+                @include respond(phone) {
+                    @include flex(yes);
+                }
                 a.secondary-button {
                     margin-left: 25px;
                     @include respond(phone) {

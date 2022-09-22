@@ -11,19 +11,24 @@ const app = Vue.createApp({
             logo: "./images/polysmart.svg",
             navbar: [{
                     name: "Home",
-                    href: "/index.html",
+                    href: "./index.html",
                 },
                 {
                     name: "About",
-                    href: "/about.html",
+                    href: "./about.html",
                 },
                 {
                     name: "Our Team",
-                    href: "/team.html",
+                    href: "./team.html",
                 },
                 {
                     name: "Major Distributors",
-                    href: "/distributors.html",
+                    href: "./distributors.html",
+                },
+                {
+                    name: "Contact Us",
+                    href: "./contact-us",
+                    class: "contact-responsive",
                 },
             ],
 
@@ -102,7 +107,7 @@ app.component("nav-bar", {
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul v-for="nav in navbar">
                         <li class="nav-item nav-li">
-                            <a :href="nav.href">{{ nav.name }}</a>
+                            <a :href="nav.href" :class="nav.class">{{ nav.name }}</a>
                         </li>
                     </ul>
                 </div>
