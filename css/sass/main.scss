@@ -99,7 +99,7 @@ nav {
                 @include respond(tab) {
                     display: block;
                 }
-                @include respond(phone) {
+                @include respond(lphone) {
                     display: none;
                 }
             }
@@ -110,7 +110,7 @@ nav {
             }
             &.contact-responsive {
                 display: none;
-                @include respond(phone) {
+                @include respond(lphone) {
                     display: inline-block;
                 }
             }

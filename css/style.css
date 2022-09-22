@@ -227,7 +227,7 @@ nav div.container-fluid {
     @media screen and (min-width: 0px) and (max-width: 991px) {
       nav div.container-fluid a.contact1 {
         display: block; } }
-    @media screen and (min-width: 0em) and (max-width: 479px) {
+    @media screen and (min-width: 0px) and (max-width: 767px) {
       nav div.container-fluid a.contact1 {
         display: none; } }
   @media screen and (min-width: 0px) and (max-width: 991px) {
@@ -235,7 +235,7 @@ nav div.container-fluid {
       display: none; } }
   nav div.container-fluid a.contact-responsive {
     display: none; }
-    @media screen and (min-width: 0em) and (max-width: 479px) {
+    @media screen and (min-width: 0px) and (max-width: 767px) {
       nav div.container-fluid a.contact-responsive {
         display: inline-block; } }
 
