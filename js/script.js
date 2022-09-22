@@ -57,7 +57,7 @@ app.component("head-content", {
         <head class="headtag">
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1">
             <link rel="stylesheet" href="./css/style.css">
             <link rel="shortcut icon" :href="icon" type="image/x-icon">
             <title>{{ title }}</title>
@@ -93,10 +93,12 @@ app.component("nav-bar", {
                 <a class="navbar-brand" href="/index.html">
                 <img :src="image" alt="Polysmart logo"/>
                 </a>
-                <a class="header-button contact1" href="/contact.html"> Contact us </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="responsive-nav">
+                    <a class="header-button contact1" href="/contact.html"> Contact us </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul v-for="nav in navbar">
                         <li class="nav-item nav-li">

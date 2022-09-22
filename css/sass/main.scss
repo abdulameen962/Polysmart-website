@@ -7,7 +7,6 @@
 body {
     @include mp;
     font-family: regular;
-    @include flex(yes);
 }
 
 .header-button {
@@ -33,7 +32,10 @@ body {
 
 div.resize {
     max-width: 1248px;
+    width: 100%;
     padding: 0px 24px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 div.subtitle-main {
@@ -54,6 +56,7 @@ nav {
         background: $white;
         position: sticky;
         top: 0;
+        z-index: 4;
     }
     div.container-fluid {
         @include flex(no);
@@ -62,6 +65,10 @@ nav {
             @include flex(no);
         }
         padding: 34px 24px;
+        div.responsive-nav {
+            @include flex(no);
+            justify-content: space-between;
+        }
         div {
             ul {
                 padding-top: 15px;
@@ -84,6 +91,7 @@ nav {
         }
         a.contact1 {
             display: none;
+            margin-right: 35px;
             @include respond(tab) {
                 display: block;
             }
@@ -111,8 +119,7 @@ div.hero {
         width: 100%;
         img {
             width: 100%;
-            min-height: 100%;
-            height: 100vh;
+            min-height: 100vh;
         }
         div.background-cover {
             background: rgba(0, 0, 0, 0.45);
@@ -124,7 +131,7 @@ div.hero {
     }
     div.container-hero {
         &>div {
-            width: 45%;
+            max-width: 566px;
             &>div {
                 @include flex(no);
                 justify-content: flex-start;
@@ -133,9 +140,14 @@ div.hero {
                 }
             }
             div.buttons {
-                margin: 25px 0px;
+                @include flex(yes);
+                padding: 0px 0px;
                 a.secondary-button {
                     margin-left: 25px;
+                    @include respond(phone) {
+                        margin-left: 0px;
+                        margin-top: 15px;
+                    }
                 }
             }
         }

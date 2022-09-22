@@ -21,6 +21,10 @@
         font-size: 16px;
         line-height: 1.125em;
     }
+    @include respond(phone) {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @mixin secondarybutton {

@@ -103,11 +103,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  font-family: regular;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
+  font-family: regular; }
 
 .header-button {
   padding: 16px 26px;
@@ -135,6 +131,10 @@ body {
     .primary-button {
       font-size: 16px;
       line-height: 1.125em; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    .primary-button {
+      width: 100%;
+      text-align: center; } }
   .primary-button:hover {
     color: #FFD3B9;
     transform: translateY(-5px);
@@ -154,6 +154,10 @@ body {
     .secondary-button {
       font-size: 16px;
       line-height: 1.125em; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    .secondary-button {
+      width: 100%;
+      text-align: center; } }
   .secondary-button:hover {
     color: #FFD3B9;
     transform: translateY(-5px);
@@ -161,7 +165,10 @@ body {
 
 div.resize {
   max-width: 1248px;
-  padding: 0px 24px; }
+  width: 100%;
+  padding: 0px 24px;
+  margin-right: auto;
+  margin-left: auto; }
 
 div.subtitle-main {
   margin-bottom: 20px; }
@@ -193,6 +200,11 @@ nav div.container-fluid {
     display: flex;
     justify-content: center;
     align-items: center; }
+  nav div.container-fluid div.responsive-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between; }
   nav div.container-fluid div ul {
     padding-top: 15px; }
     nav div.container-fluid div ul li.nav-li {
@@ -207,7 +219,8 @@ nav div.container-fluid {
           color: #FFD3B9;
           transition: all 0.5s ease; }
   nav div.container-fluid a.contact1 {
-    display: none; }
+    display: none;
+    margin-right: 35px; }
     @media screen and (min-width: 0px) and (max-width: 991px) {
       nav div.container-fluid a.contact1 {
         display: block; } }
@@ -241,7 +254,7 @@ div.hero {
       width: 100%;
       height: 100%; }
   div.hero div.container-hero > div {
-    width: 45%; }
+    max-width: 566px; }
     div.hero div.container-hero > div > div {
       display: flex;
       justify-content: center;
@@ -250,6 +263,14 @@ div.hero {
       div.hero div.container-hero > div > div div.subtitle-line {
         background: #fff; }
     div.hero div.container-hero > div div.buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       padding: 0px 0px; }
       div.hero div.container-hero > div div.buttons a.secondary-button {
         margin-left: 25px; }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.hero div.container-hero > div div.buttons a.secondary-button {
+            margin-left: 0px;
+            margin-top: 15px; } }
