@@ -71,6 +71,14 @@ const app = Vue.createApp({
         html.appendChild(head);
         html.insertBefore(head, html.children[0]);
         AOS.init();
+        var image = document.querySelector(".homebg");
+        var bigImg = document.createElement("img");
+        var srcs = image.src;
+        bigImg.onload = function() {
+            image.src = this.src;
+        }
+
+        bigImg.src = srcs;
     },
     methods: {
 
@@ -87,7 +95,7 @@ app.component("head-content", {
         <head class="headtag">
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="./css/style.css">
             <link rel="shortcut icon" :href="icon" type="image/x-icon">
             <title>{{ title }}</title>
