@@ -198,6 +198,10 @@ div.subtitle-main {
     div.subtitle-main {
       margin-bottom: 10px; } }
 
+nav img {
+  width: auto;
+  height: auto; }
+
 nav.nav-position {
   margin: 0;
   padding: 0;
@@ -390,6 +394,9 @@ div.about {
               @media screen and (min-width: 0px) and (max-width: 767px) {
                 div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 p {
                   text-align: center; } }
+          div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-3 img {
+            width: auto;
+            height: auto; }
           @media screen and (min-width: 0px) and (max-width: 767px) {
             div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-3 {
               display: flex;

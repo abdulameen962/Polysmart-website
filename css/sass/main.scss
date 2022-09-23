@@ -52,6 +52,10 @@ div.subtitle-main {
 }
 
 nav {
+    img {
+        width: auto;
+        height: auto;
+    }
     &.nav-position {
         @include mp;
         width: 100%;
@@ -257,6 +261,10 @@ div.about {
                             }
                         }
                         &>div.col-lg-3 {
+                            img {
+                                width: auto;
+                                height: auto;
+                            }
                             @include respond(lphone) {
                                 @include flex(yes);
                             }
