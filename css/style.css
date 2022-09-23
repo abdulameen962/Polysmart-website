@@ -20,26 +20,32 @@ h1 {
   margin-bottom: 20px; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     h1 {
-      font-size: 43px; } }
+      font-size: 43px;
+      line-height: 43px; } }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     h1 {
-      font-size: 36px; } }
+      font-size: 36px;
+      line-height: 36px; } }
   @media screen and (min-width: 0em) and (max-width: 479px) {
     h1 {
-      font-size: 30px; } }
+      font-size: 30px;
+      line-height: 36px; } }
 
 h2 {
   line-height: 1.316em;
   font-size: 38px; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     h2 {
-      font-size: 38px; } }
+      font-size: 38px;
+      line-height: 38px; } }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     h2 {
-      font-size: 32px; } }
+      font-size: 32px;
+      line-height: 32px; } }
   @media screen and (min-width: 0em) and (max-width: 479px) {
     h2 {
-      font-size: 26px; } }
+      font-size: 26px;
+      line-height: 26px; } }
 
 h3 {
   line-height: 1.375em;
@@ -49,20 +55,24 @@ h3 {
       font-size: 24px; } }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     h3 {
-      font-size: 22px; } }
+      font-size: 22px;
+      line-height: 22px; } }
   @media screen and (min-width: 0em) and (max-width: 479px) {
     h3 {
-      font-size: 20px; } }
+      font-size: 20px;
+      line-height: 20px; } }
 
 h4 {
   font-size: 22px;
   line-height: 1.091em; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     h4 {
-      font-size: 20px; } }
+      font-size: 20px;
+      line-height: 20px; } }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     h4 {
-      font-size: 18px; } }
+      font-size: 18px;
+      line-height: 18px; } }
   @media screen and (min-width: 0em) and (max-width: 479px) {
     h4 {
       font-size: 18px; } }
@@ -168,7 +178,7 @@ a.header-button {
 div.resize {
   max-width: 1248px;
   width: 100%;
-  padding: 0px 20px; }
+  padding: 0px 15px; }
 
 div.subtitle-main {
   margin-bottom: 20px;

@@ -12,12 +12,15 @@ h1 {
     margin-bottom: 20px;
     @include respond(tab) {
         font-size: 43px;
+        line-height: 43px;
     }
     @include respond(lphone) {
         font-size: 36px;
+        line-height: 36px;
     }
     @include respond(phone) {
         font-size: 30px;
+        line-height: 36px;
     }
 }
 
@@ -28,12 +31,15 @@ h2 {
     font-size: 38px;
     @include respond(tab) {
         font-size: 38px;
+        line-height: 38px;
     }
     @include respond(lphone) {
         font-size: 32px;
+        line-height: 32px;
     }
     @include respond(phone) {
         font-size: 26px;
+        line-height: 26px;
     }
 }
 
@@ -47,9 +53,11 @@ h3 {
     }
     @include respond(lphone) {
         font-size: 22px;
+        line-height: 22px;
     }
     @include respond(phone) {
         font-size: 20px;
+        line-height: 20px;
     }
 }
 
@@ -60,9 +68,11 @@ h4 {
     line-height: 1.091em;
     @include respond(tab) {
         font-size: 20px;
+        line-height: 20px;
     }
     @include respond(lphone) {
         font-size: 18px;
+        line-height: 18px;
     }
     @include respond(phone) {
         font-size: 18px;
