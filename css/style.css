@@ -88,7 +88,7 @@ h6 {
 p {
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.600em;
+  line-height: 1.800em;
   padding: 10px 0px; }
 
 button {
@@ -141,6 +141,7 @@ a.header-button {
   background: #343472; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .primary-button {
+      padding: 20px 44px;
       font-size: 16px;
       line-height: 1.125em; } }
   @media screen and (min-width: 0em) and (max-width: 479px) {
@@ -164,6 +165,7 @@ a.header-button {
   border: 1px solid white; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .secondary-button {
+      padding: 20px 44px;
       font-size: 16px;
       line-height: 1.125em; } }
   @media screen and (min-width: 0em) and (max-width: 479px) {
