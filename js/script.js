@@ -33,11 +33,36 @@ const app = Vue.createApp({
             ],
 
             //home page data
-            //home her0 section
+
+            //home hero section
             backgroundimg: "./images/homebackground.webp",
             subtitle: "Packaging company",
             header: "Packaging is our bussiness. We are Polysmart",
             aboutext: "We are a packaging and shopping bags production company. Best Quality Always! Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
+            //about section
+            aboutsub: "Who We Are",
+            aboutgrid: [{
+                    img: "./images/abt1.svg",
+                    name: "We care about the environment",
+                    summary: "	We care about the environment. Our operations are 100% powered by natural gas as the primary source of energy.",
+                },
+                {
+                    img: "./images/abt2.svg",
+                    name: "We produce the best polythene bags",
+                    summary: "Best polythene packaging bags!We have 600+ dealers across 21 states in Nigeria and neighbouring countries.",
+                },
+                {
+                    img: "./images/abt3.svg",
+                    name: "We provide the best quality always",
+                    summary: "Best Quality Always!Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
+                },
+                {
+                    img: "./images/abt4.svg",
+                    name: "Packaging is our bussiness",
+                    summary: "Packaging is our business, we are PolySmart!We are a packaging and shopping bags production company. ",
+                },
+
+            ]
         }
     },
     mounted() {
@@ -115,6 +140,28 @@ app.component("nav-bar", {
             </div>
         </nav>
 
+    `
+})
+app.component("about-grid", {
+    props: {
+        about: Array,
+    },
+    template: `
+        <div class="container">
+            <div class="about-grid">
+                <div class="col" v-for="ab in about" data-aos="fade-up" data-aos-duration="500">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                                <img :src="ab.img" :alt="ab.name"/>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-9">
+                                <h3> {{ ab.name }} </h3>
+                                <p> {{ ab.summary }} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     `
 })
 app.mount("body");

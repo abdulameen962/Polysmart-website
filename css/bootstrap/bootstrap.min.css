@@ -650,6 +650,7 @@ progress {
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: stretch;
     margin-top: calc(-1 * var(--bs-gutter-y));
     margin-right: calc(-.5 * var(--bs-gutter-x));
     margin-left: calc(-.5 * var(--bs-gutter-x))
@@ -665,7 +666,7 @@ progress {
 }
 
 .col {
-    flex: 1 0 0%
+    flex: 1 0 0%;
 }
 
 .row-cols-auto>* {

@@ -6,13 +6,13 @@
 @mixin mpb {
     @include mp;
     box-sizing: border-box;
+    position: relative;
 }
 
 @mixin defaultbutton {
     padding: 24px 44px;
     font-size: 18px;
     line-height: 1.389em;
-    color: $white;
     @extend .font;
     @include transition;
     text-decoration: none;
@@ -29,6 +29,7 @@
 
 @mixin secondarybutton {
     background: transparent;
+    color: $white;
     @include border($white);
     &:hover {
         color: $orange;
@@ -38,6 +39,7 @@
 }
 
 @mixin primarybtn {
+    color: $white;
     background: $blue;
     &:hover {
         color: $orange;

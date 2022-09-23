@@ -1,10 +1,10 @@
-.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, a, .header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
+.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, a, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
   font-family: regular; }
 
 .font-weight, h1, h2, h3, h4, h5, h6, button, .subtitle {
   font-weight: 700; }
 
-.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, a, .header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
+.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, a, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
   font-family: regular; }
 
 .font-weight, h1, h2, h3, h4, h5, h6, button, .subtitle {
@@ -98,22 +98,24 @@ a {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
 
 body {
   margin: 0;
   padding: 0;
   font-family: regular; }
 
-.header-button {
+a.header-button {
   padding: 16px 26px;
   line-height: 1.125em;
   color: white;
   text-decoration: none;
   border-radius: 80px;
+  color: white;
   background: #343472;
   transition: all 0.3s ease; }
-  .header-button:hover {
+  a.header-button:hover {
     color: #FFD3B9;
     transform: translateY(-5px);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
@@ -122,10 +124,10 @@ body {
   padding: 24px 44px;
   font-size: 18px;
   line-height: 1.389em;
-  color: white;
   transition: all 0.3s ease;
   text-decoration: none;
   border-radius: 80px;
+  color: white;
   background: #343472; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .primary-button {
@@ -144,11 +146,11 @@ body {
   padding: 24px 44px;
   font-size: 18px;
   line-height: 1.389em;
-  color: white;
   transition: all 0.3s ease;
   text-decoration: none;
   border-radius: 80px;
   background: transparent;
+  color: white;
   border: 1px solid white; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .secondary-button {
@@ -166,12 +168,14 @@ body {
 div.resize {
   max-width: 1248px;
   width: 100%;
-  padding: 0px 24px;
-  margin-right: auto;
-  margin-left: auto; }
+  padding: 0px 24px; }
 
 div.subtitle-main {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start; }
   div.subtitle-main div.subtitle-line {
     width: 50px;
     background: #292C32;
@@ -186,8 +190,6 @@ nav.nav-position {
   justify-content: center;
   align-items: center;
   background: white;
-  position: sticky;
-  top: 0;
   z-index: 4; }
 
 nav div.container-fluid {
@@ -242,37 +244,38 @@ nav div.container-fluid {
 div.hero {
   color: white;
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
-  div.hero div.background-img {
-    top: 15%;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: unset; }
+  div.hero img {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    z-index: -3;
-    width: 100%; }
-    div.hero div.background-img img {
-      width: 100%;
-      min-height: 100vh; }
-    div.hero div.background-img div.background-cover {
-      background: rgba(0, 0, 0, 0.45);
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%; }
+    object-fit: cover;
+    z-index: -4; }
+  div.hero div.background-cover {
+    background: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -3; }
   div.hero div.container-hero {
-    padding-top: 13%; }
+    padding-top: 10%;
+    padding-bottom: 10%; }
+    @media screen and (min-width: 1920px) {
+      div.hero div.container-hero {
+        padding-top: 130px;
+        padding-bottom: 130px; } }
     div.hero div.container-hero > div {
       max-width: 566px; }
-      div.hero div.container-hero > div > div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-content: flex-start; }
-        div.hero div.container-hero > div > div div.subtitle-line {
-          background: white; }
+      div.hero div.container-hero > div > div div.subtitle-line {
+        background: white; }
       div.hero div.container-hero > div div.buttons {
-        padding: 0px 0px; }
+        padding: 30px 0px; }
         @media screen and (min-width: 0em) and (max-width: 479px) {
           div.hero div.container-hero > div div.buttons {
             display: flex;
@@ -280,8 +283,104 @@ div.hero {
             align-items: center;
             flex-direction: column; } }
         div.hero div.container-hero > div div.buttons a.secondary-button {
-          margin-left: 25px; }
+          margin-left: 25px;
+          background: transparent;
+          color: white;
+          border: 1px solid white; }
+          div.hero div.container-hero > div div.buttons a.secondary-button:hover {
+            color: #FFD3B9;
+            transform: translateY(-5px);
+            border: 1px solid #FFD3B9; }
           @media screen and (min-width: 0em) and (max-width: 479px) {
             div.hero div.container-hero > div div.buttons a.secondary-button {
               margin-left: 0px;
               margin-top: 15px; } }
+        div.hero div.container-hero > div div.buttons a.primary-button {
+          color: white;
+          color: white;
+          background: #343472; }
+          div.hero div.container-hero > div div.buttons a.primary-button:hover {
+            color: #FFD3B9;
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
+
+div.about {
+  padding: 100px 0px; }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    div.about > div.container div.row div.abouthead {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0px 0px 20px; } }
+  div.about > div.container div.row div.abouthead div.subtitle-main div.subtitle-line {
+    background: #343472; }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      div.about > div.container div.row div.abouthead div.subtitle-main div.subtitle-line {
+        display: none; } }
+  div.about > div.container div.row div.abouthead div.subtitle-main div.subtitle {
+    color: #343472; }
+  div.about > div.container div.row div.aboutaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end; }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      div.about > div.container div.row div.aboutaction {
+        justify-content: center; } }
+    div.about > div.container div.row div.aboutaction a.secondary-button {
+      color: #292C32;
+      border: 1px solid #292C32; }
+  div.about > div.container > div.container {
+    margin: 40px 0px 0px 0px; }
+    div.about > div.container > div.container > div.about-grid {
+      height: 100%;
+      display: grid;
+      gap: 40px 80px;
+      grid-template-columns: auto auto; }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        div.about > div.container > div.container > div.about-grid {
+          grid-template-columns: auto; } }
+      div.about > div.container > div.container > div.about-grid > div.col {
+        max-width: 580px;
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+        justify-content: stretch; }
+        div.about > div.container > div.container > div.about-grid > div.col > div.row {
+          height: 100%;
+          box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+          border: 1px solid #E7E9EE;
+          padding: 40px 30px;
+          border-radius: 18px; }
+          div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 {
+            padding: 0px 25px; }
+            @media screen and (min-width: 0px) and (max-width: 991px) {
+              div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 {
+                padding: 20px 25px 0px; } }
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+              div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column; } }
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+              div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 h3 {
+                text-align: center; } }
+            div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 p {
+              color: #6F7278; }
+              @media screen and (min-width: 0px) and (max-width: 767px) {
+                div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 p {
+                  text-align: center; } }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-3 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column; } }
+          @media screen and (min-width: 0px) and (max-width: 991px) {
+            div.about > div.container > div.container > div.about-grid > div.col > div.row {
+              padding: 40px 10px; } }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.about > div.container > div.container > div.about-grid > div.col > div.row {
+              padding: 30px 0px; } }
