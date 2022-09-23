@@ -168,7 +168,7 @@ a.header-button {
 div.resize {
   max-width: 1248px;
   width: 100%;
-  padding: 0px 24px; }
+  padding: 0px 20px; }
 
 div.subtitle-main {
   margin-bottom: 20px;
@@ -197,14 +197,16 @@ nav div.container-fluid {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 34px 24px; }
+  padding-top: 34px;
+  padding-bottom: 34px; }
   nav div.container-fluid a.navbar-brand {
     display: flex;
     justify-content: center;
     align-items: center; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     nav div.container-fluid {
-      padding: 25px 24px; } }
+      padding-top: 25px;
+      padding-bottom: 25px; } }
   nav div.container-fluid div.responsive-nav {
     display: flex;
     justify-content: center;
