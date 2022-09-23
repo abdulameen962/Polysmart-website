@@ -298,6 +298,7 @@ div.third-section {
                     margin-right: 30px;
                     @include respond(tab) {
                         @include flex(yes);
+                        margin-right: 0px;
                     }
                     &:first-child {
                         @include respond(tab) {
