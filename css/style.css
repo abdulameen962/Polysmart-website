@@ -409,3 +409,41 @@ div.about {
           @media screen and (min-width: 0em) and (max-width: 479px) {
             div.about > div.container > div.container > div.about-grid > div.col > div.row {
               padding: 30px 0px; } }
+
+div.third-section {
+  background: #FBF9F8;
+  padding: 160px 0px; }
+  div.third-section > div.container > div.row > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    div.third-section > div.container > div.row > div img {
+      width: 100%; }
+    div.third-section > div.container > div.row > div > div {
+      max-width: 542px;
+      margin-right: 30px; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.third-section > div.container > div.row > div > div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; } }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.third-section > div.container > div.row > div > div:first-child {
+          margin-bottom: 30px; } }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.third-section > div.container > div.row > div > div:first-child h1 {
+          text-align: center; } }
+      div.third-section > div.container > div.row > div > div:first-child h2 {
+        margin-bottom: 20px; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.third-section > div.container > div.row > div > div:first-child h2 {
+            text-align: center; } }
+      div.third-section > div.container > div.row > div > div:first-child p {
+        color: #6F7278;
+        margin-bottom: 40px; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.third-section > div.container > div.row > div > div:first-child p {
+            text-align: center;
+            margin-bottom: 20px; } }

@@ -281,3 +281,50 @@ div.about {
         }
     }
 }
+
+div.third-section {
+    background: $greyback;
+    padding: 160px 0px;
+    &>div.container {
+        &>div.row {
+            &>div {
+                img {
+                    width: 100%;
+                }
+                @include flex(yes);
+                // justify-content: unset;
+                &>div {
+                    max-width: 542px;
+                    margin-right: 30px;
+                    @include respond(tab) {
+                        @include flex(yes);
+                    }
+                    &:first-child {
+                        @include respond(tab) {
+                            margin-bottom: 30px;
+                        }
+                        h1 {
+                            @include respond(tab) {
+                                text-align: center;
+                            }
+                        }
+                        h2 {
+                            margin-bottom: 20px;
+                            @include respond(tab) {
+                                text-align: center;
+                            }
+                        }
+                        p {
+                            color: $grey;
+                            margin-bottom: 40px;
+                            @include respond(tab) {
+                                text-align: center;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

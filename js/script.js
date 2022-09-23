@@ -62,7 +62,12 @@ const app = Vue.createApp({
                     summary: "Packaging is our business, we are PolySmart!We are a packaging and shopping bags production company. ",
                 },
 
-            ]
+
+            ],
+            //quotesection
+            quote: ' "We are polysmart, we are the future. Packaging is our bussiness"',
+            quotesummary: "Best polythene packaging bags!We have 600+ dealers across 21 states in Nigeria and neighbouring countries.Best polythene packaging bags!We have 600+ dealers across 21 states in Nigeria and neighbouring countries.",
+            quoteimage: "./images/personimage.webp",
         }
     },
     mounted() {

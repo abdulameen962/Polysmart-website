@@ -48,16 +48,23 @@
             <about-grid :about="aboutgrid"></about-grid>
         </div>
     </div>
-    <!-- <div class="third-section">
-        <div class="row resize">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <h1>Polysmart</h1>
-                <h2> {{ quote }} </h2>
-                <p> {{ quotesummary }} </p>
+    <div class="third-section">
+        <div class="container resize">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div>
+                        <h1 data-aos="fade-up" data-aos-duration="500">Polysmart</h1>
+                        <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"> {{ quote }} </h2>
+                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"> {{ quotesummary }} </p>
+                        <a href="/contact.html" class="primary-button">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img :src="quoteimage" :alt="quote" data-aos-duration="500" data-aos-delay="500" data-aos="zoom-out">
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12"></div>
         </div>
-    </div> -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
