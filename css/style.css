@@ -108,7 +108,7 @@ body {
 .header-button {
   padding: 16px 26px;
   line-height: 1.125em;
-  color: #fff;
+  color: white;
   text-decoration: none;
   border-radius: 80px;
   background: #343472;
@@ -122,7 +122,7 @@ body {
   padding: 24px 44px;
   font-size: 18px;
   line-height: 1.389em;
-  color: #fff;
+  color: white;
   transition: all 0.3s ease;
   text-decoration: none;
   border-radius: 80px;
@@ -144,12 +144,12 @@ body {
   padding: 24px 44px;
   font-size: 18px;
   line-height: 1.389em;
-  color: #fff;
+  color: white;
   transition: all 0.3s ease;
   text-decoration: none;
   border-radius: 80px;
   background: transparent;
-  border: 1px solid #fff; }
+  border: 1px solid white; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .secondary-button {
       font-size: 16px;
@@ -185,7 +185,7 @@ nav.nav-position {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: white;
   position: sticky;
   top: 0;
   z-index: 4; }
@@ -202,14 +202,14 @@ nav div.container-fluid {
     align-items: center; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     nav div.container-fluid {
-      padding: 20px 24px; } }
+      padding: 25px 24px; } }
   nav div.container-fluid div.responsive-nav {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between; }
   nav div.container-fluid div ul {
-    padding-top: 15px; }
+    padding: 15px 0px 0px 0px; }
     nav div.container-fluid div ul li.nav-li {
       margin-right: 20px; }
     nav div.container-fluid div ul li {
@@ -240,13 +240,12 @@ nav div.container-fluid {
         display: inline-block; } }
 
 div.hero {
-  color: #fff;
+  color: white;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding-top: 10%; }
+  flex-direction: column; }
   div.hero div.background-img {
     top: 15%;
     position: absolute;
@@ -261,26 +260,28 @@ div.hero {
       top: 0;
       width: 100%;
       height: 100%; }
-  div.hero div.container-hero > div {
-    max-width: 566px; }
-    div.hero div.container-hero > div > div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-content: flex-start; }
-      div.hero div.container-hero > div > div div.subtitle-line {
-        background: #fff; }
-    div.hero div.container-hero > div div.buttons {
-      padding: 0px 0px; }
-      @media screen and (min-width: 0em) and (max-width: 479px) {
-        div.hero div.container-hero > div div.buttons {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column; } }
-      div.hero div.container-hero > div div.buttons a.secondary-button {
-        margin-left: 25px; }
+  div.hero div.container-hero {
+    padding-top: 13%; }
+    div.hero div.container-hero > div {
+      max-width: 566px; }
+      div.hero div.container-hero > div > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: flex-start; }
+        div.hero div.container-hero > div > div div.subtitle-line {
+          background: white; }
+      div.hero div.container-hero > div div.buttons {
+        padding: 0px 0px; }
         @media screen and (min-width: 0em) and (max-width: 479px) {
-          div.hero div.container-hero > div div.buttons a.secondary-button {
-            margin-left: 0px;
-            margin-top: 15px; } }
+          div.hero div.container-hero > div div.buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; } }
+        div.hero div.container-hero > div div.buttons a.secondary-button {
+          margin-left: 25px; }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.hero div.container-hero > div div.buttons a.secondary-button {
+              margin-left: 0px;
+              margin-top: 15px; } }

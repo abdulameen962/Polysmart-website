@@ -66,7 +66,7 @@ nav {
         }
         padding: 34px 24px;
         @include respond(tab) {
-            padding: 20px 24px;
+            padding: 25px 24px;
         }
         div.responsive-nav {
             @include flex(no);
@@ -74,7 +74,7 @@ nav {
         }
         div {
             ul {
-                padding-top: 15px;
+                padding: 15px 0px 0px 0px;
                 li.nav-li {
                     margin-right: 20px;
                 }
@@ -122,7 +122,6 @@ div.hero {
     color: $white;
     width: 100%;
     @include flex(yes);
-    padding-top: 10%;
     div.background-img {
         top: 15%;
         position: absolute;
@@ -141,6 +140,7 @@ div.hero {
         }
     }
     div.container-hero {
+        padding-top: 13%;
         &>div {
             max-width: 566px;
             &>div {

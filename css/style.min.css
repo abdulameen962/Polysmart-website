@@ -1,0 +1,469 @@
+.font,
+.header-button,
+.primary-button,
+.secondary-button,
+.subtitle,
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav div.container-fluid div ul li a,
+p {
+    font-family: regular
+}
+
+.font-weight,
+.subtitle,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700
+}
+
+.font,
+.header-button,
+.primary-button,
+.secondary-button,
+.subtitle,
+a,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav div.container-fluid div ul li a,
+p {
+    font-family: regular
+}
+
+.font-weight,
+.subtitle,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700
+}
+
+@font-face {
+    font-family: regular;
+    src: url(./fonts/PlusJakartaSans-Regular.ttf)
+}
+
+h1 {
+    line-height: 1.308em;
+    font-size: 52px;
+    margin-bottom: 20px
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    h1 {
+        font-size: 43px
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+    h1 {
+        font-size: 36px
+    }
+}
+
+@media screen and (min-width:0em) and (max-width:479px) {
+    h1 {
+        font-size: 30px
+    }
+}
+
+h2 {
+    line-height: 1.316em;
+    font-size: 38px
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    h2 {
+        font-size: 38px
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+    h2 {
+        font-size: 32px
+    }
+}
+
+@media screen and (min-width:0em) and (max-width:479px) {
+    h2 {
+        font-size: 26px
+    }
+}
+
+h3 {
+    line-height: 1.375em;
+    font-size: 24px
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    h3 {
+        font-size: 24px
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+    h3 {
+        font-size: 22px
+    }
+}
+
+@media screen and (min-width:0em) and (max-width:479px) {
+    h3 {
+        font-size: 20px
+    }
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 1.091em
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    h4 {
+        font-size: 20px
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+    h4 {
+        font-size: 18px
+    }
+}
+
+@media screen and (min-width:0em) and (max-width:479px) {
+    h4 {
+        font-size: 18px
+    }
+}
+
+h5 {
+    line-height: 1.389em;
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1.125em
+}
+
+p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+    padding: 10px 0
+}
+
+button {
+    font-size: 16px
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 1.125em
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    .subtitle {
+        font-size: 16px
+    }
+}
+
+a {
+    font-size: 16px;
+    text-decoration: none
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: regular
+}
+
+.header-button {
+    padding: 16px 26px;
+    line-height: 1.125em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 80px;
+    background: #343472;
+    transition: all .3s ease
+}
+
+.header-button:hover {
+    color: #ffd3b9;
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .05)
+}
+
+.primary-button {
+    padding: 24px 44px;
+    font-size: 18px;
+    line-height: 1.389em;
+    color: #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+    border-radius: 80px;
+    background: #343472
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+    .primary-button {
+        font-size: 16px;
+        line-height: 1.125em
+    }
+}
+
+@media screen and (min-width:0em) and (max-width:479px) {
+    .primary-button {
+        width: 100%;
+        text-align: center
+    }
+}
+
+.primary-button:hover {
+    color: #ffd3b9;
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .05)
+}
+
+.secondary-button {
+    padding: 24px 44px;
+    font-size: 18px;
+    line-height: 1.389em;
+    color: #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+    border-radius: 80px;
+    background: 0 0;
+    border: 1px solid #fff
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+    .secondary-button {
+        font-size: 16px;
+        line-height: 1.125em
+    }
+}
+
+@media screen and (min-width:0em) and (max-width:479px) {
+    .secondary-button {
+        width: 100%;
+        text-align: center
+    }
+}
+
+.secondary-button:hover {
+    color: #ffd3b9;
+    transform: translateY(-5px);
+    border: 1px solid #ffd3b9
+}
+
+div.resize {
+    max-width: 1248px;
+    width: 100%;
+    padding: 0 24px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+div.subtitle-main {
+    margin-bottom: 20px
+}
+
+div.subtitle-main div.subtitle-line {
+    width: 50px;
+    background: #292c32;
+    height: 2px;
+    margin-right: 15px
+}
+
+nav.nav-position {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 4
+}
+
+nav div.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 24px
+}
+
+nav div.container-fluid a.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    nav div.container-fluid {
+        padding: 20px 24px
+    }
+}
+
+nav div.container-fluid div.responsive-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between
+}
+
+nav div.container-fluid div ul {
+    padding-top: 15px
+}
+
+nav div.container-fluid div ul li.nav-li {
+    margin-right: 20px
+}
+
+nav div.container-fluid div ul li {
+    list-style-type: none
+}
+
+nav div.container-fluid div ul li a {
+    color: #292c32;
+    font-size: 18px;
+    text-decoration: none
+}
+
+nav div.container-fluid div ul li a:hover {
+    color: #ffd3b9;
+    transition: all .5s ease
+}
+
+nav div.container-fluid a.contact1 {
+    display: none;
+    margin-right: 35px
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    nav div.container-fluid a.contact1 {
+        display: block
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+    nav div.container-fluid a.contact1 {
+        display: none
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+    nav div.container-fluid a.contact2 {
+        display: none
+    }
+}
+
+nav div.container-fluid a.contact-responsive {
+    display: none
+}
+
+@media screen and (min-width:0px) and (max-width:767px) {
+    nav div.container-fluid a.contact-responsive {
+        display: inline-block
+    }
+}
+
+div.hero {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%
+}
+
+div.hero div.background-img {
+    top: 15%;
+    position: absolute;
+    z-index: -3;
+    width: 100%
+}
+
+div.hero div.background-img img {
+    width: 100%;
+    min-height: 100vh
+}
+
+div.hero div.background-img div.background-cover {
+    background: rgba(0, 0, 0, .45);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+
+div.hero div.container-hero>div {
+    max-width: 566px
+}
+
+div.hero div.container-hero>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start
+}
+
+div.hero div.container-hero>div>div div.subtitle-line {
+    background: #fff
+}
+
+div.hero div.container-hero>div div.buttons {
+    padding: 0 0
+}
+
+@media screen and (min-width:0em) and (max-width:479px) {
+    div.hero div.container-hero>div div.buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+}
+
+div.hero div.container-hero>div div.buttons a.secondary-button {
+    margin-left: 25px
+}
+
+@media screen and (min-width:0em) and (max-width:479px) {
+    div.hero div.container-hero>div div.buttons a.secondary-button {
+        margin-left: 0;
+        margin-top: 15px
+    }
+}
