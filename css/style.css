@@ -12,7 +12,8 @@
 
 @font-face {
   font-family: regular;
-  src: url("./fonts/PlusJakartaSans-Regular.ttf"); }
+  src: url("./fonts/PlusJakartaSans-Regular.ttf"), local("Courier New");
+  font-display: swap; }
 
 h1 {
   line-height: 1.308em;
