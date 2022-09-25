@@ -289,6 +289,7 @@ div.third-section {
             &>div {
                 img {
                     width: 100%;
+                    height: auto;
                 }
                 @include flex(yes);
                 // justify-content: unset;

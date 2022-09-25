@@ -419,7 +419,8 @@ div.third-section {
     align-items: center;
     flex-direction: column; }
     div.third-section > div.container > div.row > div img {
-      width: 100%; }
+      width: 100%;
+      height: auto; }
     div.third-section > div.container > div.row > div > div {
       max-width: 542px;
       margin-right: 30px; }
