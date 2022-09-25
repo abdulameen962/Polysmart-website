@@ -160,7 +160,7 @@ app.component("about-grid", {
         about: Array,
     },
     template: `
-        <div class="container">
+        <div class="containerx">
             <div class="about-grid">
                 <div class="col" v-for="ab in about" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">

@@ -353,61 +353,61 @@ div.about {
     div.about > div.container div.row div.aboutaction a.secondary-button {
       color: #292C32;
       border: 1px solid #292C32; }
-  div.about > div.container > div.container {
+  div.about > div.container > div.containerx {
     margin: 40px 0px 0px 0px; }
-    div.about > div.container > div.container > div.about-grid {
+    div.about > div.container > div.containerx > div.about-grid {
       height: 100%;
       display: grid;
       gap: 40px 80px;
       grid-template-columns: auto auto; }
       @media screen and (min-width: 0px) and (max-width: 767px) {
-        div.about > div.container > div.container > div.about-grid {
+        div.about > div.container > div.containerx > div.about-grid {
           grid-template-columns: auto; } }
-      div.about > div.container > div.container > div.about-grid > div.col {
+      div.about > div.container > div.containerx > div.about-grid > div.col {
         max-width: 580px;
         height: 100%;
         display: flex;
         align-items: stretch;
         justify-content: stretch; }
-        div.about > div.container > div.container > div.about-grid > div.col > div.row {
+        div.about > div.container > div.containerx > div.about-grid > div.col > div.row {
           height: 100%;
           box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
           border: 1px solid #E7E9EE;
           padding: 40px 30px;
           border-radius: 18px; }
-          div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 {
+          div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 {
             padding: 0px 25px; }
             @media screen and (min-width: 0px) and (max-width: 991px) {
-              div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 {
+              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 {
                 padding: 20px 25px 0px; } }
             @media screen and (min-width: 0px) and (max-width: 767px) {
-              div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 {
+              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column; } }
             @media screen and (min-width: 0px) and (max-width: 767px) {
-              div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 h3 {
+              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 h3 {
                 text-align: center; } }
-            div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 p {
+            div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 p {
               color: #6F7278; }
               @media screen and (min-width: 0px) and (max-width: 767px) {
-                div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-9 p {
+                div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 p {
                   text-align: center; } }
-          div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-3 img {
+          div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-3 img {
             width: auto;
             height: auto; }
           @media screen and (min-width: 0px) and (max-width: 767px) {
-            div.about > div.container > div.container > div.about-grid > div.col > div.row > div.col-lg-3 {
+            div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-3 {
               display: flex;
               justify-content: center;
               align-items: center;
               flex-direction: column; } }
           @media screen and (min-width: 0px) and (max-width: 991px) {
-            div.about > div.container > div.container > div.about-grid > div.col > div.row {
+            div.about > div.container > div.containerx > div.about-grid > div.col > div.row {
               padding: 40px 10px; } }
           @media screen and (min-width: 0em) and (max-width: 479px) {
-            div.about > div.container > div.container > div.about-grid > div.col > div.row {
+            div.about > div.container > div.containerx > div.about-grid > div.col > div.row {
               padding: 30px 0px; } }
 
 div.third-section {

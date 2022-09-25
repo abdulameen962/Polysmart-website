@@ -217,10 +217,9 @@ div.about {
                 }
             }
         }
-        &>div.container {
+        &>div.containerx {
             margin: 40px 0px 0px 0px;
             &>div.about-grid {
-                // @include border(blue);
                 height: 100%;
                 display: grid;
                 gap: 40px 80px;
