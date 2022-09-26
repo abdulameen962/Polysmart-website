@@ -232,19 +232,17 @@ nav div.container-fluid {
     justify-content: center;
     align-items: center;
     justify-content: space-between; }
-  nav div.container-fluid div ul {
-    padding: 15px 0px 0px 0px; }
-    nav div.container-fluid div ul li.nav-li {
-      margin-right: 20px; }
-    nav div.container-fluid div ul li {
-      list-style-type: none; }
-      nav div.container-fluid div ul li a {
-        color: #292C32;
-        font-size: 18px;
-        text-decoration: none; }
-        nav div.container-fluid div ul li a:hover {
-          color: #FFD3B9;
-          transition: all 0.5s ease; }
+  nav div.container-fluid div ul li.nav-li {
+    margin-right: 20px; }
+  nav div.container-fluid div ul li {
+    list-style-type: none; }
+    nav div.container-fluid div ul li a {
+      color: #292C32;
+      font-size: 18px;
+      text-decoration: none; }
+      nav div.container-fluid div ul li a:hover {
+        color: #FFD3B9;
+        transition: all 0.5s ease; }
   nav div.container-fluid a.contact1 {
     display: none;
     margin-right: 35px; }
