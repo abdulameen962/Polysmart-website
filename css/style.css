@@ -18,7 +18,7 @@
 h1 {
   line-height: 1.308em;
   font-size: 52px;
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     h1 {
       font-size: 43px;
@@ -34,7 +34,8 @@ h1 {
 
 h2 {
   line-height: 1.316em;
-  font-size: 38px; }
+  font-size: 38px;
+  margin-bottom: 10px; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     h2 {
       font-size: 38px;
@@ -507,3 +508,34 @@ div.product {
             @media screen and (min-width: 0px) and (max-width: 767px) {
               div.product div.containerx div.product-grid div.col div.row > div:nth-child(2) {
                 padding: 35px 30px; } }
+
+div.subtext {
+  background: #343472;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden; }
+  div.subtext > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; }
+    div.subtext > div img {
+      position: absolute; }
+      div.subtext > div img:first-child {
+        top: 0; }
+      div.subtext > div img:nth-child(2) {
+        left: 0;
+        background: blue; }
+      div.subtext > div img:nth-child(3) {
+        bottom: 0; }
+      div.subtext > div img:nth-child(4) {
+        right: 0; }
+    div.subtext > div div.buttons {
+      margin-top: 30px; }

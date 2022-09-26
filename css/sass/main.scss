@@ -393,3 +393,38 @@ div.product {
         }
     }
 }
+
+div.subtext {
+    background: $blue;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    position: relative;
+    color: $white;
+    @include flex(yes);
+    overflow: hidden;
+    &>div {
+        @include flex(yes);
+        position: relative;
+        img {
+            position: absolute;
+            &:first-child {
+                top: 0;
+                // background: green;
+            }
+            &:nth-child(2) {
+                // top: 0;
+                left: 0;
+                background: blue;
+            }
+            &:nth-child(3) {
+                bottom: 0;
+            }
+            &:nth-child(4) {
+                right: 0;
+            }
+        }
+        div.buttons {
+            margin-top: 30px;
+        }
+    }
+}
