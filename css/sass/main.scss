@@ -338,14 +338,12 @@ div.product {
     background: linear-gradient(180deg, #FFFFFF 37.5%, #FAFAFC 37.5%);
     div.containerx {
         @include flex(no);
+        overflow: hidden;
         padding: auto 24px;
-        // @include border(blue);
         div.product-grid {
             display: grid;
             justify-content: space-between;
             gap: 50px;
-            // @include border(green);
-            // overflow: hidden;
             padding: 50px 0px 0px;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             @include respond(tab) {
@@ -357,15 +355,15 @@ div.product {
                 grid-template-columns: auto;
             }
             div.col {
+                max-width: 580px;
                 div.row {
                     background: $white;
                     height: 100%;
-                    max-width: 580px;
                     border-radius: 18px;
                     @include border($blueborder);
                     &>div {
                         img {
-                            width: auto;
+                            width: 100%;
                             height: auto;
                         }
                         &:first-child {
@@ -377,14 +375,13 @@ div.product {
                             @include flex(no);
                             @include respond(lphone) {
                                 height: auto;
-                                padding: 40px 30px;
+                                padding: 35px 30px;
                             }
                         }
                         &:nth-child(2) {
                             padding: 30px;
                             @include respond(lphone) {
-                                height: auto;
-                                padding: 40px 30px;
+                                padding: 35px 30px;
                             }
                         }
                     }

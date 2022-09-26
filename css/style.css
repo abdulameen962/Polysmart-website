@@ -460,6 +460,7 @@ div.product {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     padding: auto 24px; }
     div.product div.containerx div.product-grid {
       display: grid;
@@ -475,31 +476,31 @@ div.product {
       @media screen and (min-width: 0px) and (max-width: 767px) {
         div.product div.containerx div.product-grid {
           grid-template-columns: auto; } }
-      div.product div.containerx div.product-grid div.col div.row {
-        background: white;
-        height: 100%;
-        max-width: 580px;
-        border-radius: 18px;
-        border: 1px solid #E7E9EE; }
-        div.product div.containerx div.product-grid div.col div.row > div img {
-          width: auto;
-          height: auto; }
-        div.product div.containerx div.product-grid div.col div.row > div:first-child {
-          background: #E8E9FD;
-          padding: 30px;
-          height: 55%;
-          border-top-left-radius: 18px;
-          border-top-right-radius: 18px;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          @media screen and (min-width: 0px) and (max-width: 767px) {
-            div.product div.containerx div.product-grid div.col div.row > div:first-child {
-              height: auto;
-              padding: 40px 30px; } }
-        div.product div.containerx div.product-grid div.col div.row > div:nth-child(2) {
-          padding: 30px; }
-          @media screen and (min-width: 0px) and (max-width: 767px) {
-            div.product div.containerx div.product-grid div.col div.row > div:nth-child(2) {
-              height: auto;
-              padding: 40px 30px; } }
+      div.product div.containerx div.product-grid div.col {
+        max-width: 580px; }
+        div.product div.containerx div.product-grid div.col div.row {
+          background: white;
+          height: 100%;
+          border-radius: 18px;
+          border: 1px solid #E7E9EE; }
+          div.product div.containerx div.product-grid div.col div.row > div img {
+            width: 100%;
+            height: auto; }
+          div.product div.containerx div.product-grid div.col div.row > div:first-child {
+            background: #E8E9FD;
+            padding: 30px;
+            height: 55%;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+              div.product div.containerx div.product-grid div.col div.row > div:first-child {
+                height: auto;
+                padding: 35px 30px; } }
+          div.product div.containerx div.product-grid div.col div.row > div:nth-child(2) {
+            padding: 30px; }
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+              div.product div.containerx div.product-grid div.col div.row > div:nth-child(2) {
+                padding: 35px 30px; } }
