@@ -226,10 +226,10 @@ div.about {
             &>div.about-grid {
                 height: 100%;
                 display: grid;
-                gap: 40px 80px;
+                gap: 40px;
                 grid-template-columns: auto auto;
                 @include respond(tab) {
-                    gap: 40px 60px;
+                    gap: 40px;
                 }
                 @include respond(lphone) {
                     grid-template-columns: auto;
@@ -346,7 +346,7 @@ div.product {
         div.product-grid {
             display: grid;
             justify-content: space-between;
-            gap: 50px;
+            gap: 50px 30px;
             padding: 50px 0px 0px;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             @include respond(tab) {
@@ -371,12 +371,19 @@ div.product {
                         }
                         &:first-child {
                             background: $lightblue;
-                            padding: 30px;
+                            padding: 30px 60px;
                             height: 55%;
                             border-top-left-radius: 18px;
                             border-top-right-radius: 18px;
                             @include flex(no);
+                            @include respond(tab) {
+                                padding: 35px 30px;
+                            }
                             @include respond(lphone) {
+                                height: auto;
+                                padding: 35px 70px;
+                            }
+                            @include respond(phone) {
                                 height: auto;
                                 padding: 35px 30px;
                             }
@@ -402,29 +409,77 @@ div.subtext {
     color: $white;
     @include flex(yes);
     overflow: hidden;
+    img {
+        position: absolute;
+        &:first-child {
+            top: -172.5px;
+            left: -125px;
+            animation: twirl 50s infinite ease-in;
+            @include respond(phone) {
+                left: -145px;
+            }
+        }
+        &:nth-child(2) {
+            left: -260px;
+            width: 308px;
+            min-width: 308px;
+            min-height: 308px;
+            @include respond(lphone) {
+                display: none;
+            }
+        }
+        &.bigtwirl {
+            right: -94px;
+            bottom: -278px;
+            animation: twirl 50s infinite ease-in;
+            @include respond(lphone) {
+                display: none;
+            }
+        }
+        &.smallcircle {
+            right: -106px;
+            bottom: -217px;
+            @include respond(lphone) {
+                right: -66px;
+                bottom: -177px;
+            }
+        }
+    }
     &>div {
         @include flex(yes);
         position: relative;
-        img {
-            position: absolute;
-            &:first-child {
-                top: 0;
-                // background: green;
-            }
-            &:nth-child(2) {
-                // top: 0;
-                left: 0;
-                background: blue;
-            }
-            &:nth-child(3) {
-                bottom: 0;
-            }
-            &:nth-child(4) {
-                right: 0;
-            }
+        h2 {
+            text-align: center;
         }
         div.buttons {
-            margin-top: 30px;
+            margin-top: 25px;
+            width: 100%;
+            @include flex(no);
+            a {
+                &.primary-button {
+                    background: $white;
+                    color: $dark;
+                }
+                &.secondary-button {
+                    margin-left: 30px;
+                    @include respond(phone) {
+                        margin-left: 0px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            @include respond(phone) {
+                @include flex(yes);
+            }
         }
+    }
+}
+
+@keyframes twirl {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
     }
 }

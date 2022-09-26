@@ -38,7 +38,7 @@ const app = Vue.createApp({
             backgroundimg: "./images/homebackground.webp",
             subtitle: "Packaging company",
             header: "Packaging is our business. We are Polysmart",
-            aboutext: "We are a packaging and shopping bags production company. Best Quality Always! Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
+            aboutext: "Best Quality Always!  Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
             //about section
             aboutsub: "Who We Are",
             aboutgrid: [{
@@ -101,8 +101,6 @@ const app = Vue.createApp({
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
             ],
-            //subtext section
-            subtexttitle: "We package it all, contact us now and you won't ever be disappointed",
         }
     },
     mounted() {

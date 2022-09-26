@@ -143,7 +143,7 @@ a.header-button {
   background: #343472; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .primary-button {
-      padding: 20px 44px;
+      padding: 25px 44px;
       font-size: 16px;
       line-height: 1.125em; } }
   @media screen and (min-width: 0em) and (max-width: 479px) {
@@ -167,7 +167,7 @@ a.header-button {
   border: 1px solid white; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .secondary-button {
-      padding: 20px 44px;
+      padding: 25px 44px;
       font-size: 16px;
       line-height: 1.125em; } }
   @media screen and (min-width: 0em) and (max-width: 479px) {
@@ -363,11 +363,11 @@ div.about {
     div.about > div.container > div.containerx > div.about-grid {
       height: 100%;
       display: grid;
-      gap: 40px 80px;
+      gap: 40px;
       grid-template-columns: auto auto; }
       @media screen and (min-width: 0px) and (max-width: 991px) {
         div.about > div.container > div.containerx > div.about-grid {
-          gap: 40px 60px; } }
+          gap: 40px; } }
       @media screen and (min-width: 0px) and (max-width: 767px) {
         div.about > div.container > div.containerx > div.about-grid {
           grid-template-columns: auto; } }
@@ -469,7 +469,7 @@ div.product {
     div.product div.containerx div.product-grid {
       display: grid;
       justify-content: space-between;
-      gap: 50px;
+      gap: 50px 30px;
       padding: 50px 0px 0px;
       grid-template-columns: repeat(3, minmax(0, 1fr)); }
       @media screen and (min-width: 0px) and (max-width: 991px) {
@@ -492,14 +492,21 @@ div.product {
             height: auto; }
           div.product div.containerx div.product-grid div.col div.row > div:first-child {
             background: #E8E9FD;
-            padding: 30px;
+            padding: 30px 60px;
             height: 55%;
             border-top-left-radius: 18px;
             border-top-right-radius: 18px;
             display: flex;
             justify-content: center;
             align-items: center; }
+            @media screen and (min-width: 0px) and (max-width: 991px) {
+              div.product div.containerx div.product-grid div.col div.row > div:first-child {
+                padding: 35px 30px; } }
             @media screen and (min-width: 0px) and (max-width: 767px) {
+              div.product div.containerx div.product-grid div.col div.row > div:first-child {
+                height: auto;
+                padding: 35px 70px; } }
+            @media screen and (min-width: 0em) and (max-width: 479px) {
               div.product div.containerx div.product-grid div.col div.row > div:first-child {
                 height: auto;
                 padding: 35px 30px; } }
@@ -520,22 +527,69 @@ div.subtext {
   align-items: center;
   flex-direction: column;
   overflow: hidden; }
+  div.subtext img {
+    position: absolute; }
+    div.subtext img:first-child {
+      top: -172.5px;
+      left: -125px;
+      animation: twirl 50s infinite ease-in; }
+      @media screen and (min-width: 0em) and (max-width: 479px) {
+        div.subtext img:first-child {
+          left: -145px; } }
+    div.subtext img:nth-child(2) {
+      left: -260px;
+      width: 308px;
+      min-width: 308px;
+      min-height: 308px; }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        div.subtext img:nth-child(2) {
+          display: none; } }
+    div.subtext img.bigtwirl {
+      right: -94px;
+      bottom: -278px;
+      animation: twirl 50s infinite ease-in; }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        div.subtext img.bigtwirl {
+          display: none; } }
+    div.subtext img.smallcircle {
+      right: -106px;
+      bottom: -217px; }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        div.subtext img.smallcircle {
+          right: -66px;
+          bottom: -177px; } }
   div.subtext > div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative; }
-    div.subtext > div img {
-      position: absolute; }
-      div.subtext > div img:first-child {
-        top: 0; }
-      div.subtext > div img:nth-child(2) {
-        left: 0;
-        background: blue; }
-      div.subtext > div img:nth-child(3) {
-        bottom: 0; }
-      div.subtext > div img:nth-child(4) {
-        right: 0; }
+    div.subtext > div h2 {
+      text-align: center; }
     div.subtext > div div.buttons {
-      margin-top: 30px; }
+      margin-top: 25px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      div.subtext > div div.buttons a.primary-button {
+        background: white;
+        color: #292C32; }
+      div.subtext > div div.buttons a.secondary-button {
+        margin-left: 30px; }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.subtext > div div.buttons a.secondary-button {
+            margin-left: 0px;
+            margin-top: 20px; } }
+      @media screen and (min-width: 0em) and (max-width: 479px) {
+        div.subtext > div div.buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; } }
+
+@keyframes twirl {
+  0% {
+    transform: rotateZ(0deg); }
+  100% {
+    transform: rotateZ(360deg); } }
