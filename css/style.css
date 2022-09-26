@@ -593,3 +593,6 @@ div.subtext {
     transform: rotateZ(0deg); }
   100% {
     transform: rotateZ(360deg); } }
+
+div.steps {
+  height: 200px; }
