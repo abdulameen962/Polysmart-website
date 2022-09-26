@@ -181,7 +181,7 @@ a.header-button {
 div.resize {
   max-width: 1248px;
   width: 100%;
-  padding: 0px 15px; }
+  padding: 0px 24px; }
 
 div.subtitle-main {
   margin-bottom: 20px;
@@ -354,12 +354,18 @@ div.about {
       color: #292C32;
       border: 1px solid #292C32; }
   div.about > div.container > div.containerx {
-    margin: 40px 0px 0px 0px; }
+    margin: 40px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     div.about > div.container > div.containerx > div.about-grid {
       height: 100%;
       display: grid;
       gap: 40px 80px;
       grid-template-columns: auto auto; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.about > div.container > div.containerx > div.about-grid {
+          gap: 40px 60px; } }
       @media screen and (min-width: 0px) and (max-width: 767px) {
         div.about > div.container > div.containerx > div.about-grid {
           grid-template-columns: auto; } }
@@ -449,3 +455,53 @@ div.third-section {
           div.third-section > div.container > div.row > div > div:first-child p {
             text-align: center;
             margin-bottom: 20px; } }
+
+div.product {
+  background: linear-gradient(180deg, #FFFFFF 37.5%, #FAFAFC 37.5%); }
+  div.product div.containerx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto 24px; }
+    div.product div.containerx div.product-grid {
+      display: grid;
+      justify-content: space-between;
+      gap: 50px;
+      padding: 50px 0px 0px;
+      grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.product div.containerx div.product-grid {
+          grid-template-columns: auto auto;
+          justify-content: center;
+          gap: 50px; } }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        div.product div.containerx div.product-grid {
+          grid-template-columns: auto; } }
+      div.product div.containerx div.product-grid div.col div.row {
+        background: white;
+        height: 100%;
+        max-width: 580px;
+        border-radius: 18px;
+        border: 1px solid #E7E9EE; }
+        div.product div.containerx div.product-grid div.col div.row > div img {
+          width: auto;
+          height: auto; }
+        div.product div.containerx div.product-grid div.col div.row > div:first-child {
+          background: #E8E9FD;
+          padding: 30px;
+          height: 55%;
+          border-top-left-radius: 18px;
+          border-top-right-radius: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.product div.containerx div.product-grid div.col div.row > div:first-child {
+              height: auto;
+              padding: 40px 30px; } }
+        div.product div.containerx div.product-grid div.col div.row > div:nth-child(2) {
+          padding: 30px; }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.product div.containerx div.product-grid div.col div.row > div:nth-child(2) {
+              height: auto;
+              padding: 40px 30px; } }

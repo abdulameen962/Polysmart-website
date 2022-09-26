@@ -33,7 +33,7 @@ a.header-button {
 div.resize {
     max-width: 1248px;
     width: 100%;
-    padding: 0px 15px;
+    padding: 0px 24px;
 }
 
 div.subtitle-main {
@@ -219,11 +219,15 @@ div.about {
         }
         &>div.containerx {
             margin: 40px 0px 0px 0px;
+            @include flex(no);
             &>div.about-grid {
                 height: 100%;
                 display: grid;
                 gap: 40px 80px;
                 grid-template-columns: auto auto;
+                @include respond(tab) {
+                    gap: 40px 60px;
+                }
                 @include respond(lphone) {
                     grid-template-columns: auto;
                 }
@@ -321,6 +325,66 @@ div.third-section {
                             @include respond(tab) {
                                 text-align: center;
                                 margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.product {
+    background: linear-gradient(180deg, #FFFFFF 37.5%, #FAFAFC 37.5%);
+    div.containerx {
+        @include flex(no);
+        padding: auto 24px;
+        // @include border(blue);
+        div.product-grid {
+            display: grid;
+            justify-content: space-between;
+            gap: 50px;
+            // @include border(green);
+            // overflow: hidden;
+            padding: 50px 0px 0px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            @include respond(tab) {
+                grid-template-columns: auto auto;
+                justify-content: center;
+                gap: 50px;
+            }
+            @include respond(lphone) {
+                grid-template-columns: auto;
+            }
+            div.col {
+                div.row {
+                    background: $white;
+                    height: 100%;
+                    max-width: 580px;
+                    border-radius: 18px;
+                    @include border($blueborder);
+                    &>div {
+                        img {
+                            width: auto;
+                            height: auto;
+                        }
+                        &:first-child {
+                            background: $lightblue;
+                            padding: 30px;
+                            height: 55%;
+                            border-top-left-radius: 18px;
+                            border-top-right-radius: 18px;
+                            @include flex(no);
+                            @include respond(lphone) {
+                                height: auto;
+                                padding: 40px 30px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            padding: 30px;
+                            @include respond(lphone) {
+                                height: auto;
+                                padding: 40px 30px;
                             }
                         }
                     }

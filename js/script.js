@@ -37,37 +37,70 @@ const app = Vue.createApp({
             //home hero section
             backgroundimg: "./images/homebackground.webp",
             subtitle: "Packaging company",
-            header: "Packaging is our bussiness. We are Polysmart",
+            header: "Packaging is our business. We are Polysmart",
             aboutext: "We are a packaging and shopping bags production company. Best Quality Always! Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
             //about section
             aboutsub: "Who We Are",
             aboutgrid: [{
                     img: "./images/abt1.svg",
                     name: "We care about the environment",
-                    summary: "	We care about the environment. Our operations are 100% powered by natural gas as the primary source of energy.",
+                    summary: "Our operations are 100% powered by natural gas as the primary source of energy.",
                 },
                 {
                     img: "./images/abt2.svg",
-                    name: "We produce the best polythene bags",
-                    summary: "Best polythene packaging bags!We have 600+ dealers across 21 states in Nigeria and neighbouring countries.",
+                    name: "We produce the best polythene bags!",
+                    summary: "We have 600+ dealers across 21 states in Nigeria and neighbouring countries.",
                 },
                 {
                     img: "./images/abt3.svg",
                     name: "We provide the best quality always",
-                    summary: "Best Quality Always!Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
+                    summary: "Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
                 },
                 {
                     img: "./images/abt4.svg",
-                    name: "Packaging is our bussiness",
-                    summary: "Packaging is our business, we are PolySmart!We are a packaging and shopping bags production company. ",
+                    name: "Packaging is our business",
+                    summary: "We are PolySmart!We are a packaging and shopping bags production company. ",
                 },
 
 
             ],
             //quotesection
-            quote: ' "We are polysmart, we are the future. Packaging is our bussiness"',
+            quote: ' "We are polysmart, we are the future. Packaging is our business"',
             quotesummary: "Best polythene packaging bags!We have 600+ dealers across 21 states in Nigeria and neighbouring countries.Best polythene packaging bags!We have 600+ dealers across 21 states in Nigeria and neighbouring countries.",
             quoteimage: "./images/personimage.webp",
+            //productsection
+            productsub: "Our Products",
+            products: [{
+                    img: "./images/nylon1.png",
+                    name: "Double Colour Shopping Bag",
+                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                },
+                {
+                    img: "./images/nylon2.png",
+                    name: "Medium Black Shopping Bag",
+                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                },
+                {
+                    img: "./images/nylon3.png",
+                    name: "Poly bags (100% recycled)",
+                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                },
+                {
+                    img: "./images/nylon4.png",
+                    name: "Small Black Shopping Bag",
+                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                },
+                {
+                    img: "./images/nylon4.png",
+                    name: "	Fashion Bags",
+                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                },
+                {
+                    img: "./images/nylon4.png",
+                    name: "Packing Bags for Pure water",
+                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                },
+            ]
         }
     },
     mounted() {
@@ -170,6 +203,28 @@ app.component("about-grid", {
                         <div class="col-sm-12 col-md-12 col-lg-9">
                                 <h3> {{ ab.name }} </h3>
                                 <p> {{ ab.summary }} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `
+})
+app.component("product-grid", {
+    props: {
+        products: Array,
+    },
+    template: `
+        <div class="containerx">
+            <div class="product-grid">
+                <div class="col" v-for="product in products" data-aos="fade-up" data-aos-duration="500">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                                <img :src="product.img" :alt="product.name" width="100px" height="100px"/>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                                <h3> {{ product.name }} </h3>
+                                <p> {{ product.summary }} </p>
                         </div>
                     </div>
                 </div>
