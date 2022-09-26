@@ -243,6 +243,9 @@ nav div.container-fluid {
       nav div.container-fluid div ul li a:hover {
         color: #FFD3B9;
         transition: all 0.5s ease; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      nav div.container-fluid div ul li {
+        padding: 20px 0px 0px 0px; } }
   nav div.container-fluid a.contact1 {
     display: none;
     margin-right: 35px; }
