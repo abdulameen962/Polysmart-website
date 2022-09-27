@@ -337,7 +337,7 @@ div.hero {
             box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
 
 div.about {
-  padding: 100px 0px; }
+  padding: 110px 0px; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     div.about > div.container div.row div.abouthead {
       display: flex;
@@ -414,6 +414,9 @@ div.about {
           div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 img {
             width: 100%;
             height: auto; }
+            @media screen and (min-width: 0px) and (max-width: 991px) {
+              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 img {
+                width: auto; } }
           @media screen and (min-width: 0px) and (max-width: 767px) {
             div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 {
               display: flex;
@@ -537,7 +540,9 @@ div.subtext {
   flex-direction: column;
   overflow: hidden; }
   div.subtext img {
-    position: absolute; }
+    position: absolute;
+    width: auto;
+    height: auto; }
     div.subtext img:first-child {
       top: -172.5px;
       left: -125px;
@@ -732,3 +737,46 @@ div.steps {
             @media screen and (min-width: 0em) and (max-width: 479px) {
               div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) {
                 width: 100%; } }
+
+div.summary {
+  background: #FBF9F8;
+  position: relative;
+  overflow: hidden; }
+  div.summary > div {
+    position: relative; }
+    div.summary > div img {
+      position: absolute;
+      width: auto;
+      height: auto;
+      max-width: 100%; }
+      div.summary > div img:first-child {
+        left: -212px;
+        top: -241px;
+        animation: twirl 50s infinite ease-in; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.summary > div img:first-child {
+            left: -290px;
+            top: -279px; } }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          div.summary > div img:first-child {
+            top: -326px; } }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.summary > div img:first-child {
+            top: -326px; } }
+      div.summary > div img.summarycircle {
+        right: -276px;
+        bottom: -388px;
+        width: 443px;
+        min-width: 443px;
+        min-height: 443px; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.summary > div img.summarycircle {
+            right: -158px;
+            bottom: -331px; } }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.summary > div img.summarycircle {
+            width: auto;
+            min-height: auto;
+            padding-top: 99%; } }
+    div.summary > div > div {
+      border: 1px solid blue; }

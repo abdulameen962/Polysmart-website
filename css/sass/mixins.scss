@@ -113,6 +113,16 @@
     grid-template-columns: repeat( $number, minmax(0, 1fr));
 }
 
+@mixin image {
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+@mixin animate {
+    animation: twirl 50s infinite ease-in;
+}
+
 @mixin respond ($breakpoint) {
     @if $breakpoint==phone {
         @media screen and (min-width: 0em) and (max-width: 479px) {

@@ -198,7 +198,7 @@ div.hero {
 }
 
 div.about {
-    padding: 100px 0px;
+    padding: 110px 0px;
     &>div.container {
         div.row {
             div.abouthead {
@@ -277,6 +277,9 @@ div.about {
                             img {
                                 width: 100%;
                                 height: auto;
+                                @include respond(tab) {
+                                    width: auto;
+                                }
                             }
                             @include respond(lphone) {
                                 @include flex(yes);
@@ -415,11 +418,11 @@ div.subtext {
     @include flex(yes);
     overflow: hidden;
     img {
-        position: absolute;
+        @include image;
         &:first-child {
             top: -172.5px;
             left: -125px;
-            animation: twirl 50s infinite ease-in;
+            @include animate;
             @include respond(phone) {
                 left: -145px;
             }
@@ -436,7 +439,7 @@ div.subtext {
         &.bigtwirl {
             right: -94px;
             bottom: -278px;
-            animation: twirl 50s infinite ease-in;
+            @include animate;
             @include respond(lphone) {
                 display: none;
             }
@@ -599,6 +602,53 @@ div.steps {
                     }
                 }
             }
+        }
+    }
+}
+
+div.summary {
+    background: $greyback;
+    position: relative;
+    overflow: hidden;
+    &>div {
+        position: relative;
+        img {
+            @include image;
+            max-width: 100%;
+            &:first-child {
+                left: -212px;
+                top: -241px;
+                @include animate;
+                @include respond(tab) {
+                    left: -290px;
+                    top: -279px;
+                }
+                @include respond(lphone) {
+                    top: -326px;
+                }
+                @include respond(phone) {
+                    top: -326px;
+                }
+            }
+            &.summarycircle {
+                right: -276px;
+                bottom: -388px;
+                width: 443px;
+                min-width: 443px;
+                min-height: 443px;
+                @include respond(tab) {
+                    right: -158px;
+                    bottom: -331px;
+                }
+                @include respond(phone) {
+                    width: auto;
+                    min-height: auto;
+                    padding-top: 99%;
+                }
+            }
+        }
+        &>div {
+            @include border(blue);
         }
     }
 }
