@@ -9,6 +9,12 @@
     position: relative;
 }
 
+@mixin background {
+    box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+    border-radius: 18px;
+    @include border(#E7E9EE);
+}
+
 @mixin defaultbutton {
     padding: 24px 44px;
     font-size: 18px;
@@ -95,6 +101,16 @@
 @mixin linkhover {
     color: $orange;
     transition: all 0.5s ease;
+}
+
+@mixin max-width {
+    max-width: 580px;
+}
+
+@mixin grid($number) {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat( $number, minmax(0, 1fr));
 }
 
 @mixin respond ($breakpoint) {

@@ -184,6 +184,14 @@ div.resize {
   width: 100%;
   padding: 0px 24px; }
 
+div.resize-small {
+  max-width: 551px; }
+
+div.resize-medium {
+  max-width: 994px;
+  width: 100%;
+  padding: 0px 24px; }
+
 div.subtitle-main {
   margin-bottom: 20px;
   display: flex;
@@ -362,9 +370,10 @@ div.about {
     align-items: center; }
     div.about > div.container > div.containerx > div.about-grid {
       height: 100%;
-      display: grid;
       gap: 40px;
-      grid-template-columns: auto auto; }
+      display: grid;
+      justify-content: space-between;
+      grid-template-columns: repeat(2, minmax(0, 1fr)); }
       @media screen and (min-width: 0px) and (max-width: 991px) {
         div.about > div.container > div.containerx > div.about-grid {
           gap: 40px; } }
@@ -380,9 +389,9 @@ div.about {
         div.about > div.container > div.containerx > div.about-grid > div.col > div.row {
           height: 100%;
           box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+          border-radius: 18px;
           border: 1px solid #E7E9EE;
-          padding: 40px 30px;
-          border-radius: 18px; }
+          padding: 40px 30px; }
           div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 {
             padding: 0px 25px; }
             @media screen and (min-width: 0px) and (max-width: 991px) {
@@ -469,9 +478,9 @@ div.product {
     div.product div.containerx div.product-grid {
       display: grid;
       justify-content: space-between;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 50px 30px;
-      padding: 50px 0px 0px;
-      grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      padding: 50px 0px 0px; }
       @media screen and (min-width: 0px) and (max-width: 991px) {
         div.product div.containerx div.product-grid {
           grid-template-columns: auto auto;
@@ -595,4 +604,82 @@ div.subtext {
     transform: rotateZ(360deg); } }
 
 div.steps {
-  height: 200px; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 110px 0px; }
+  div.steps div.step-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    div.steps div.step-inner div.step-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      div.steps div.step-inner div.step-header div.subtitle {
+        color: #343472; }
+      div.steps div.step-inner div.step-header h2 {
+        text-align: center; }
+  div.steps div.step-grid {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px 30px;
+    padding: 50px 0px 0px; }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      div.steps div.step-grid {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+    div.steps div.step-grid div.inner-grid {
+      max-width: 580px;
+      padding: 64px 31px;
+      box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+      border-radius: 18px;
+      border: 1px solid #E7E9EE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.steps div.step-grid div.inner-grid {
+          padding: 64px 20px; } }
+      div.steps div.step-grid div.inner-grid div.row {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          div.steps div.step-grid div.inner-grid div.row {
+            display: flex;
+            justify-content: center;
+            align-items: center; } }
+        div.steps div.step-grid div.inner-grid div.row > div {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; }
+          div.steps div.step-grid div.inner-grid div.row > div div.number {
+            background: #343472;
+            border-radius: 50%;
+            width: 128px;
+            min-width: 128px;
+            min-height: 128px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 43px;
+            color: white;
+            font-weight: 700; }
+          div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) {
+            margin: 20px 0px 0px; }
+            div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) h3 {
+              text-align: center; }
+            div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) p {
+              text-align: center;
+              color: #6F7278; }

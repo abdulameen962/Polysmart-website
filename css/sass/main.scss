@@ -36,6 +36,16 @@ div.resize {
     padding: 0px 24px;
 }
 
+div.resize-small {
+    max-width: 551px;
+}
+
+div.resize-medium {
+    max-width: 994px;
+    width: 100%;
+    padding: 0px 24px;
+}
+
 div.subtitle-main {
     margin-bottom: 20px;
     @include flex(no);
@@ -225,9 +235,8 @@ div.about {
             @include flex(no);
             &>div.about-grid {
                 height: 100%;
-                display: grid;
                 gap: 40px;
-                grid-template-columns: auto auto;
+                @include grid(2);
                 @include respond(tab) {
                     gap: 40px;
                 }
@@ -235,17 +244,15 @@ div.about {
                     grid-template-columns: auto;
                 }
                 &>div.col {
-                    max-width: 580px;
+                    @include max-width;
                     height: 100%;
                     display: flex;
                     align-items: stretch;
                     justify-content: stretch;
                     &>div.row {
                         height: 100%;
-                        box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
-                        @include border(#E7E9EE);
+                        @include background;
                         padding: 40px 30px;
-                        border-radius: 18px;
                         &>div.col-lg-9 {
                             padding: 0px 25px;
                             @include respond(tab) {
@@ -344,11 +351,9 @@ div.product {
         overflow: hidden;
         padding: auto 24px;
         div.product-grid {
-            display: grid;
-            justify-content: space-between;
+            @include grid(3);
             gap: 50px 30px;
             padding: 50px 0px 0px;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
             @include respond(tab) {
                 grid-template-columns: auto auto;
                 justify-content: center;
@@ -358,7 +363,7 @@ div.product {
                 grid-template-columns: auto;
             }
             div.col {
-                max-width: 580px;
+                @include max-width;
                 div.row {
                     background: $white;
                     height: 100%;
@@ -485,5 +490,67 @@ div.subtext {
 }
 
 div.steps {
-    height: 200px;
+    @include flex(yes);
+    padding: 110px 0px;
+    div.step-inner {
+        @include flex(yes);
+        div.step-header {
+            @include flex(yes);
+            div.subtitle {
+                color: $blue;
+            }
+            h2 {
+                text-align: center;
+            }
+        }
+    }
+    div.step-grid {
+        @include grid(2);
+        gap: 50px 30px;
+        padding: 50px 0px 0px;
+        @include respond(lphone) {
+            @include grid(1);
+        }
+        div.inner-grid {
+            @include max-width;
+            padding: 64px 31px;
+            @include background;
+            @include flex(yes);
+            @include respond(tab) {
+                padding: 64px 20px;
+            }
+            div.row {
+                position: relative;
+                @include flex(yes);
+                @include respond(lphone) {
+                    @include flex(no);
+                }
+                &>div {
+                    width: 100%;
+                    @include flex(yes);
+                    div.number {
+                        background: $blue;
+                        border-radius: 50%;
+                        width: 128px;
+                        min-width: 128px;
+                        min-height: 128px;
+                        @include flex(no);
+                        font-size: 43px;
+                        color: $white;
+                        font-weight: 700;
+                    }
+                    &:nth-child(2) {
+                        margin: 20px 0px 0px;
+                        h3 {
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

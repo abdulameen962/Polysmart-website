@@ -101,6 +101,32 @@ const app = Vue.createApp({
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
             ],
+            //step section
+            stepsub: "Order now",
+            stepheader: "Step by step on how to order from Polysmart groups",
+            steps: [{
+                    number: "1",
+                    name: "Lorem ipsum dolor sit amet consectetur ",
+                    summary: "Lorem ipsum dolor sit amet consectetur adipisci elit eque ips odio justo.",
+                },
+                {
+                    number: "2",
+                    name: "Lorem ipsum dolor sit",
+                    summary: "Lorem ipsum dolor sit amet consectetur adipisci elit eque ips odio justo.",
+                },
+                {
+                    number: "3",
+                    name: "Lorem ipsum dolor sit amet consectetur ",
+                    summary: "Lorem ipsum dolor sit amet consectetur adipisci elit eque ips odio justo.",
+                },
+                {
+                    number: "4",
+                    name: "Lorem ipsum dolor sit amet",
+                    summary: "Lorem ipsum dolor sit amet consectetur adipisci elit eque ips odio justo.",
+                },
+
+
+            ],
         }
     },
     mounted() {
@@ -225,6 +251,30 @@ app.component("product-grid", {
                         <div class="col-sm-12 col-md-12 col-lg-12">
                                 <h3> {{ product.name }} </h3>
                                 <p> {{ product.summary }} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `
+})
+app.component("step-grid", {
+    props: {
+        steps: Array,
+    },
+    template: `
+        <div class="containerx">
+            <div class="step-grid">
+                <div class="inner-grid" v-for="step in steps" data-aos="fade-up" data-aos-duration="500">
+                    <div class="row">
+                        <div class="col-3">
+                                <div class="number">
+                                    {{ step.number }}
+                                </div>
+                        </div>
+                        <div class="col-9">
+                                <h3> {{ step.name }} </h3>
+                                <p> {{ step.summary }} </p>
                         </div>
                     </div>
                 </div>
