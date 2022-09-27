@@ -223,10 +223,10 @@ app.component("about-grid", {
             <div class="about-grid">
                 <div class="col" v-for="ab in about" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-3">
+                        <div class="col-sm-12 col-md-12 col-lg-4">
                                 <img :src="ab.img" :alt="ab.name" width="100px" height="100px"/>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-9">
+                        <div class="col-sm-12 col-md-12 col-lg-8">
                                 <h3> {{ ab.name }} </h3>
                                 <p> {{ ab.summary }} </p>
                         </div>

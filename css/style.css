@@ -411,11 +411,11 @@ div.about {
               @media screen and (min-width: 0px) and (max-width: 767px) {
                 div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 p {
                   text-align: center; } }
-          div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-3 img {
-            width: auto;
+          div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 img {
+            width: 100%;
             height: auto; }
           @media screen and (min-width: 0px) and (max-width: 767px) {
-            div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-3 {
+            div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 {
               display: flex;
               justify-content: center;
               align-items: center;

@@ -273,9 +273,9 @@ div.about {
                                 }
                             }
                         }
-                        &>div.col-lg-3 {
+                        &>div.col-lg-4 {
                             img {
-                                width: auto;
+                                width: 100%;
                                 height: auto;
                             }
                             @include respond(lphone) {
