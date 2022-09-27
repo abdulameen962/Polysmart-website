@@ -522,12 +522,21 @@ div.steps {
             div.row {
                 position: relative;
                 @include flex(yes);
+                width: 100%;
                 @include respond(lphone) {
                     @include flex(no);
+                    flex-direction: row;
+                }
+                @include respond(phone) {
+                    @include flex(yes);
                 }
                 &>div {
-                    width: 100%;
                     @include flex(yes);
+                    @include respond(phone) {
+                        display: block;
+                        justify-content: unset;
+                        align-items: unset;
+                    }
                     div.number {
                         background: $blue;
                         border-radius: 50%;
@@ -538,15 +547,54 @@ div.steps {
                         font-size: 43px;
                         color: $white;
                         font-weight: 700;
+                        @include respond(tab) {
+                            width: 107px;
+                            min-width: 107px;
+                            min-height: 107px;
+                            font-size: 36px;
+                        }
+                        @include respond(lphone) {
+                            width: 90px;
+                            min-width: 90px;
+                            min-height: 90px;
+                            font-size: 30px;
+                        }
+                        @include respond(phone) {
+                            width: 75px;
+                            min-width: 75px;
+                            min-height: 75px;
+                            font-size: 25px;
+                        }
+                    }
+                    &:nth-child(1) {
+                        @include respond(lphone) {
+                            width: 25%;
+                        }
+                        @include respond(phone) {
+                            width: 100%;
+                        }
                     }
                     &:nth-child(2) {
                         margin: 20px 0px 0px;
                         h3 {
                             text-align: center;
+                            @include respond(lphone) {
+                                text-align: left;
+                                width: 100%;
+                            }
                         }
                         p {
                             text-align: center;
                             color: $grey;
+                            @include respond(lphone) {
+                                text-align: left;
+                            }
+                        }
+                        @include respond(lphone) {
+                            width: 75%;
+                        }
+                        @include respond(phone) {
+                            width: 100%;
                         }
                     }
                 }

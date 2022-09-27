@@ -652,18 +652,30 @@ div.steps {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column; }
+        flex-direction: column;
+        width: 100%; }
         @media screen and (min-width: 0px) and (max-width: 767px) {
           div.steps div.step-grid div.inner-grid div.row {
             display: flex;
             justify-content: center;
-            align-items: center; } }
+            align-items: center;
+            flex-direction: row; } }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.steps div.step-grid div.inner-grid div.row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; } }
         div.steps div.step-grid div.inner-grid div.row > div {
-          width: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
           flex-direction: column; }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.steps div.step-grid div.inner-grid div.row > div {
+              display: block;
+              justify-content: unset;
+              align-items: unset; } }
           div.steps div.step-grid div.inner-grid div.row > div div.number {
             background: #343472;
             border-radius: 50%;
@@ -676,10 +688,47 @@ div.steps {
             font-size: 43px;
             color: white;
             font-weight: 700; }
+            @media screen and (min-width: 0px) and (max-width: 991px) {
+              div.steps div.step-grid div.inner-grid div.row > div div.number {
+                width: 107px;
+                min-width: 107px;
+                min-height: 107px;
+                font-size: 36px; } }
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+              div.steps div.step-grid div.inner-grid div.row > div div.number {
+                width: 90px;
+                min-width: 90px;
+                min-height: 90px;
+                font-size: 30px; } }
+            @media screen and (min-width: 0em) and (max-width: 479px) {
+              div.steps div.step-grid div.inner-grid div.row > div div.number {
+                width: 75px;
+                min-width: 75px;
+                min-height: 75px;
+                font-size: 25px; } }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.steps div.step-grid div.inner-grid div.row > div:nth-child(1) {
+              width: 25%; } }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.steps div.step-grid div.inner-grid div.row > div:nth-child(1) {
+              width: 100%; } }
           div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) {
             margin: 20px 0px 0px; }
             div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) h3 {
               text-align: center; }
+              @media screen and (min-width: 0px) and (max-width: 767px) {
+                div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) h3 {
+                  text-align: left;
+                  width: 100%; } }
             div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) p {
               text-align: center;
               color: #6F7278; }
+              @media screen and (min-width: 0px) and (max-width: 767px) {
+                div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) p {
+                  text-align: left; } }
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+              div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) {
+                width: 75%; } }
+            @media screen and (min-width: 0em) and (max-width: 479px) {
+              div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) {
+                width: 100%; } }

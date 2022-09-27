@@ -267,12 +267,12 @@ app.component("step-grid", {
             <div class="step-grid">
                 <div class="inner-grid" v-for="step in steps" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="first">
                                 <div class="number">
                                     {{ step.number }}
                                 </div>
                         </div>
-                        <div class="col-9">
+                        <div class="second">
                                 <h3> {{ step.name }} </h3>
                                 <p> {{ step.summary }} </p>
                         </div>
