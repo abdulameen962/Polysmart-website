@@ -286,10 +286,10 @@ div.about {
                             }
                         }
                         @include respond(tab) {
-                            padding: 40px 10px;
+                            padding: 40px 20px;
                         }
                         @include respond(phone) {
-                            padding: 30px 0px;
+                            padding: 30px 10px;
                         }
                     }
                 }
@@ -652,6 +652,8 @@ div.summary {
                     width: auto;
                     min-height: auto;
                     padding-top: 99%;
+                    right: -165px;
+                    bottom: -430px;
                 }
             }
         }

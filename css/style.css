@@ -432,10 +432,10 @@ div.about {
               flex-direction: column; } }
           @media screen and (min-width: 0px) and (max-width: 991px) {
             div.about > div.container > div.containerx > div.about-grid > div.col > div.row {
-              padding: 40px 10px; } }
+              padding: 40px 20px; } }
           @media screen and (min-width: 0em) and (max-width: 479px) {
             div.about > div.container > div.containerx > div.about-grid > div.col > div.row {
-              padding: 30px 0px; } }
+              padding: 30px 10px; } }
 
 div.third-section {
   background: #FBF9F8;
@@ -792,7 +792,9 @@ div.summary {
           div.summary > div > img.summarycircle {
             width: auto;
             min-height: auto;
-            padding-top: 99%; } }
+            padding-top: 99%;
+            right: -165px;
+            bottom: -430px; } }
     div.summary > div > div {
       display: flex;
       justify-content: center;
