@@ -71,32 +71,32 @@ const app = Vue.createApp({
             //productsection
             productsub: "Our Products",
             products: [{
-                    img: "./images/nylon1.png",
+                    img: "./images/nylon1.webp",
                     name: "Double Colour Shopping Bag",
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
                 {
-                    img: "./images/nylon2.png",
+                    img: "./images/nylon2.webp",
                     name: "Medium Black Shopping Bag",
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
                 {
-                    img: "./images/nylon3.png",
+                    img: "./images/nylon3.webp",
                     name: "Poly bags (100% recycled)",
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
                 {
-                    img: "./images/nylon4.png",
+                    img: "./images/nylon4.webp",
                     name: "Small Black Shopping Bag",
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
                 {
-                    img: "./images/nylon4.png",
+                    img: "./images/nylon4.webp",
                     name: "	Fashion Bags",
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
                 {
-                    img: "./images/nylon4.png",
+                    img: "./images/nylon4.webp",
                     name: "Packing Bags for Pure water",
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
@@ -178,6 +178,9 @@ const app = Vue.createApp({
                     return false;
                 }
             }
+        })
+        document.querySelectorAll("img").forEach(function(e) {
+            e.loading = "lazy";
         })
     },
     methods: {

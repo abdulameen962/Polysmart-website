@@ -148,6 +148,11 @@ a.header-button {
   border-radius: 80px;
   color: white;
   background: #343472; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .primary-button {
+      padding: 25px 44px;
+      font-size: 16px;
+      line-height: 1.125em; } }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .primary-button {
       padding: 25px 44px;
@@ -172,6 +177,11 @@ a.header-button {
   background: transparent;
   color: white;
   border: 1px solid white; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .secondary-button {
+      padding: 25px 44px;
+      font-size: 16px;
+      line-height: 1.125em; } }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     .secondary-button {
       padding: 25px 44px;
@@ -418,6 +428,9 @@ div.about {
               @media screen and (min-width: 0px) and (max-width: 767px) {
                 div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 p {
                   text-align: center; } }
+          @media screen and (min-width: 0px) and (max-width: 991px) {
+            div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 {
+              margin-bottom: 20px; } }
           div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 img {
             width: 100%;
             height: auto; }
@@ -758,7 +771,9 @@ div.summary {
     position: relative; }
     @media screen and (min-width: 0px) and (max-width: 991px) {
       div.summary > div {
-        flex-direction: column-reverse; } }
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center; } }
     div.summary > div > img {
       position: absolute;
       width: auto;
@@ -799,7 +814,8 @@ div.summary {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column; }
+      flex-direction: column;
+      max-width: 549px; }
       div.summary > div > div > img {
         height: auto;
         max-width: 90%;

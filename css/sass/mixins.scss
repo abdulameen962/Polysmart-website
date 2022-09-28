@@ -27,6 +27,11 @@
     @include transition;
     text-decoration: none;
     border-radius: 80px;
+    @include respond(tab) {
+        padding: 25px 44px;
+        font-size: 16px;
+        line-height: 1.125em;
+    }
     @include respond(lphone) {
         padding: 25px 44px;
         font-size: 16px;

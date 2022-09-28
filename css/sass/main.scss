@@ -274,6 +274,9 @@ div.about {
                             }
                         }
                         &>div.col-lg-4 {
+                            @include respond(tab) {
+                                margin-bottom: 20px;
+                            }
                             img {
                                 width: 100%;
                                 height: auto;
@@ -619,6 +622,8 @@ div.summary {
         position: relative;
         @include respond(tab) {
             flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
         }
         &>img {
             @include image;
@@ -659,6 +664,7 @@ div.summary {
         }
         &>div {
             @include flex(yes);
+            max-width: 549px;
             &>img {
                 height: auto;
                 max-width: 90%;
