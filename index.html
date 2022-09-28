@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <!-- <script src="./vendor/vue.js"></script> -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./vendor/vue.js"></script>
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
     <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -82,7 +82,7 @@
             <product-grid :products="products"></product-grid>
         </div>
     </div>
-    <div class="subtext">
+    <div class="subtext scrollstop">
         <div class="inner resize">
             <img src="./images/twirlystuff.svg" alt="twirl" height="100px" width="100px">
             <img src="./images/leftcircle.svg" alt="circle" data-aos="zoom-in" data-aos-duration="500" height="100px" width="100px">
@@ -103,14 +103,29 @@
             <step-grid :steps="steps"></step-grid>
         </div>
     </div>
-    <!-- <div class="about summary">
+    <div class="about summary scrollstop">
         <div class="container row resize">
             <img src="./images/twirlybrown.svg" alt="circle" height="100px" width="100px">
-            <div class="col-sm-12 col-md-12 col-lg-6">Testing</div>
-            <div class="col-sm-12 col-md-12 col-lg-6">Testing</div>
-            <img src="./images/leftcircle.svg" alt="circle" height="100px" width="100px" class="summarycircle">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <img src="./images/IMAGE-min.png" alt="picture" height="100px" width="100px" data-aos="fade-in" data-aos-duration="500">
+                <div class="testimonial" data-aos="fade-up" data-aos-duration="500">
+                    <p class="medtext"> {{ testimonialtext }} </p>
+                    <div class="medtext">{{ testimonialname }}</div>
+                    <div class="medtext">{{ testimonialtitle }}</div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="500">
+                <div class="subtitle-main" data-aos="fade-up" data-aos-duration="500">
+                    <div class="subtitle-line"></div>
+                    <div class="subtitle"> {{ summarysub }} </div>
+                </div>
+                <h2> {{ summaryheader }} </h2>
+                <p> {{ summarytext }} </p>
+                <summary-grid :summarys="summarys"></summary-grid>
+            </div>
+            <img src="./images/leftcircle.svg" alt="circle" height="100px" width="100px" class="summarycircle" data-aos="zoom-in" data-aos-duration="500">
         </div>
-    </div> -->
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

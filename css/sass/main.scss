@@ -370,12 +370,14 @@ div.product {
                 div.row {
                     background: $white;
                     height: 100%;
-                    border-radius: 18px;
+                    @include bradius;
                     @include border($blueborder);
                     &>div {
                         img {
                             width: 100%;
                             height: auto;
+                            max-width: 90%;
+                            max-height: 90%;
                         }
                         &:first-child {
                             background: $lightblue;
@@ -610,9 +612,15 @@ div.summary {
     background: $greyback;
     position: relative;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100%;
     &>div {
         position: relative;
-        img {
+        @include respond(tab) {
+            flex-direction: column-reverse;
+        }
+        &>img {
             @include image;
             max-width: 100%;
             &:first-child {
@@ -638,7 +646,7 @@ div.summary {
                 min-height: 443px;
                 @include respond(tab) {
                     right: -158px;
-                    bottom: -331px;
+                    bottom: -400px;
                 }
                 @include respond(phone) {
                     width: auto;
@@ -648,7 +656,130 @@ div.summary {
             }
         }
         &>div {
-            @include border(blue);
+            @include flex(yes);
+            &>img {
+                height: auto;
+                max-width: 90%;
+                width: 100%;
+                @include mp;
+            }
+            &:nth-child(3) {
+                @include flex(yes);
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding: 0px 0px 0px 120px;
+                @include respond(tab) {
+                    padding: 0px;
+                    @include flex(yes);
+                }
+                &>div {
+                    &:first-child {
+                        color: $blue;
+                        div.subtitle-line {
+                            background: $blue;
+                            @include respond(tab) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                div.summary-grid {
+                    max-width: 550px;
+                    @include grid(2);
+                    gap: 50px 30px;
+                    margin-top: 40px;
+                    @include respond(phone) {
+                        margin-top: 10px;
+                        @include grid(1);
+                        gap: 25px 0px;
+                    }
+                    &>div {
+                        @include respond(tab) {
+                            @include flex(yes);
+                        }
+                        &>div {
+                            font-size: 50px;
+                            font-weight: 700;
+                            @include respond(tab) {
+                                font-size: 42px;
+                            }
+                            @include respond(lphone) {
+                                font-size: 35px;
+                            }
+                            @include respond(phone) {
+                                font-size: 36px;
+                            }
+                            span {
+                                color: $blue;
+                            }
+                        }
+                        &>p {
+                            @include respond(tab) {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                &>h2 {
+                    @include respond(tab) {
+                        text-align: center;
+                    }
+                }
+                &>p {
+                    color: $grey;
+                    font-size: 18px;
+                    line-height: 30px;
+                    @include respond(tab) {
+                        text-align: center;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                @include respond(tab) {
+                    @include mp;
+                    margin: 35px 0px;
+                    align-items: flex-start;
+                }
+                div.testimonial {
+                    background: $white;
+                    @include background;
+                    max-width: 439px;
+                    padding: 53px 42px 47px;
+                    position: absolute;
+                    bottom: -50px;
+                    right: -50px;
+                    z-index: 2;
+                    p {
+                        color: $grey;
+                        line-height: 25px;
+                    }
+                    &>div {
+                        &:nth-child(2) {
+                            font-weight: 700;
+                            color: $dark;
+                            margin-top: 15px;
+                        }
+                        &:nth-child(3) {
+                            color: $blue;
+                            margin-top: 5px;
+                        }
+                    }
+                    @include respond(tab) {
+                        right: 0px;
+                        bottom: -25px;
+                    }
+                    @include respond(lphone) {
+                        padding: 44px 35px;
+                    }
+                    @include respond(phone) {
+                        right: 0px;
+                        padding: 37px 25px 33px;
+                        bottom: 0px;
+                        position: relative;
+                        margin-top: -67px;
+                    }
+                }
+            }
         }
     }
 }

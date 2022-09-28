@@ -1,10 +1,10 @@
-.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, a, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
+.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, .medtext, a, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
   font-family: regular; }
 
 .font-weight, h1, h2, h3, h4, h5, h6, button, .subtitle {
   font-weight: 700; }
 
-.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, a, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
+.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, .medtext, a, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
   font-family: regular; }
 
 .font-weight, h1, h2, h3, h4, h5, h6, button, .subtitle {
@@ -102,6 +102,13 @@ button {
   @media screen and (min-width: 0px) and (max-width: 991px) {
     .subtitle {
       font-size: 16px; } }
+
+.medtext {
+  font-size: 18px;
+  line-height: 1.125em; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .medtext {
+      font-size: 18px; } }
 
 a {
   font-size: 16px;
@@ -501,7 +508,9 @@ div.product {
           border: 1px solid #E7E9EE; }
           div.product div.containerx div.product-grid div.col div.row > div img {
             width: 100%;
-            height: auto; }
+            height: auto;
+            max-width: 90%;
+            max-height: 90%; }
           div.product div.containerx div.product-grid div.col div.row > div:first-child {
             background: #E8E9FD;
             padding: 30px 60px;
@@ -741,42 +750,167 @@ div.steps {
 div.summary {
   background: #FBF9F8;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%; }
   div.summary > div {
     position: relative; }
-    div.summary > div img {
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.summary > div {
+        flex-direction: column-reverse; } }
+    div.summary > div > img {
       position: absolute;
       width: auto;
       height: auto;
       max-width: 100%; }
-      div.summary > div img:first-child {
+      div.summary > div > img:first-child {
         left: -212px;
         top: -241px;
         animation: twirl 50s infinite ease-in; }
         @media screen and (min-width: 0px) and (max-width: 991px) {
-          div.summary > div img:first-child {
+          div.summary > div > img:first-child {
             left: -290px;
             top: -279px; } }
         @media screen and (min-width: 0px) and (max-width: 767px) {
-          div.summary > div img:first-child {
+          div.summary > div > img:first-child {
             top: -326px; } }
         @media screen and (min-width: 0em) and (max-width: 479px) {
-          div.summary > div img:first-child {
+          div.summary > div > img:first-child {
             top: -326px; } }
-      div.summary > div img.summarycircle {
+      div.summary > div > img.summarycircle {
         right: -276px;
         bottom: -388px;
         width: 443px;
         min-width: 443px;
         min-height: 443px; }
         @media screen and (min-width: 0px) and (max-width: 991px) {
-          div.summary > div img.summarycircle {
+          div.summary > div > img.summarycircle {
             right: -158px;
-            bottom: -331px; } }
+            bottom: -400px; } }
         @media screen and (min-width: 0em) and (max-width: 479px) {
-          div.summary > div img.summarycircle {
+          div.summary > div > img.summarycircle {
             width: auto;
             min-height: auto;
             padding-top: 99%; } }
     div.summary > div > div {
-      border: 1px solid blue; }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      div.summary > div > div > img {
+        height: auto;
+        max-width: 90%;
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+      div.summary > div > div:nth-child(3) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0px 0px 0px 120px; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.summary > div > div:nth-child(3) {
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; } }
+        div.summary > div > div:nth-child(3) > div:first-child {
+          color: #343472; }
+          div.summary > div > div:nth-child(3) > div:first-child div.subtitle-line {
+            background: #343472; }
+            @media screen and (min-width: 0px) and (max-width: 991px) {
+              div.summary > div > div:nth-child(3) > div:first-child div.subtitle-line {
+                display: none; } }
+        div.summary > div > div:nth-child(3) div.summary-grid {
+          max-width: 550px;
+          display: grid;
+          justify-content: space-between;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 50px 30px;
+          margin-top: 40px; }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.summary > div > div:nth-child(3) div.summary-grid {
+              margin-top: 10px;
+              display: grid;
+              justify-content: space-between;
+              grid-template-columns: repeat(1, minmax(0, 1fr));
+              gap: 25px 0px; } }
+          @media screen and (min-width: 0px) and (max-width: 991px) {
+            div.summary > div > div:nth-child(3) div.summary-grid > div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column; } }
+          div.summary > div > div:nth-child(3) div.summary-grid > div > div {
+            font-size: 50px;
+            font-weight: 700; }
+            @media screen and (min-width: 0px) and (max-width: 991px) {
+              div.summary > div > div:nth-child(3) div.summary-grid > div > div {
+                font-size: 42px; } }
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+              div.summary > div > div:nth-child(3) div.summary-grid > div > div {
+                font-size: 35px; } }
+            @media screen and (min-width: 0em) and (max-width: 479px) {
+              div.summary > div > div:nth-child(3) div.summary-grid > div > div {
+                font-size: 36px; } }
+            div.summary > div > div:nth-child(3) div.summary-grid > div > div span {
+              color: #343472; }
+          @media screen and (min-width: 0px) and (max-width: 991px) {
+            div.summary > div > div:nth-child(3) div.summary-grid > div > p {
+              text-align: center; } }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.summary > div > div:nth-child(3) > h2 {
+            text-align: center; } }
+        div.summary > div > div:nth-child(3) > p {
+          color: #6F7278;
+          font-size: 18px;
+          line-height: 30px; }
+          @media screen and (min-width: 0px) and (max-width: 991px) {
+            div.summary > div > div:nth-child(3) > p {
+              text-align: center; } }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.summary > div > div:nth-child(2) {
+          margin: 0;
+          padding: 0;
+          margin: 35px 0px;
+          align-items: flex-start; } }
+      div.summary > div > div:nth-child(2) div.testimonial {
+        background: white;
+        box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+        border-radius: 18px;
+        border: 1px solid #E7E9EE;
+        max-width: 439px;
+        padding: 53px 42px 47px;
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+        z-index: 2; }
+        div.summary > div > div:nth-child(2) div.testimonial p {
+          color: #6F7278;
+          line-height: 25px; }
+        div.summary > div > div:nth-child(2) div.testimonial > div:nth-child(2) {
+          font-weight: 700;
+          color: #292C32;
+          margin-top: 15px; }
+        div.summary > div > div:nth-child(2) div.testimonial > div:nth-child(3) {
+          color: #343472;
+          margin-top: 5px; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.summary > div > div:nth-child(2) div.testimonial {
+            right: 0px;
+            bottom: -25px; } }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          div.summary > div > div:nth-child(2) div.testimonial {
+            padding: 44px 35px; } }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.summary > div > div:nth-child(2) div.testimonial {
+            right: 0px;
+            padding: 37px 25px 33px;
+            bottom: 0px;
+            position: relative;
+            margin-top: -67px; } }

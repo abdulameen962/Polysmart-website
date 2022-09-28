@@ -124,9 +124,35 @@ const app = Vue.createApp({
                     name: "Lorem ipsum dolor sit amet",
                     summary: "Lorem ipsum dolor sit amet consectetur adipisci elit eque ips odio justo.",
                 },
-
-
             ],
+            //summary
+            testimonialtext: "“Lorem ipsum dolor sit amet consectetur adipiscing elit auctor scelerisque quam id magna risus nisi lectus odio interdum.”",
+            testimonialname: "Andy Smith",
+            testimonialtitle: "An esteemed distributor",
+            summarysub: "OUR SUMMARY",
+            summaryheader: "Polysmart in a few sentences",
+            summarytext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit eque dolor ipsum odio justo amet, urna, auctor dolor ist amenor.",
+            summarys: [{
+                    number: "600",
+                    shape: "+",
+                    summary: "dealers across 21 states in Nigeria  and neighbouring countries",
+                },
+                {
+                    number: "100",
+                    shape: "%",
+                    summary: "of our operations are powered by natural gas",
+                },
+                {
+                    number: "5",
+                    shape: "+",
+                    summary: "Top5  in the industry with about  250 manufacturers",
+                },
+                {
+                    number: "2013",
+                    shape: "+",
+                    summary: "Existence date",
+                },
+            ]
         }
     },
     mounted() {
@@ -141,8 +167,18 @@ const app = Vue.createApp({
         bigImg.onload = function() {
             image.src = this.src;
         }
-
         bigImg.src = srcs;
+        document.querySelectorAll(".scrollstop").forEach(function(e) {
+            e.addEventListener('keydown', preventKeyBoardScroll, false);
+
+            function preventKeyBoardScroll(e) {
+                var keys = [32, 33, 34, 35, 37, 38, 39, 40];
+                if (keys.includes(e.keyCode)) {
+                    e.preventDefault();
+                    return false;
+                }
+            }
+        })
     },
     methods: {
 
@@ -278,6 +314,19 @@ app.component("step-grid", {
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    `
+})
+app.component("summary-grid", {
+    props: {
+        summarys: Array,
+    },
+    template: `
+        <div class="summary-grid">
+            <div class="inner-grid" v-for="summary in summarys" data-aos="fade-up" data-aos-duration="500">
+                <div> {{ summary.number }}  <span> {{ summary.shape }} </span></div>
+                <p> {{ summary.summary }} </p>
             </div>
         </div>
     `

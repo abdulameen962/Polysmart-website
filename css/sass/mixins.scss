@@ -9,9 +9,13 @@
     position: relative;
 }
 
+@mixin bradius {
+    border-radius: 18px;
+}
+
 @mixin background {
     box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
-    border-radius: 18px;
+    @include bradius;
     @include border(#E7E9EE);
 }
 
