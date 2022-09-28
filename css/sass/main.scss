@@ -664,7 +664,6 @@ div.summary {
         }
         &>div {
             @include flex(yes);
-            max-width: 549px;
             &>img {
                 height: auto;
                 max-width: 90%;
@@ -676,9 +675,11 @@ div.summary {
                 align-items: flex-start;
                 justify-content: flex-start;
                 padding: 0px 0px 0px 120px;
+                max-width: 549px;
                 @include respond(tab) {
                     padding: 0px;
                     @include flex(yes);
+                    max-width: 700px;
                 }
                 &>div {
                     &:first-child {
@@ -743,10 +744,13 @@ div.summary {
                 }
             }
             &:nth-child(2) {
+                max-width: 553px;
                 @include respond(tab) {
                     @include mp;
                     margin: 35px 0px;
+                    @include flex(yes);
                     align-items: flex-start;
+                    max-width: 754px;
                 }
                 div.testimonial {
                     background: $white;

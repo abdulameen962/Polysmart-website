@@ -814,8 +814,7 @@ div.summary {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      max-width: 549px; }
+      flex-direction: column; }
       div.summary > div > div > img {
         height: auto;
         max-width: 90%;
@@ -829,14 +828,16 @@ div.summary {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        padding: 0px 0px 0px 120px; }
+        padding: 0px 0px 0px 120px;
+        max-width: 549px; }
         @media screen and (min-width: 0px) and (max-width: 991px) {
           div.summary > div > div:nth-child(3) {
             padding: 0px;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column; } }
+            flex-direction: column;
+            max-width: 700px; } }
         div.summary > div > div:nth-child(3) > div:first-child {
           color: #343472; }
           div.summary > div > div:nth-child(3) > div:first-child div.subtitle-line {
@@ -891,45 +892,52 @@ div.summary {
           @media screen and (min-width: 0px) and (max-width: 991px) {
             div.summary > div > div:nth-child(3) > p {
               text-align: center; } }
-      @media screen and (min-width: 0px) and (max-width: 991px) {
-        div.summary > div > div:nth-child(2) {
-          margin: 0;
-          padding: 0;
-          margin: 35px 0px;
-          align-items: flex-start; } }
-      div.summary > div > div:nth-child(2) div.testimonial {
-        background: white;
-        box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
-        border-radius: 18px;
-        border: 1px solid #E7E9EE;
-        max-width: 439px;
-        padding: 40px 42px 47px;
-        position: absolute;
-        bottom: -50px;
-        right: -50px;
-        z-index: 2; }
-        div.summary > div > div:nth-child(2) div.testimonial p {
-          color: #6F7278;
-          line-height: 25px;
-          line-height: 30px; }
-        div.summary > div > div:nth-child(2) div.testimonial > div:nth-child(2) {
-          font-weight: 700;
-          color: #292C32;
-          margin-top: 15px; }
-        div.summary > div > div:nth-child(2) div.testimonial > div:nth-child(3) {
-          color: #343472;
-          margin-top: 5px; }
+      div.summary > div > div:nth-child(2) {
+        max-width: 553px; }
         @media screen and (min-width: 0px) and (max-width: 991px) {
-          div.summary > div > div:nth-child(2) div.testimonial {
-            right: 0px;
-            bottom: -25px; } }
-        @media screen and (min-width: 0px) and (max-width: 767px) {
-          div.summary > div > div:nth-child(2) div.testimonial {
-            padding: 44px 35px; } }
-        @media screen and (min-width: 0em) and (max-width: 479px) {
-          div.summary > div > div:nth-child(2) div.testimonial {
-            right: 0px;
-            padding: 37px 25px 33px;
-            bottom: 0px;
-            position: relative;
-            margin-top: -67px; } }
+          div.summary > div > div:nth-child(2) {
+            margin: 0;
+            padding: 0;
+            margin: 35px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 754px; } }
+        div.summary > div > div:nth-child(2) div.testimonial {
+          background: white;
+          box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+          border-radius: 18px;
+          border: 1px solid #E7E9EE;
+          max-width: 439px;
+          padding: 40px 42px 47px;
+          position: absolute;
+          bottom: -50px;
+          right: -50px;
+          z-index: 2; }
+          div.summary > div > div:nth-child(2) div.testimonial p {
+            color: #6F7278;
+            line-height: 25px;
+            line-height: 30px; }
+          div.summary > div > div:nth-child(2) div.testimonial > div:nth-child(2) {
+            font-weight: 700;
+            color: #292C32;
+            margin-top: 15px; }
+          div.summary > div > div:nth-child(2) div.testimonial > div:nth-child(3) {
+            color: #343472;
+            margin-top: 5px; }
+          @media screen and (min-width: 0px) and (max-width: 991px) {
+            div.summary > div > div:nth-child(2) div.testimonial {
+              right: 0px;
+              bottom: -25px; } }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.summary > div > div:nth-child(2) div.testimonial {
+              padding: 44px 35px; } }
+          @media screen and (min-width: 0em) and (max-width: 479px) {
+            div.summary > div > div:nth-child(2) div.testimonial {
+              right: 0px;
+              padding: 37px 25px 33px;
+              bottom: 0px;
+              position: relative;
+              margin-top: -67px; } }

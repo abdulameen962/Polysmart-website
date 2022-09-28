@@ -133,24 +133,24 @@ const app = Vue.createApp({
             summaryheader: "Polysmart in a few sentences",
             summarytext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit eque dolor ipsum odio justo amet, urna, auctor dolor ist amenor.",
             summarys: [{
+                    number: "5",
+                    shape: "",
+                    summary: "Top 5  in the packaging industry of about  250 manufacturers",
+                },
+                {
                     number: "600",
                     shape: "+",
                     summary: "dealers across 21 states in Nigeria  and neighbouring countries",
                 },
                 {
+                    number: "2013",
+                    shape: "",
+                    summary: "Been running operation for over 9 years",
+                },
+                {
                     number: "100",
                     shape: "%",
                     summary: "of our operations are powered by natural gas",
-                },
-                {
-                    number: "5",
-                    shape: "+",
-                    summary: "Top5  in the industry with about  250 manufacturers",
-                },
-                {
-                    number: "2013",
-                    shape: "+",
-                    summary: "Existence date",
                 },
             ]
         }
@@ -326,8 +326,8 @@ app.component("summary-grid", {
         summarys: Array,
     },
     template: `
-        <div class="summary-grid">
-            <div class="inner-grid" v-for="summary in summarys" data-aos="fade-up" data-aos-duration="500">
+        <div class="summary-grid" data-aos="fade-up" data-aos-duration="500">
+            <div class="inner-grid" v-for="summary in summarys">
                 <div> {{ summary.number }}  <span> {{ summary.shape }} </span></div>
                 <p> {{ summary.summary }} </p>
             </div>
