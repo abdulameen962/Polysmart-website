@@ -179,7 +179,7 @@ const app = Vue.createApp({
                 }
             }
         })
-        document.querySelectorAll("img").forEach(function(e) {
+        document.querySelectorAll(".img").forEach(function(e) {
             e.loading = "lazy";
         })
     },
@@ -232,7 +232,7 @@ app.component("nav-bar", {
         <nav class="navbar navbar-expand-lg nav-position">
             <div class="container-fluid resize">
                 <a class="navbar-brand" href="/index.html">
-                <img :src="image" alt="Polysmart logo" width="100px" height="100px"/>
+                <img class="img" :src="image" alt="Polysmart logo" width="100px" height="100px"/>
                 </a>
                 <div class="responsive-nav">
                     <a class="header-button contact1" href="/contact.html"> Contact us </a>
@@ -263,7 +263,7 @@ app.component("about-grid", {
                 <div class="col" v-for="ab in about" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-4">
-                                <img :src="ab.img" :alt="ab.name" width="100px" height="100px"/>
+                                <img class="img" :src="ab.img" :alt="ab.name" width="100px" height="100px"/>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-8">
                                 <h3> {{ ab.name }} </h3>
@@ -285,7 +285,7 @@ app.component("product-grid", {
                 <div class="col" v-for="product in products" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                                <img :src="product.img" :alt="product.name" width="100px" height="100px"/>
+                                <img class="img" :src="product.img" :alt="product.name" width="100px" height="100px"/>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
                                 <h3> {{ product.name }} </h3>
