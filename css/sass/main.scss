@@ -426,11 +426,8 @@ div.subtext {
         @include image;
         &:first-child {
             top: -172.5px;
-            left: -125px;
+            left: -105px;
             @include animate;
-            @include respond(phone) {
-                left: -145px;
-            }
         }
         &:nth-child(2) {
             left: -260px;
@@ -684,6 +681,7 @@ div.summary {
                 &>div {
                     &:first-child {
                         color: $blue;
+                        @include flex(no);
                         div.subtitle-line {
                             background: $blue;
                             @include respond(tab) {

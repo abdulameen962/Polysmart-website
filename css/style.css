@@ -567,11 +567,8 @@ div.subtext {
     height: auto; }
     div.subtext img:first-child {
       top: -172.5px;
-      left: -125px;
+      left: -105px;
       animation: twirl 50s infinite ease-in; }
-      @media screen and (min-width: 0em) and (max-width: 479px) {
-        div.subtext img:first-child {
-          left: -145px; } }
     div.subtext img:nth-child(2) {
       left: -260px;
       width: 308px;
@@ -839,7 +836,10 @@ div.summary {
             flex-direction: column;
             max-width: 700px; } }
         div.summary > div > div:nth-child(3) > div:first-child {
-          color: #343472; }
+          color: #343472;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
           div.summary > div > div:nth-child(3) > div:first-child div.subtitle-line {
             background: #343472; }
             @media screen and (min-width: 0px) and (max-width: 991px) {
