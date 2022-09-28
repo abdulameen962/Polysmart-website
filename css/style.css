@@ -189,7 +189,7 @@ a.header-button {
 div.resize {
   max-width: 1248px;
   width: 100%;
-  padding: 0px 24px; }
+  padding: 0px 18px; }
 
 div.resize-small {
   max-width: 551px; }
@@ -887,14 +887,15 @@ div.summary {
         border-radius: 18px;
         border: 1px solid #E7E9EE;
         max-width: 439px;
-        padding: 53px 42px 47px;
+        padding: 40px 42px 47px;
         position: absolute;
         bottom: -50px;
         right: -50px;
         z-index: 2; }
         div.summary > div > div:nth-child(2) div.testimonial p {
           color: #6F7278;
-          line-height: 25px; }
+          line-height: 25px;
+          line-height: 30px; }
         div.summary > div > div:nth-child(2) div.testimonial > div:nth-child(2) {
           font-weight: 700;
           color: #292C32;

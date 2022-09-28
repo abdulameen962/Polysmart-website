@@ -33,7 +33,7 @@ a.header-button {
 div.resize {
     max-width: 1248px;
     width: 100%;
-    padding: 0px 24px;
+    padding: 0px 18px;
 }
 
 div.resize-small {
@@ -746,7 +746,7 @@ div.summary {
                     background: $white;
                     @include background;
                     max-width: 439px;
-                    padding: 53px 42px 47px;
+                    padding: 40px 42px 47px;
                     position: absolute;
                     bottom: -50px;
                     right: -50px;
@@ -754,6 +754,7 @@ div.summary {
                     p {
                         color: $grey;
                         line-height: 25px;
+                        line-height: 30px;
                     }
                     &>div {
                         &:nth-child(2) {
