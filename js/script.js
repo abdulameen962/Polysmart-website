@@ -152,7 +152,10 @@ const app = Vue.createApp({
                     shape: "%",
                     summary: "of our operations are powered by natural gas",
                 },
-            ]
+            ],
+            touchheader: "Get in touch with us, we are your trusted packaging company",
+            touchheader1: "Get in touch and get the best prices",
+            touchheader2: "Know about us and our products",
         }
     },
     mounted() {
@@ -182,6 +185,14 @@ const app = Vue.createApp({
         document.querySelectorAll(".img").forEach(function(e) {
             e.loading = "lazy";
         })
+        const darksvg = document.querySelector(".lightpath");
+        const box = document.querySelector(".links").children[1];
+        box.onmouseover = () => {
+            darksvg.style.stroke = "#FFD3B9";
+        }
+        box.onmouseout = () => {
+            darksvg.style.stroke = "rgb(255, 255, 255)";
+        }
     },
     methods: {
 

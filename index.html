@@ -123,7 +123,26 @@
                 <p> {{ summarytext }} </p>
                 <summary-grid :summarys="summarys"></summary-grid>
             </div>
-            <img src="./images/leftcircle.svg" alt="circle" height="100px" width="100px" class="summarycircle img" data-aos="zoom-in" data-aos-duration="500">
+            <div class="orangeshape" data-aos="zoom-in" data-aos-duration="500"></div>
+        </div>
+    </div>
+    <div class="touch">
+        <div class="touch-inner container resize row">
+            <div class="col-sm-12 col-md-12 col-lg-5 header">
+                <h2 data-aos="fade-in" data-aos-duration="500"> {{ touchheader }} </h2>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-7 links" data-aos="fade-in" data-aos-duration="500">
+                <a href="#"> {{ touchheader1 }} 
+                    <svg class="dark" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 1L1 21M21 1H4.33333M21 1V17.6667" stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </a>
+                <a href="#"> {{ touchheader2 }} 
+                    <svg class="light" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="lightpath" d="M21 1L1 21M21 1H4.33333M21 1V17.6667" stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </a>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>

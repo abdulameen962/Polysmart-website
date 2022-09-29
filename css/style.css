@@ -556,11 +556,11 @@ div.subtext {
   padding-bottom: 110px;
   position: relative;
   color: white;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  overflow: hidden; }
+  flex-direction: column; }
   div.subtext img {
     position: absolute;
     width: auto;
@@ -771,6 +771,25 @@ div.summary {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center; } }
+    div.summary > div div.orangeshape {
+      position: absolute;
+      right: -276px;
+      bottom: -388px;
+      width: 443px;
+      background: #FFD3B9;
+      border-radius: 1000px;
+      min-width: 443px;
+      min-height: 443px; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.summary > div div.orangeshape {
+          right: -158px;
+          bottom: -400px; } }
+      @media screen and (min-width: 0em) and (max-width: 479px) {
+        div.summary > div div.orangeshape {
+          width: auto;
+          min-height: auto;
+          min-width: 99%;
+          padding-top: 99%; } }
     div.summary > div > img {
       position: absolute;
       width: auto;
@@ -941,3 +960,85 @@ div.summary {
               bottom: 0px;
               position: relative;
               margin-top: -67px; } }
+
+div.touch {
+  background: #343472;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  position: relative;
+  color: white;
+  overflow: hidden; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    div.touch div.touch-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; } }
+  div.touch div.touch-inner > div.header {
+    max-width: 566px; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.touch div.touch-inner > div.header h2 {
+        text-align: center; } }
+  div.touch div.touch-inner > div.links {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0px 0px 0px 80px;
+    gap: 35px; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.touch div.touch-inner > div.links {
+        padding: 0px;
+        margin-top: 30px;
+        max-width: 566px; } }
+    @media screen and (min-width: 0em) and (max-width: 479px) {
+      div.touch div.touch-inner > div.links {
+        gap: 15px; } }
+    div.touch div.touch-inner > div.links a {
+      padding: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      transition: all 0.3s ease;
+      font-size: 22px;
+      max-width: 95%;
+      box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+      border-radius: 18px;
+      border: 1px solid #E7E9EE; }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        div.touch div.touch-inner > div.links a {
+          font-size: 20px; } }
+      @media screen and (min-width: 0em) and (max-width: 479px) {
+        div.touch div.touch-inner > div.links a {
+          padding: 20px 16px;
+          font-size: 18px;
+          border-radius: 10px; } }
+      div.touch div.touch-inner > div.links a:nth-child(1) {
+        color: #292C32;
+        background: white; }
+        div.touch div.touch-inner > div.links a:nth-child(1):hover {
+          background: #FFD3B9;
+          border: none;
+          transform: translateY(-5px); }
+        div.touch div.touch-inner > div.links a:nth-child(1):hover .dark {
+          margin-top: 20px; }
+      div.touch div.touch-inner > div.links a:nth-child(2) {
+        border: 1px solid white;
+        color: white; }
+        div.touch div.touch-inner > div.links a:nth-child(2) .dark {
+          color: white; }
+        div.touch div.touch-inner > div.links a:nth-child(2):hover {
+          border: 1px solid #FFD3B9;
+          color: #FFD3B9;
+          transform: translateY(-5px); }
+        div.touch div.touch-inner > div.links a:nth-child(2):hover .light {
+          margin-top: 20px;
+          color: #FFD3B9; }
+      div.touch div.touch-inner > div.links a svg {
+        transition: all 0.3s ease;
+        z-index: 3;
+        margin-top: 25px; }

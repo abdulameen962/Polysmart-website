@@ -415,13 +415,8 @@ div.product {
 }
 
 div.subtext {
-    background: $blue;
-    padding-top: 110px;
-    padding-bottom: 110px;
-    position: relative;
-    color: $white;
+    @include subtext;
     @include flex(yes);
-    overflow: hidden;
     img {
         @include image;
         &:first-child {
@@ -622,6 +617,26 @@ div.summary {
             justify-content: center;
             align-items: center;
         }
+        div.orangeshape {
+            position: absolute;
+            right: -276px;
+            bottom: -388px;
+            width: 443px;
+            background: $orange;
+            border-radius: 1000px;
+            min-width: 443px;
+            min-height: 443px;
+            @include respond(tab) {
+                right: -158px;
+                bottom: -400px;
+            }
+            @include respond(phone) {
+                width: auto;
+                min-height: auto;
+                min-width: 99%;
+                padding-top: 99%;
+            }
+        }
         &>img {
             @include image;
             max-width: 100%;
@@ -789,6 +804,88 @@ div.summary {
                         position: relative;
                         margin-top: -67px;
                     }
+                }
+            }
+        }
+    }
+}
+
+div.touch {
+    @include subtext;
+    div.touch-inner {
+        @include respond(tab) {
+            @include flex(yes);
+        }
+        &>div.header {
+            max-width: 566px;
+            h2 {
+                @include respond(tab) {
+                    text-align: center;
+                }
+            }
+        }
+        &>div.links {
+            @include mp;
+            @include grid(2);
+            padding: 0px 0px 0px 80px;
+            gap: 35px;
+            @include respond(tab) {
+                padding: 0px;
+                margin-top: 30px;
+                max-width: 566px;
+            }
+            @include respond(phone) {
+                gap: 15px;
+            }
+            a {
+                padding: 32px;
+                @include flex(yes);
+                justify-content: flex-start;
+                align-items: flex-start;
+                @include transition;
+                font-size: 22px;
+                max-width: 95%;
+                @include background;
+                @include respond(lphone) {
+                    font-size: 20px;
+                }
+                @include respond(phone) {
+                    padding: 20px 16px;
+                    font-size: 18px;
+                    border-radius: 10px;
+                }
+                &:nth-child(1) {
+                    color: $dark;
+                    background: $white;
+                    &:hover {
+                        background: $orange;
+                        border: none;
+                        transform: translateY(-5px);
+                    }
+                    &:hover .dark {
+                        margin-top: 20px;
+                    }
+                }
+                &:nth-child(2) {
+                    @include border($white);
+                    color: $white;
+                    .dark {
+                        color: $white;
+                    }
+                    &:hover {
+                        @include border($orange);
+                        color: $orange;
+                        transform: translateY(-5px);
+                    }
+                    &:hover .light {
+                        margin-top: 20px;
+                        color: $orange;
+                    }
+                }
+                svg {
+                    @include transition;
+                    z-index: 3;
+                    margin-top: 25px;
                 }
             }
         }

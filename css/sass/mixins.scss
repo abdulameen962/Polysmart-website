@@ -19,6 +19,15 @@
     @include border(#E7E9EE);
 }
 
+@mixin subtext {
+    background: $blue;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    position: relative;
+    color: $white;
+    overflow: hidden;
+}
+
 @mixin defaultbutton {
     padding: 24px 44px;
     font-size: 18px;
