@@ -301,7 +301,7 @@ app.component("nav-bar", {
         <nav class="navbar navbar-expand-lg nav-position">
             <div class="container-fluid resize">
                 <a class="navbar-brand" href="/index">
-                <img class="img" :src="image" alt="Polysmart logo" width="100px" height="100px"/>
+                <img class="img" :src="image" alt="Polysmart logo" width="100" height="100"/>
                 </a>
                 <div class="responsive-nav">
                     <a class="header-button contact1" href="/contact"> Contact us </a>
@@ -310,7 +310,7 @@ app.component("nav-bar", {
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul v-for="nav in navbar">
+                    <ul v-for="nav in navbar" class="nav-ul">
                         <li class="nav-item nav-li">
                             <a :href="nav.href" :class="nav.class">{{ nav.name }}</a>
                         </li>
@@ -332,7 +332,7 @@ app.component("about-grid", {
                 <div class="col" v-for="ab in about" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-4">
-                                <img class="img" :src="ab.img" :alt="ab.name" width="100px" height="100px"/>
+                                <img class="img" :src="ab.img" :alt="ab.name" width="100" height="100"/>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-8">
                                 <h3> {{ ab.name }} </h3>
@@ -354,7 +354,7 @@ app.component("product-grid", {
                 <div class="col" v-for="product in products" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                                <img class="img" :src="product.img" :alt="product.name" width="100px" height="100px"/>
+                                <img class="img" :src="product.img" :alt="product.name" width="100" height="100"/>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
                                 <h3> {{ product.name }} </h3>
@@ -447,7 +447,7 @@ app.component("social-links", {
     },
     template: `
         <a  v-for="link in socialinks" :href="link.link">
-            <img  :src="link.img" :alt="link.link" width="100px" height="100px"/>
+            <img  :src="link.img" :alt="link.link" width="100" height="100"/>
         </a>
     `
 })
