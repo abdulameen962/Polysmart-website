@@ -77,6 +77,7 @@ div.subtitle-main {
 }
 
 nav {
+    width: 100%;
     img {
         width: auto;
         height: auto;
@@ -207,6 +208,7 @@ div.hero {
 
 div.about {
     padding: 110px 0px;
+    width: 100%;
     &>div.container {
         div.row {
             div.abouthead {
@@ -313,6 +315,7 @@ div.about {
 div.third-section {
     background: $greyback;
     padding: 80px 0px;
+    width: 100%;
     &>div.container {
         &>div.row {
             &>div {
@@ -360,6 +363,7 @@ div.third-section {
 }
 
 div.product {
+    width: 100%;
     background: linear-gradient(180deg, #FFFFFF 37.5%, #FAFAFC 37.5%);
     div.containerx {
         @include flex(no);
@@ -424,6 +428,7 @@ div.product {
 }
 
 div.subtext {
+    width: 100%;
     @include subtext;
     @include flex(yes);
     img {
@@ -496,6 +501,7 @@ div.subtext {
 }
 
 div.steps {
+    width: 100%;
     @include flex(yes);
     padding: 110px 0px;
     div.step-inner {
@@ -613,6 +619,7 @@ div.summary {
     background: $greyback;
     position: relative;
     overflow: hidden;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
     max-width: 100%;
@@ -817,6 +824,7 @@ div.summary {
 }
 
 div.touch {
+    width: 100%;
     @include subtext;
     div.touch-inner {
         @include respond(tab) {
@@ -899,6 +907,7 @@ div.touch {
 }
 
 footer {
+    width: 100%;
     padding: 110px 0px 60px;
     @include respond(lphone) {
         padding: 70px 0px 30px;
