@@ -271,7 +271,7 @@ app.component("head-content", {
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/style.min.css">
             <link rel="shortcut icon" :href="icon" type="image/x-icon">
             <title>{{ title }}</title>
             <meta property="og:type" content="website" />	
@@ -283,9 +283,6 @@ app.component("head-content", {
             <meta name="twitter:data1" content="1 minute" />
             <link rel='dns-prefetch' href='//fonts.googleapis.com' />
             <link rel='dns-prefetch' href='//s.w.org' />
-            <link rel="alternate" type="application/rss+xml" title="Polysmartgroup &raquo; Feed" href="https://polysmartgroup.com/feed/" />
-            <link rel="alternate" type="application/rss+xml" title="Polysmartgroup &raquo; Comments Feed" href="https://polysmartgroup.com/comments/feed/" />
-            <link rel="alternate" type="application/rss+xml" title="Polysmartgroup &raquo; Feed" href="https://polysmartgroup.com/feed/" />
             <link rel="canonical" :href="link" />
             <meta property="og:title" :content="title" />
             <meta property="og:description" :content="description" />
