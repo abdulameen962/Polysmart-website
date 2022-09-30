@@ -271,7 +271,7 @@ app.component("head-content", {
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="./css/style.min.css">
+            <link rel="stylesheet" href="./css/style.css">
             <link rel="shortcut icon" :href="icon" type="image/x-icon">
             <title>{{ title }}</title>
             <meta property="og:type" content="website" />	
@@ -374,7 +374,7 @@ app.component("step-grid", {
         <div class="containerx">
             <div class="step-grid">
                 <div class="inner-grid" v-for="step in steps" data-aos="fade-up" data-aos-duration="500">
-                    <div class="row">
+                    <div class="row" data-aos="fade-up" data-aos-duration="500">
                         <div class="first">
                                 <div class="number">
                                     {{ step.number }}
@@ -413,7 +413,7 @@ app.component("footer-right", {
         header3: String,
     },
     template: `
-        <div class="col-sm-12 col-md-12 col-lg-7 footer-right">
+        <div class="col-sm-12 col-md-12 col-lg-7 footer-right" data-aos="fade-up" data-aos-duration="500">
             <ul>
                 <li>
                     <h3> {{ header1 }} </h3>

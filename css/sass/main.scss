@@ -86,14 +86,16 @@ nav {
         @include flex(no);
         background: $white;
         z-index: 4;
-        // position: sticky;
-        // top: 0;
     }
     div.container-fluid {
         @include flex(no);
         justify-content: space-between;
         a.navbar-brand {
             @include flex(no);
+            @include transition;
+            &:hover {
+                transform: scale(0.95);
+            }
         }
         padding-top: 34px;
         padding-bottom: 34px;
@@ -107,7 +109,6 @@ nav {
         }
         div {
             ul {
-                // padding: 15px 0px 0px 0px;
                 li.nav-li {
                     margin-right: 20px;
                 }
@@ -233,6 +234,7 @@ div.about {
                 a.secondary-button {
                     color: $dark;
                     @include border($dark);
+                    @include sbtnhover;
                 }
             }
         }
@@ -470,6 +472,13 @@ div.subtext {
                 &.primary-button {
                     background: $white;
                     color: $dark;
+                    &:hover {
+                        color: $dark;
+                        transform: translateY(-5px);
+                        background: $orange;
+                        font-weight: 550;
+                        box-shadow: 0px 0px 30px rgba(0, 0, 0, .05);
+                    }
                 }
             }
         }
@@ -908,6 +917,7 @@ footer {
                 a.secondary-button {
                     color: $dark;
                     @include border($dark);
+                    @include sbtnhover;
                 }
                 @include respond(phone) {
                     padding: 15px 0px 0px 0px;
@@ -950,6 +960,7 @@ footer {
         }
     }
     &>div.footer-bottom {
+        @include mp;
         margin-top: 100px;
         padding-top: 40px;
         border-top: 1px solid $blueborder;

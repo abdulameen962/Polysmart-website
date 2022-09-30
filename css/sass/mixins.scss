@@ -73,6 +73,22 @@
     }
 }
 
+@mixin pbtnhover {
+    &:hover {
+        color: $orange;
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, .05);
+    }
+}
+
+@mixin sbtnhover {
+    &:hover {
+        color: $orange;
+        transform: translateY(-5px);
+        @include border($orange);
+    }
+}
+
 @mixin iconhover {
     transform: scale(1.1);
     @include purple(.8, c);
