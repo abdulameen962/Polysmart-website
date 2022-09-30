@@ -1043,19 +1043,22 @@ footer {
   footer img {
     width: auto;
     height: auto; }
-  footer > div.footer-top div.footer-left p {
-    color: #6F7278; }
-  footer > div.footer-top div.footer-left div.buttons {
-    padding: 45px 0px 0px; }
-    footer > div.footer-top div.footer-left div.buttons a.secondary-button {
-      color: #292C32;
-      border: 1px solid #292C32; }
+  footer > div.footer-top div.footer-left {
+    margin: 0;
+    padding: 0; }
+    footer > div.footer-top div.footer-left p {
+      color: #6F7278; }
+    footer > div.footer-top div.footer-left div.buttons {
+      padding: 45px 0px 0px; }
+      footer > div.footer-top div.footer-left div.buttons a.secondary-button {
+        color: #292C32;
+        border: 1px solid #292C32; }
+      @media screen and (min-width: 0em) and (max-width: 479px) {
+        footer > div.footer-top div.footer-left div.buttons {
+          padding: 15px 0px 0px 0px; } }
     @media screen and (min-width: 0em) and (max-width: 479px) {
-      footer > div.footer-top div.footer-left div.buttons {
-        padding: 15px 0px 0px 0px; } }
-  @media screen and (min-width: 0em) and (max-width: 479px) {
-    footer > div.footer-top div.footer-left img {
-      max-width: 60%; } }
+      footer > div.footer-top div.footer-left img {
+        max-width: 60%; } }
   footer > div.footer-top div.footer-right {
     display: grid;
     justify-content: space-between;

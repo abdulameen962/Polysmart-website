@@ -899,6 +899,7 @@ footer {
     }
     &>div.footer-top {
         div.footer-left {
+            @include mp;
             p {
                 color: $grey;
             }
