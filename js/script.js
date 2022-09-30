@@ -11,19 +11,19 @@ const app = Vue.createApp({
             logo: "./images/polysmart.svg",
             navbar: [{
                     name: "Home",
-                    href: "./index.html",
+                    href: "./index",
                 },
                 {
                     name: "About",
-                    href: "./about.html",
+                    href: "./about",
                 },
                 {
                     name: "Our Team",
-                    href: "./team.html",
+                    href: "./team",
                 },
                 {
                     name: "Major Distributors",
-                    href: "./distributors.html",
+                    href: "./distributors",
                 },
                 {
                     name: "Contact Us",
@@ -153,9 +153,70 @@ const app = Vue.createApp({
                     summary: "of our operations are powered by natural gas",
                 },
             ],
+            //get in touch section
             touchheader: "Get in touch with us, we are your trusted packaging company",
             touchheader1: "Get in touch and get the best prices",
             touchheader2: "Know about us and our products",
+            //footer
+            footerlogo: "./images/polysmartlogo.webp",
+            footersummary: "We are a shopping bags production company. Our Products are mainly shopping bags for domestic uses .i.e: Small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Fashion bags, Packing bags for pure water and poly bags (100% waste recycled).",
+            footerlistheader1: "Quick Links",
+            footerlistheader2: "Legal",
+            footerlistheader3: "Get started",
+            quicklinks: [{
+                    list: "Home",
+                    link: "#",
+                },
+                {
+                    list: "About",
+                    link: "#",
+                },
+                {
+                    list: "Contact",
+                    link: "#",
+                },
+
+            ],
+            legals: [{
+                    list: "Cookie Policy",
+                    link: "#",
+                },
+                {
+                    list: "Terms and Conditions",
+                    link: "#",
+                },
+                {
+                    list: "Privacy Policy",
+                    link: "#",
+                },
+                {
+                    list: "Refund Policy",
+                    link: "#",
+                },
+            ],
+            getstarted: [{
+                    list: "Our Team",
+                    link: "#",
+                },
+                {
+                    list: "Online Orders",
+                    link: "#",
+                },
+            ],
+            copyright: "Copyright © 2018 - 2022 All Rights Reserved | Polysmart Group Limited",
+            socialinks: [{
+                    link: "#",
+                    img: "./images/facebook.svg",
+                },
+                {
+                    link: "#",
+                    img: "./images/twitter.svg",
+                },
+                {
+                    link: "#",
+                    img: "./images/instagram.svg",
+                },
+            ],
         }
     },
     mounted() {
@@ -242,11 +303,11 @@ app.component("nav-bar", {
     template: `
         <nav class="navbar navbar-expand-lg nav-position">
             <div class="container-fluid resize">
-                <a class="navbar-brand" href="/index.html">
+                <a class="navbar-brand" href="/index">
                 <img class="img" :src="image" alt="Polysmart logo" width="100px" height="100px"/>
                 </a>
                 <div class="responsive-nav">
-                    <a class="header-button contact1" href="/contact.html"> Contact us </a>
+                    <a class="header-button contact1" href="/contact"> Contact us </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -258,7 +319,7 @@ app.component("nav-bar", {
                         </li>
                     </ul>
                 </div>
-                <a class="header-button contact2" href="/contact.html"> Contact us </a>
+                <a class="header-button contact2" href="/contact"> Contact us </a>
             </div>
         </nav>
 
@@ -343,6 +404,54 @@ app.component("summary-grid", {
                 <p> {{ summary.summary }} </p>
             </div>
         </div>
+    `
+})
+app.component("footer-right", {
+    props: {
+        quicklinks: Array,
+        legals: Array,
+        getstarted: Array,
+        header1: String,
+        header2: String,
+        header3: String,
+    },
+    template: `
+        <div class="col-sm-12 col-md-12 col-lg-7 footer-right">
+            <ul>
+                <li>
+                    <h3> {{ header1 }} </h3>
+                </li>
+                <li v-for="quick in quicklinks"> 
+                   <a :href="quick.link">  {{ quick.list }} </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <h3> {{ header2 }} </h3>
+                </li>
+                <li v-for="legal in legals"> 
+                    <a :href="legal.link">  {{ legal.list }} </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <h3> {{ header3 }} </h3>
+                </li>
+                <li v-for="get in getstarted"> 
+                    <a :href="get.link">  {{ get.list }} </a>
+                </li>
+            </ul>
+        </div>
+    `
+})
+app.component("social-links", {
+    props: {
+        socialinks: Array,
+    },
+    template: `
+        <a  v-for="link in socialinks" :href="link.link">
+            <img  :src="link.img" :alt="link.link" width="100px" height="100px"/>
+        </a>
     `
 })
 app.mount("body");

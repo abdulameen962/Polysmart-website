@@ -139,6 +139,21 @@ a.header-button {
     transform: translateY(-5px);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
 
+div.buttons a.secondary-button {
+  color: #292C32;
+  margin-left: 30px; }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    div.buttons a.secondary-button {
+      margin: 0;
+      margin-top: 20px; } }
+
+@media screen and (min-width: 0em) and (max-width: 479px) {
+  div.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; } }
+
 .primary-button {
   padding: 24px 44px;
   font-size: 18px;
@@ -325,14 +340,7 @@ div.hero {
         background: white; }
       div.hero div.container-hero > div div.buttons {
         padding: 30px 0px; }
-        @media screen and (min-width: 0em) and (max-width: 479px) {
-          div.hero div.container-hero > div div.buttons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column; } }
         div.hero div.container-hero > div div.buttons a.secondary-button {
-          margin-left: 25px;
           background: transparent;
           color: white;
           border: 1px solid white; }
@@ -340,10 +348,6 @@ div.hero {
             color: #FFD3B9;
             transform: translateY(-5px);
             border: 1px solid #FFD3B9; }
-          @media screen and (min-width: 0em) and (max-width: 479px) {
-            div.hero div.container-hero > div div.buttons a.secondary-button {
-              margin-left: 0px;
-              margin-top: 15px; } }
         div.hero div.container-hero > div div.buttons a.primary-button {
           color: white;
           color: white;
@@ -409,24 +413,24 @@ div.about {
           border-radius: 18px;
           border: 1px solid #E7E9EE;
           padding: 40px 30px; }
-          div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 {
+          div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 {
             padding: 0px 25px; }
             @media screen and (min-width: 0px) and (max-width: 991px) {
-              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 {
+              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 {
                 padding: 20px 25px 0px; } }
             @media screen and (min-width: 0px) and (max-width: 767px) {
-              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 {
+              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column; } }
             @media screen and (min-width: 0px) and (max-width: 767px) {
-              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 h3 {
+              div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 h3 {
                 text-align: center; } }
-            div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 p {
+            div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 p {
               color: #6F7278; }
               @media screen and (min-width: 0px) and (max-width: 767px) {
-                div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-9 p {
+                div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 p {
                   text-align: center; } }
           @media screen and (min-width: 0px) and (max-width: 991px) {
             div.about > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 {
@@ -608,18 +612,6 @@ div.subtext {
       div.subtext > div div.buttons a.primary-button {
         background: white;
         color: #292C32; }
-      div.subtext > div div.buttons a.secondary-button {
-        margin-left: 30px; }
-        @media screen and (min-width: 0em) and (max-width: 479px) {
-          div.subtext > div div.buttons a.secondary-button {
-            margin-left: 0px;
-            margin-top: 20px; } }
-      @media screen and (min-width: 0em) and (max-width: 479px) {
-        div.subtext > div div.buttons {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column; } }
 
 @keyframes twirl {
   0% {
@@ -1042,3 +1034,87 @@ div.touch {
         transition: all 0.3s ease;
         z-index: 3;
         margin-top: 25px; }
+
+footer {
+  padding: 110px 0px 60px; }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    footer {
+      padding: 70px 0px 30px; } }
+  footer img {
+    width: auto;
+    height: auto; }
+  footer > div.footer-top div.footer-left p {
+    color: #6F7278; }
+  footer > div.footer-top div.footer-left div.buttons {
+    padding: 45px 0px 0px; }
+    footer > div.footer-top div.footer-left div.buttons a.secondary-button {
+      color: #292C32;
+      border: 1px solid #292C32; }
+    @media screen and (min-width: 0em) and (max-width: 479px) {
+      footer > div.footer-top div.footer-left div.buttons {
+        padding: 15px 0px 0px 0px; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    footer > div.footer-top div.footer-left img {
+      max-width: 60%; } }
+  footer > div.footer-top div.footer-right {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    padding: 0px 0px 0px 140px; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      footer > div.footer-top div.footer-right {
+        padding: 0;
+        margin-top: 70px; } }
+    @media screen and (min-width: 0em) and (max-width: 479px) {
+      footer > div.footer-top div.footer-right {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+    footer > div.footer-top div.footer-right ul li {
+      list-style-type: none;
+      margin-bottom: 15px; }
+      footer > div.footer-top div.footer-right ul li h3 {
+        margin-bottom: 20px; }
+      footer > div.footer-top div.footer-right ul li a {
+        color: #6F7278;
+        transition: all 0.3s ease;
+        text-decoration: none; }
+        footer > div.footer-top div.footer-right ul li a:hover {
+          color: #FFD3B9; }
+  footer > div.footer-bottom {
+    margin-top: 100px;
+    padding-top: 40px;
+    border-top: 1px solid #E7E9EE; }
+    @media screen and (min-width: 0em) and (max-width: 479px) {
+      footer > div.footer-bottom {
+        margin-top: 40px;
+        padding-top: 20px; } }
+    footer > div.footer-bottom div.socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: flex-end; }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        footer > div.footer-bottom div.socials {
+          justify-content: flex-start; } }
+      footer > div.footer-bottom div.socials a {
+        background: #343472;
+        transition: all 0.3s ease;
+        border-radius: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 40px;
+        min-height: 40px;
+        margin-left: 15px; }
+        footer > div.footer-bottom div.socials a:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.1); }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          footer > div.footer-bottom div.socials a {
+            margin: 0;
+            margin-right: 15px; } }
+        footer > div.footer-bottom div.socials a img {
+          max-width: 90%;
+          max-height: 90%; }

@@ -145,6 +145,27 @@
             </div>
         </div>
     </div>
+    <footer class="container resize about">
+        <div class="row footer-top">
+            <div class="col-sm-12 col-md-12 col-lg-5 footer-left">
+                <img :src="footerlogo" alt="logo" width="100px" height="100px">
+                <p> {{ footersummary }} </p>
+                <div class="buttons">
+                    <a href="#" class="primary-button">Contact Us</a>
+                    <a href="#" class="secondary-button"> About Us </a>
+                </div>
+            </div>
+            <footer-right :quicklinks="quicklinks" :legals="legals" :getstarted="getstarted" :header1="footerlistheader1" :header2="footerlistheader2" :header3="footerlistheader3"></footer-right>
+        </div>
+        <div class="footer-bottom row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <p> {{ copyright }} </p>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 socials">
+                <social-links :socialinks="socialinks"></social-links>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
