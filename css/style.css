@@ -124,12 +124,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: regular;
-  overflow-x: hidden;
-  overflow-y: scroll; }
-
-body::-webkit-scrollbar {
-  display: block; }
+  font-family: regular; }
 
 a.header-button {
   padding: 16px 26px;
