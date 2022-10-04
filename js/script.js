@@ -18,8 +18,8 @@ const app = Vue.createApp({
                     href: "./about",
                 },
                 {
-                    name: "Our Team",
-                    href: "./team",
+                    name: "Our Product",
+                    href: "./products",
                 },
                 {
                     name: "Major Distributors",
@@ -28,7 +28,6 @@ const app = Vue.createApp({
                 {
                     name: "Contact Us",
                     href: "./contact-us",
-                    class: "contact-responsive",
                 },
             ],
 
@@ -38,9 +37,9 @@ const app = Vue.createApp({
             backgroundimg: "./images/homebackground.webp",
             subtitle: "Packaging company",
             header: "Packaging is our business. We are Polysmart",
-            aboutext: "Best Quality Always!  Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
+            aboutext: "Best Quality Always! <br/> Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
             //about section
-            aboutsub: "Who We Are",
+            aboutsub: "About Us",
             aboutgrid: [{
                     img: "./images/abt1.svg",
                     name: "We care about the environment",
