@@ -214,7 +214,7 @@ div.hero {
     }
 }
 
-div.about {
+div.about-section {
     padding: 110px 0px;
     width: 100%;
     &>div.container {
@@ -312,56 +312,6 @@ div.about {
                         }
                         @include respond(phone) {
                             padding: 30px 10px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-div.third-section {
-    background: $greyback;
-    padding: 80px 0px;
-    width: 100%;
-    &>div.container {
-        &>div.row {
-            &>div {
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-                @include flex(yes);
-                // justify-content: unset;
-                &>div {
-                    max-width: 542px;
-                    margin-right: 30px;
-                    @include respond(tab) {
-                        @include flex(yes);
-                        margin-right: 0px;
-                    }
-                    &:first-child {
-                        @include respond(tab) {
-                            margin-bottom: 30px;
-                        }
-                        h1 {
-                            @include respond(tab) {
-                                text-align: center;
-                            }
-                        }
-                        h2 {
-                            margin-bottom: 20px;
-                            @include respond(tab) {
-                                text-align: center;
-                            }
-                        }
-                        p {
-                            color: $grey;
-                            margin-bottom: 40px;
-                            @include respond(tab) {
-                                text-align: center;
-                                margin-bottom: 20px;
-                            }
                         }
                     }
                 }
@@ -786,46 +736,6 @@ div.summary {
                     align-items: flex-start;
                     max-width: 754px;
                 }
-                div.testimonial {
-                    background: $white;
-                    @include background;
-                    max-width: 439px;
-                    padding: 40px 42px 47px;
-                    position: absolute;
-                    bottom: -50px;
-                    right: -50px;
-                    z-index: 2;
-                    p {
-                        color: $grey;
-                        line-height: 25px;
-                        line-height: 30px;
-                    }
-                    &>div {
-                        &:nth-child(2) {
-                            font-weight: 700;
-                            color: $dark;
-                            margin-top: 15px;
-                        }
-                        &:nth-child(3) {
-                            color: $blue;
-                            margin-top: 5px;
-                        }
-                    }
-                    @include respond(tab) {
-                        right: 0px;
-                        bottom: -25px;
-                    }
-                    @include respond(lphone) {
-                        padding: 44px 35px;
-                    }
-                    @include respond(phone) {
-                        right: 0px;
-                        padding: 37px 25px 33px;
-                        bottom: 0px;
-                        position: relative;
-                        margin-top: -67px;
-                    }
-                }
             }
         }
     }
@@ -1026,5 +936,71 @@ footer {
                 }
             }
         }
+    }
+}
+
+div.about {
+    @include flex(yes);
+    position: relative;
+    background: linear-gradient(180deg, #343472 47%, #FFFFFF 47%);
+    padding: 110px 0px;
+    div.resize {
+        position: relative;
+        @include flex(yes);
+        div.text {
+            color: $white;
+            @include flex(yes);
+            margin-bottom: 70px;
+            h1 {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            p {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            div.buttons {
+                @include flex(no);
+                a.primary-button {
+                    background: $white;
+                    color: $dark;
+                    &:hover {
+                        background: $orange;
+                    }
+                }
+                a.secondary-button {
+                    color: $white;
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+        div.image {
+            position: relative;
+            width: 100%;
+            img {
+                width: auto;
+                height: auto;
+                z-index: 1;
+                max-width: 100%;
+                border-radius: 25px;
+            }
+            svg {
+                position: absolute;
+                top: -120px;
+                left: -100px;
+                @include animate;
+            }
+        }
+    }
+    div.orange {
+        border-radius: 50%;
+        width: 277px;
+        height: 277px;
+        background: $orange;
+        position: absolute;
+        top: -100px;
+        right: -100px;
     }
 }

@@ -1,11 +1,16 @@
 const app = Vue.createApp({
     data() {
         return {
-            //head tag data
+            //head tag data for home page
             icon: "./images/icon.svg",
             hometitle: "Polysmart Packaging Limited - We package it all..",
             homelink: "https://polysmartgroup.com/",
             homedescription: "We package it all..",
+
+            //head tag for about page
+            abouttitle: "About Polysmart",
+            aboutlink: "https://polysmartgroup.com/about-us",
+            aboutdescription: "Visit the post for more.",
 
             //navigation bar data
             logo: "./images/polysmart.svg",
@@ -15,7 +20,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: "About",
-                    href: "./about",
+                    href: "./about-us",
                 },
                 {
                     name: "Our Product",
@@ -94,11 +99,6 @@ const app = Vue.createApp({
                     name: "	Fashion Bags",
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
-                {
-                    img: "./images/nylon4.webp",
-                    name: "Packing Bags for Pure water",
-                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
-                },
             ],
             //step section
             stepsub: "Order now",
@@ -125,9 +125,6 @@ const app = Vue.createApp({
                 },
             ],
             //summary
-            testimonialtext: "“Lorem ipsum dolor sit amet consectetur adipiscing elit auctor scelerisque quam id magna risus nisi lectus odio interdum.”",
-            testimonialname: "Andy Smith",
-            testimonialtitle: "An esteemed distributor",
             summarysub: "OUR SUMMARY",
             summaryheader: "Polysmart in a few sentences",
             summarytext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit eque dolor ipsum odio justo amet, urna, auctor dolor ist amenor.",
@@ -164,11 +161,11 @@ const app = Vue.createApp({
             footerlistheader3: "Get started",
             quicklinks: [{
                     list: "Home",
-                    link: "#",
+                    link: "/index",
                 },
                 {
                     list: "About",
-                    link: "#",
+                    link: "/about-us",
                 },
                 {
                     list: "Contact",
@@ -186,10 +183,6 @@ const app = Vue.createApp({
                 },
                 {
                     list: "Privacy Policy",
-                    link: "#",
-                },
-                {
-                    list: "Refund Policy",
                     link: "#",
                 },
             ],
@@ -216,6 +209,14 @@ const app = Vue.createApp({
                     img: "./images/instagram.svg",
                 },
             ],
+
+
+            //about page
+
+            //about section
+            aboutheader: "WE ARE THE BEST AT WHAT WE DO!",
+            aboutparagraph: "We are a packaging and shopping bags production company and our products are mainly shopping bags for domestic uses.",
+            aboutimg: "./images/aboutimg.png",
         }
     },
     mounted() {
@@ -401,8 +402,12 @@ app.component("summary-grid", {
         </div>
     `
 })
-app.component("footer-right", {
+app.component("foot-er", {
     props: {
+        footerlogo: String,
+        footersummary: String,
+        copyright: String,
+        socialinks: Array,
         quicklinks: Array,
         legals: Array,
         getstarted: Array,
@@ -411,42 +416,69 @@ app.component("footer-right", {
         header3: String,
     },
     template: `
-        <div class="col-sm-12 col-md-12 col-lg-7 footer-right" data-aos="fade-up" data-aos-duration="500">
-            <ul>
-                <li>
-                    <h3> {{ header1 }} </h3>
-                </li>
-                <li v-for="quick in quicklinks"> 
-                   <a :href="quick.link">  {{ quick.list }} </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                <h3> {{ header2 }} </h3>
-                </li>
-                <li v-for="legal in legals"> 
-                    <a :href="legal.link">  {{ legal.list }} </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                <h3> {{ header3 }} </h3>
-                </li>
-                <li v-for="get in getstarted"> 
-                    <a :href="get.link">  {{ get.list }} </a>
-                </li>
-            </ul>
-        </div>
+        <footer>
+            <div class="resize">
+                <div class="row footer-top">
+                    <div class="col-sm-12 col-md-12 col-lg-5 footer-left" data-aos="fade-up" data-aos-duration="500">
+                        <img :src="footerlogo" alt="logo" width="100" height="100">
+                        <p> {{ footersummary }} </p>
+                        <div class="buttons">
+                            <a href="#" class="primary-button">Contact Us</a>
+                            <a href="#" class="secondary-button"> About Us </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-7 footer-right" data-aos="fade-up" data-aos-duration="500">
+                        <ul>
+                            <li>
+                                <h3> {{ header1 }} </h3>
+                            </li>
+                            <li v-for="quick in quicklinks"> 
+                            <a :href="quick.link">  {{ quick.list }} </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                            <h3> {{ header2 }} </h3>
+                            </li>
+                            <li v-for="legal in legals"> 
+                                <a :href="legal.link">  {{ legal.list }} </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                            <h3> {{ header3 }} </h3>
+                            </li>
+                            <li v-for="get in getstarted"> 
+                                <a :href="get.link">  {{ get.list }} </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom row" data-aos="fade-up" data-aos-duration="500">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <p> {{ copyright }} </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 socials">
+                        <a  v-for="link in socialinks" :href="link.link">
+                            <img  :src="link.img" :alt="link.link" width="100" height="100"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     `
 })
-app.component("social-links", {
+app.component("achieve-ment", {
     props: {
-        socialinks: Array,
+        summarys: Array,
     },
     template: `
-        <a  v-for="link in socialinks" :href="link.link">
-            <img  :src="link.img" :alt="link.link" width="100" height="100"/>
-        </a>
+        <div class="achieve-grid" data-aos="fade-up" data-aos-duration="500">
+            <div class="inner-grid" v-for="summary in summarys">
+                <div> {{ summary.number }}  <span> {{ summary.shape }} </span></div>
+                <p> {{ summary.summary }} </p>
+            </div>
+        </div>
     `
 })
 app.mount("body");

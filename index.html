@@ -28,14 +28,14 @@
                 <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" v-html="aboutext"> {{ aboutext }} </p>
                 <div class="buttons" data-aos="fade-up" data-aos-delay="600">
                     <a href="/contact" class="primary-button">Contact Us</a>
-                    <a href="/about" class="secondary-button">About Polysmart</a>
+                    <a href="/about-us" class="secondary-button">About Polysmart</a>
                 </div>
             </div>
         </div>
         <img :src="backgroundimg" alt="herobackground" class="homebg" height="100" width="100">
         <div class="background-cover"></div>
     </div>
-    <div class="about">
+    <div class="about-section">
         <div class="container resize">
             <div class="row">
                 <div class="col-md-8 col-sm-12 abouthead">
@@ -46,30 +46,13 @@
                     <h2 data-aos="fade-up" data-aos-duration="500"> <strong> ABOUT US </strong> </h2>
                 </div>
                 <div class="col-md-4  col-sm-12 aboutaction">
-                    <a href="#" class="secondary-button" data-aos="fade-up" data-aos-duration="500">Read more</a>
+                    <a href="/about-us" class="secondary-button" data-aos="fade-up" data-aos-duration="500">Read more</a>
                 </div>
             </div>
             <about-grid :about="aboutgrid"></about-grid>
         </div>
     </div>
-    <div class="third-section">
-        <div class="container resize">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div>
-                        <!-- <h1 data-aos="fade-up" data-aos-duration="500">Polysmart</h1> -->
-                        <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"> {{ quote }} </h2>
-                        <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"> {{ quotesummary }} </p>
-                        <!-- <a href="/contact" class="primary-button" data-aos="fade-up" data-aos-duration="500" data-aos-delay="800">Our Major Distributors</a> -->
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <img class="img" :src="quoteimage" :alt="quote" data-aos-duration="500" data-aos-delay="500" data-aos="fade-in" width="100" height="100">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="about product">
+    <div class="about-section product">
         <div class="container resize">
             <div class="row">
                 <div class="col-md-8 col-sm-12 abouthead">
@@ -107,16 +90,11 @@
             <step-grid :steps="steps"></step-grid>
         </div>
     </div>
-    <div class="about summary scrollstop">
+    <div class="about-section summary scrollstop">
         <div class="container row resize">
             <img class="img" src="./images/twirlybrown.svg" alt="circle" height="100" width="100" data-aos="fade-up" data-aos-duration="500">
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <img class="img" src="./images/personimage.webp" alt="picture" height="100" width="100" data-aos="fade-in" data-aos-duration="500">
-                <div class="testimonial" data-aos="fade-up" data-aos-duration="500">
-                    <p class="medtext"> {{ testimonialtext }} </p>
-                    <div class="medtext">{{ testimonialname }}</div>
-                    <div class="medtext">{{ testimonialtitle }}</div>
-                </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="500">
                 <div class="subtitle-main" data-aos="fade-up" data-aos-duration="500">
@@ -149,29 +127,7 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="resize">
-            <div class="row footer-top">
-                <div class="col-sm-12 col-md-12 col-lg-5 footer-left" data-aos="fade-up" data-aos-duration="500">
-                    <img :src="footerlogo" alt="logo" width="100" height="100">
-                    <p> {{ footersummary }} </p>
-                    <div class="buttons">
-                        <a href="#" class="primary-button">Contact Us</a>
-                        <a href="#" class="secondary-button"> About Us </a>
-                    </div>
-                </div>
-                <footer-right :quicklinks="quicklinks" :legals="legals" :getstarted="getstarted" :header1="footerlistheader1" :header2="footerlistheader2" :header3="footerlistheader3"></footer-right>
-            </div>
-            <div class="footer-bottom row" data-aos="fade-up" data-aos-duration="500">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <p> {{ copyright }} </p>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 socials">
-                    <social-links :socialinks="socialinks"></social-links>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <foot-er :quicklinks="quicklinks" :legals="legals" :getstarted="getstarted" :header1="footerlistheader1" :header2="footerlistheader2" :header3="footerlistheader3" :socialinks="socialinks" :footerlogo="footerlogo" :footersummary="footersummary" :copyright="copyright"></foot-er>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.40/vue.global.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
