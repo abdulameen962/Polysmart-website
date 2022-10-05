@@ -7,6 +7,7 @@
 body {
     @include mp;
     width: 100%;
+    overflow-x: hidden;
     font-family: regular;
 }
 
@@ -22,6 +23,7 @@ a.header-button {
 }
 
 div.buttons {
+    width: 100%;
     a.secondary-button {
         color: $dark;
         margin-left: 30px;
@@ -940,10 +942,15 @@ footer {
 }
 
 div.about {
+    width: 100%;
+    overflow: hidden;
     @include flex(yes);
     position: relative;
-    background: linear-gradient(180deg, #343472 47%, #FFFFFF 47%);
+    background: linear-gradient(180deg, #343472 62%, #FFFFFF 62%);
     padding: 110px 0px;
+    @include respond(phone) {
+        background: linear-gradient(180deg, #343472 52%, #FFFFFF 52%);
+    }
     div.resize {
         position: relative;
         @include flex(yes);
@@ -991,6 +998,55 @@ div.about {
                 top: -120px;
                 left: -100px;
                 @include animate;
+                height: 350px;
+                width: 350px;
+                @include respond(tab) {
+                    top: -100px;
+                    left: -120px;
+                }
+                @include respond(phone) {
+                    top: -50px;
+                    left: -220px;
+                }
+            }
+        }
+        div.achieve-grid {
+            @include grid(4);
+            gap: 0px 40px;
+            margin: 60px 0px 25px;
+            &>div {
+                @include flex(yes);
+                @include respond(phone) {
+                    max-width: 200px;
+                }
+                &>div {
+                    font-size: 50px;
+                    text-align: center;
+                    font-weight: 700;
+                    @include respond(tab) {
+                        font-size: 42px;
+                    }
+                    @include respond(lphone) {
+                        font-size: 35px;
+                    }
+                    @include respond(phone) {
+                        font-size: 36px;
+                    }
+                    span {
+                        color: $blue;
+                    }
+                }
+                p {
+                    text-align: center;
+                    font-weight: 600;
+                }
+            }
+            @include respond(lphone) {
+                @include grid(2);
+                gap: 40px 0px;
+            }
+            @include respond(phone) {
+                @include grid(1);
             }
         }
     }
@@ -1002,5 +1058,17 @@ div.about {
         position: absolute;
         top: -100px;
         right: -100px;
+        @include respond(tab) {
+            top: -140px;
+            right: -140px;
+        }
+        @include respond(lphone) {
+            top: -150px;
+            right: -150px;
+        }
+        @include respond(phone) {
+            top: -170px;
+            right: -170px;
+        }
     }
 }

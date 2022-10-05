@@ -18,7 +18,7 @@
     <nav-bar :image="logo" :navbar="navbar"></nav-bar>
     <div class="about">
         <div class="resize">
-            <div class="text resize-small">
+            <div class="text resize-small" data-aos="fade-up" data-aos-duration="500">
                 <h1><strong>{{ aboutheader }}</strong></h1>
                 <p> {{ aboutparagraph }} </p>
                 <div class="buttons">
@@ -26,9 +26,9 @@
                     <a href="#" class="secondary-button">Major Distributors</a>
                 </div>
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-up" data-aos-duration="500">
                 <img :src="aboutimg" alt="mainimage" height="100" width="100">
-                <svg width="351" height="351" viewBox="0 0 351 351" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 351 351" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_9_451)">
                     <g opacity="0.22">
                     <path d="M0.102022 165.262C0.0245954 174.826 0.906431 184.43 5.08467 192.292C8.86808 199.44 14.3489 205.568 19.7256 211.455C25.0198 217.349 30.4934 223.394 34.4041 230.573C39.3648 239.779 41.4214 249.987 43.4491 259.866C44.997 267.584 46.5737 275.632 49.6293 283.01C50.5736 285.254 51.5178 287.499 52.4694 289.825C54.8786 295.515 57.2574 301.332 59.3511 307.216C58.1331 306.117 56.915 305.019 55.697 303.92C54.063 299.492 52.1817 295.086 50.3524 290.8C49.4008 288.473 48.4117 286.191 47.4674 283.947C44.3525 276.366 42.731 268.281 41.1687 260.398C39.2379 250.677 37.1958 240.634 32.3913 231.788C28.6295 224.887 23.2456 218.917 18.0034 213.143C12.5746 207.136 6.95933 200.896 3.02696 193.469C1.83524 191.247 0.914123 188.792 0.15797 186.324C-0.297618 179.217 -0.326405 172.238 0.102022 165.262Z" fill="white"/>
@@ -65,7 +65,7 @@
             </div>
             <achieve-ment :summarys="summarys"></achieve-ment>
         </div>
-        <div class="orange"></div>
+        <div class="orange" data-aos="zoom-in" data-aos-duration="500"></div>
     </div>
     <foot-er :quicklinks="quicklinks" :legals="legals" :getstarted="getstarted" :header1="footerlistheader1" :header2="footerlistheader2" :header3="footerlistheader3" :socialinks="socialinks" :footerlogo="footerlogo" :footersummary="footersummary" :copyright="copyright"></foot-er>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.40/vue.global.min.js"></script>
