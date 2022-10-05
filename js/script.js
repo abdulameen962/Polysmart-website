@@ -32,7 +32,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: "Contact Us",
-                    href: "./contact-us",
+                    href: "../contact-us",
                 },
             ],
 
@@ -161,11 +161,11 @@ const app = Vue.createApp({
             footerlistheader3: "Get started",
             quicklinks: [{
                     list: "Home",
-                    link: "/index",
+                    link: "./index",
                 },
                 {
                     list: "About",
-                    link: "/about-us",
+                    link: "./about-us",
                 },
                 {
                     list: "Contact",
@@ -303,7 +303,7 @@ app.component("nav-bar", {
                 <img class="img" :src="image" alt="Polysmart logo" width="100" height="100"/>
                 </a>
                 <div class="responsive-nav">
-                    <a class="header-button contact1" href="/contact"> Contact us </a>
+                    <a class="header-button contact1" href="./contact"> Contact us </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -315,7 +315,7 @@ app.component("nav-bar", {
                         </li>
                     </ul>
                 </div>
-                <a class="header-button contact2" href="/contact"> Contact us </a>
+                <a class="header-button contact2" href="./contact"> Contact us </a>
             </div>
         </nav>
 
