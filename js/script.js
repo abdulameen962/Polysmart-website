@@ -96,7 +96,7 @@ const app = Vue.createApp({
                 },
                 {
                     img: "./images/nylon4.webp",
-                    name: "	Fashion Bags",
+                    name: "Large Shopping Bags",
                     summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
                 },
             ],
