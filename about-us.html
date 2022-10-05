@@ -67,6 +67,45 @@
         </div>
         <div class="orange" data-aos="zoom-in" data-aos-duration="500"></div>
     </div>
+    <div class="history">
+        <div class="resize">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-in" data-aos-duration="500">
+                    <div class="text">
+                        <div class="subtitle-main" data-aos="fade-up" data-aos-duration="500">
+                            <div class="subtitle-line"></div>
+                            <div class="subtitle"> {{ historysubtitle }} </div>
+                        </div>
+                        <h2 v-html="historyheader"> {{ historyheader }} </h2>
+                        <p v-html="history">
+                            {{ history }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-in" data-aos-duration="500">
+                    <img :src="historyimage" alt="image">
+                </div>
+            </div>
+            <div class="row bottom">
+                <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-in" data-aos-duration="500">
+                    <img :src="missionimage" alt="image">
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6" data-aos="fade-in" data-aos-duration="500">
+                    <div class="text">
+                        <div class="subtitle-main" data-aos="fade-up" data-aos-duration="500">
+                            <div class="subtitle-line"></div>
+                            <div class="subtitle"> {{ missionsubtitle }} </div>
+                        </div>
+                        <h2> {{ missionheader }} </h2>
+                        <p v-html="mission">
+                            {{ mission }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <foot-er :quicklinks="quicklinks" :legals="legals" :getstarted="getstarted" :header1="footerlistheader1" :header2="footerlistheader2" :header3="footerlistheader3" :socialinks="socialinks" :footerlogo="footerlogo" :footersummary="footersummary" :copyright="copyright"></foot-er>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.40/vue.global.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>

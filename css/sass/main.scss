@@ -275,7 +275,7 @@ div.about-section {
                         @include background;
                         padding: 40px 30px;
                         &>div.col-lg-8 {
-                            padding: 0px 25px;
+                            // padding: 0px 25px;
                             @include respond(tab) {
                                 padding: 20px 25px 0px;
                             }
@@ -294,12 +294,12 @@ div.about-section {
                                 }
                             }
                         }
-                        &>div.col-lg-4 {
+                        &>div.col-lg-3 {
                             @include respond(tab) {
                                 margin-bottom: 20px;
                             }
                             img {
-                                width: 100%;
+                                max-width: 100%;
                                 height: auto;
                                 @include respond(tab) {
                                     width: auto;
@@ -944,10 +944,9 @@ footer {
 div.about {
     width: 100%;
     overflow: hidden;
-    @include flex(yes);
     position: relative;
     background: linear-gradient(180deg, #343472 62%, #FFFFFF 62%);
-    padding: 110px 0px;
+    @extend div.main-extend;
     @include respond(phone) {
         background: linear-gradient(180deg, #343472 47%, #FFFFFF 47%);
     }
@@ -1075,6 +1074,73 @@ div.about {
         @include respond(phone) {
             top: -170px;
             right: -170px;
+        }
+    }
+}
+
+div.history {
+    @extend div.main-extend;
+    background: $greyback;
+    div.resize {
+        div.row {
+            &>div {
+                position: relative;
+                @include respond(tab) {
+                    @include flex(yes);
+                }
+                @include respond(lphone) {
+                    justify-content: flex-start;
+                }
+                div.text {
+                    @include mp;
+                    max-width: 539px;
+                    padding: 60px 0px 0px;
+                    div.subtitle-main {
+                        div.subtitle {
+                            color: $blue;
+                        }
+                        div.subtitle-line {
+                            background: $blue;
+                        }
+                    }
+                    h2 {
+                        @include respond(tab) {
+                            text-align: center;
+                        }
+                        @include respond(lphone) {
+                            text-align: start;
+                        }
+                    }
+                    p {
+                        color: $grey;
+                        @include respond(tab) {
+                            text-align: center;
+                        }
+                        @include respond(lphone) {
+                            text-align: start;
+                        }
+                    }
+                    @include respond(tab) {
+                        @include flex(yes);
+                    }
+                    @include respond(lphone) {
+                        display: block;
+                    }
+                }
+                img {
+                    @include bradius;
+                    max-width: 539px;
+                    width: 100%;
+                    @include respond(tab) {
+                        margin: 20px 0px;
+                    }
+                }
+            }
+            &.bottom {
+                @include respond(tab) {
+                    flex-direction: column-reverse;
+                }
+            }
         }
     }
 }

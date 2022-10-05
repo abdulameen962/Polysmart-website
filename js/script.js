@@ -217,6 +217,16 @@ const app = Vue.createApp({
             aboutheader: "WE ARE THE BEST AT WHAT WE DO!",
             aboutparagraph: "We are a packaging and shopping bags production company and our products are mainly shopping bags for domestic uses.",
             aboutimg: "./images/aboutimg.webp",
+
+            //history and mission section
+            historysubtitle: "Our History",
+            historyheader: "How Poly-smart came to existence",
+            history: "We produce Small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Fashion bags, Packing bags for pure water and poly bags. All our poly bags are 100% waste recycled. Polysmart Packaging Limited is one of the groups of companies that form the Polysmart Group. Polysmart Packaging Limited started operations in January 2013 at Ota, Ogun State Nigeria. Currently, Polysmart Group is divided into three companies:<br/>•	Polysmart Packaging Limited <br/>•	Switch Recycling Innovations <br/>•	Crystal Packaging Limited <br/>Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness.",
+            historyimage: "./images/history1.webp",
+            missionsubtitle: "Our Mission",
+            missionheader: "Our mission - what we seek to achieve in Polysmart",
+            mission: "Our main objective is to make all our products mainly from Post Consumer waste material starting with Polyethylene. Our vision is to to be the reference point for packaging business in Nigeria. Our mission is to be the best in the eyes of our customers, employees, and shareholders and contribute to the environment where it operates.",
+            missionimage: "./images/history2.webp",
         }
     },
     mounted() {
@@ -330,7 +340,7 @@ app.component("about-grid", {
             <div class="about-grid">
                 <div class="col" v-for="ab in about" data-aos="fade-up" data-aos-duration="500">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-4">
+                        <div class="col-sm-12 col-md-12 col-lg-3">
                                 <img class="img" :src="ab.img" :alt="ab.name" width="100" height="100"/>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-8">

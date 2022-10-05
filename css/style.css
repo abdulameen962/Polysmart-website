@@ -4,11 +4,31 @@
 .font-weight, h1, h2, h3, h4, h5, h6, button, .subtitle {
   font-weight: 700; }
 
+div.main-extend, div.about, div.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 110px 0px; }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    div.main-extend, div.about, div.history {
+      padding: 80px 0px; } }
+
 .font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, .medtext, a, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
   font-family: regular; }
 
 .font-weight, h1, h2, h3, h4, h5, h6, button, .subtitle {
   font-weight: 700; }
+
+div.main-extend, div.about, div.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 110px 0px; }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    div.main-extend, div.about, div.history {
+      padding: 80px 0px; } }
 
 @font-face {
   font-family: regular;
@@ -424,36 +444,34 @@ div.about-section {
           border-radius: 18px;
           border: 1px solid #E7E9EE;
           padding: 40px 30px; }
-          div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 {
-            padding: 0px 25px; }
-            @media screen and (min-width: 0px) and (max-width: 991px) {
-              div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 {
-                padding: 20px 25px 0px; } }
-            @media screen and (min-width: 0px) and (max-width: 767px) {
-              div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column; } }
-            @media screen and (min-width: 0px) and (max-width: 767px) {
-              div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 h3 {
-                text-align: center; } }
-            div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 p {
-              color: #6F7278; }
-              @media screen and (min-width: 0px) and (max-width: 767px) {
-                div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 p {
-                  text-align: center; } }
           @media screen and (min-width: 0px) and (max-width: 991px) {
-            div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 {
+            div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 {
+              padding: 20px 25px 0px; } }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column; } }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 h3 {
+              text-align: center; } }
+          div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 p {
+            color: #6F7278; }
+            @media screen and (min-width: 0px) and (max-width: 767px) {
+              div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-8 p {
+                text-align: center; } }
+          @media screen and (min-width: 0px) and (max-width: 991px) {
+            div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-3 {
               margin-bottom: 20px; } }
-          div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 img {
-            width: 100%;
+          div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-3 img {
+            max-width: 100%;
             height: auto; }
             @media screen and (min-width: 0px) and (max-width: 991px) {
-              div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 img {
+              div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-3 img {
                 width: auto; } }
           @media screen and (min-width: 0px) and (max-width: 767px) {
-            div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-4 {
+            div.about-section > div.container > div.containerx > div.about-grid > div.col > div.row > div.col-lg-3 {
               display: flex;
               justify-content: center;
               align-items: center;
@@ -1093,13 +1111,8 @@ footer {
 div.about {
   width: 100%;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   position: relative;
-  background: linear-gradient(180deg, #343472 62%, #FFFFFF 62%);
-  padding: 110px 0px; }
+  background: linear-gradient(180deg, #343472 62%, #FFFFFF 62%); }
   @media screen and (min-width: 0em) and (max-width: 479px) {
     div.about {
       background: linear-gradient(180deg, #343472 47%, #FFFFFF 47%); } }
@@ -1228,3 +1241,59 @@ div.about {
       div.about div.orange {
         top: -170px;
         right: -170px; } }
+
+div.history {
+  background: #FBF9F8; }
+  div.history div.resize div.row > div {
+    position: relative; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.history div.resize div.row > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; } }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      div.history div.resize div.row > div {
+        justify-content: flex-start; } }
+    div.history div.resize div.row > div div.text {
+      margin: 0;
+      padding: 0;
+      max-width: 539px;
+      padding: 60px 0px 0px; }
+      div.history div.resize div.row > div div.text div.subtitle-main div.subtitle {
+        color: #343472; }
+      div.history div.resize div.row > div div.text div.subtitle-main div.subtitle-line {
+        background: #343472; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.history div.resize div.row > div div.text h2 {
+          text-align: center; } }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        div.history div.resize div.row > div div.text h2 {
+          text-align: start; } }
+      div.history div.resize div.row > div div.text p {
+        color: #6F7278; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.history div.resize div.row > div div.text p {
+            text-align: center; } }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          div.history div.resize div.row > div div.text p {
+            text-align: start; } }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.history div.resize div.row > div div.text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column; } }
+      @media screen and (min-width: 0px) and (max-width: 767px) {
+        div.history div.resize div.row > div div.text {
+          display: block; } }
+    div.history div.resize div.row > div img {
+      border-radius: 18px;
+      max-width: 539px;
+      width: 100%; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.history div.resize div.row > div img {
+          margin: 20px 0px; } }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    div.history div.resize div.row.bottom {
+      flex-direction: column-reverse; } }
