@@ -299,7 +299,7 @@ app.component("nav-bar", {
     template: `
         <nav class="navbar navbar-expand-lg nav-position">
             <div class="container-fluid resize">
-                <a class="navbar-brand" href="/index">
+                <a class="navbar-brand" href="./index">
                 <img class="img" :src="image" alt="Polysmart logo" width="100" height="100"/>
                 </a>
                 <div class="responsive-nav">
