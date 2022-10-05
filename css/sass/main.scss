@@ -949,7 +949,7 @@ div.about {
     background: linear-gradient(180deg, #343472 62%, #FFFFFF 62%);
     padding: 110px 0px;
     @include respond(phone) {
-        background: linear-gradient(180deg, #343472 52%, #FFFFFF 52%);
+        background: linear-gradient(180deg, #343472 47%, #FFFFFF 47%);
     }
     div.resize {
         position: relative;
@@ -958,6 +958,9 @@ div.about {
             color: $white;
             @include flex(yes);
             margin-bottom: 70px;
+            @include respond(phone) {
+                margin-bottom: 50px;
+            }
             h1 {
                 text-align: center;
                 margin-bottom: 10px;
