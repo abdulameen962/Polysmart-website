@@ -1147,6 +1147,9 @@ div.about {
         z-index: 1;
         max-width: 100%;
         border-radius: 25px; }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.about div.resize div.image img {
+            border-radius: 12px; } }
       div.about div.resize div.image svg {
         position: absolute;
         top: -120px;

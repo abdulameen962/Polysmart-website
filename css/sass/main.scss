@@ -995,6 +995,9 @@ div.about {
                 z-index: 1;
                 max-width: 100%;
                 border-radius: 25px;
+                @include respond(phone) {
+                    border-radius: 12px;
+                }
             }
             svg {
                 position: absolute;

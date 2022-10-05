@@ -216,7 +216,7 @@ const app = Vue.createApp({
             //about section
             aboutheader: "WE ARE THE BEST AT WHAT WE DO!",
             aboutparagraph: "We are a packaging and shopping bags production company and our products are mainly shopping bags for domestic uses.",
-            aboutimg: "./images/aboutimg.png",
+            aboutimg: "./images/aboutimg.webp",
         }
     },
     mounted() {
