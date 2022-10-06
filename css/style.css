@@ -328,7 +328,7 @@ nav {
 div.hero {
   color: white;
   width: 100%;
-  height: 100vh;
+  min-height: 85vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -349,12 +349,12 @@ div.hero {
     height: 100%;
     z-index: -3; }
   div.hero div.container-hero {
-    padding-top: 10%;
-    padding-bottom: 10%; }
+    padding-top: 12%;
+    padding-bottom: 12%; }
     @media screen and (min-width: 1920px) {
       div.hero div.container-hero {
-        padding-top: 130px;
-        padding-bottom: 130px; } }
+        padding-top: 200px;
+        padding-bottom: 200px; } }
     div.hero div.container-hero > div {
       max-width: 566px; }
       @media screen and (min-width: 0px) and (max-width: 991px) {
