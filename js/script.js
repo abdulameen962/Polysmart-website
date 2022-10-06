@@ -155,7 +155,7 @@ const app = Vue.createApp({
             touchheader2: "Know about us and our products",
             //footer
             footerlogo: "./images/polysmartlogo.webp",
-            footersummary: "We are a shopping bags production company. Our Products are mainly shopping bags for domestic uses .i.e: Small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Fashion bags, Packing bags for pure water and poly bags (100% waste recycled).",
+            footersummary: "We are a shopping bags production company. Our Products are mainly shopping bags for domestic uses .i.e: Small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Large shopping bags and poly bags (100% waste recycled).",
             footerlistheader1: "Quick Links",
             footerlistheader2: "Legal",
             footerlistheader3: "Get started",
@@ -164,7 +164,7 @@ const app = Vue.createApp({
                     link: "./index",
                 },
                 {
-                    list: "About",
+                    list: "About Us",
                     link: "./about-us",
                 },
                 {
@@ -219,12 +219,12 @@ const app = Vue.createApp({
             aboutimg: "./images/aboutimg.webp",
 
             //history and mission section
-            historysubtitle: "Our Vision",
+            historysubtitle: "Our History",
             historyheader: "How Polysmart came to existence",
-            history: "We produce Small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Fashion bags, Packing bags for pure water and poly bags. All our poly bags are 100% waste recycled. Polysmart Packaging Limited is one of the groups of companies that form the Polysmart Group. Polysmart Packaging Limited started operations in January 2013 at Ota, Ogun State Nigeria. Currently, Polysmart Group is divided into three companies:<br/>•	Polysmart Packaging Limited <br/>•	Switch Recycling Innovations <br/>•	Crystal Packaging Limited <br/>Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness.",
+            history: "We produce: small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Large shopping bags and poly bags (100% waste recycled).Polysmart Packaging Limited is one of the groups of companies that form the Polysmart Group. Polysmart Packaging Limited started operations in January 2013 at Ota, Ogun State Nigeria. Currently, Polysmart Group is divided into three companies: <br/>•	Polysmart Packaging Limited <br/>•	Switch Recycling Innovations <br/> •	Crystal Packaging Limited <br/> Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness.",
             historyimage: "./images/history1.webp",
             missionsubtitle: "Our Mission",
-            missionheader: "Our mission - what we seek to achieve in Polysmart",
+            missionheader: "Our achieved milestones along the way",
             mission: "Our main objective is to make all our products mainly from Post Consumer waste material starting with Polyethylene. Our vision is to to be the reference point for packaging business in Nigeria. Our mission is to be the best in the eyes of our customers, employees, and shareholders and contribute to the environment where it operates.",
             missionimage: "./images/history2.webp",
         }
