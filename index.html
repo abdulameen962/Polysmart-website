@@ -20,19 +20,13 @@
     <div class="hero">
         <div class="container-hero resize">
             <div class="container-inner">
-                <div class="subtitle-main" data-aos="fade-up" data-aos-duration="500">
-                    <div class="subtitle-line"></div>
-                    <div class="subtitle"> {{ subtitle }} </div>
-                </div>
                 <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200"> <strong>{{ header }}</strong> </h1>
                 <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="400" v-html="aboutext"> {{ aboutext }} </p>
-                <div class="buttons" data-aos="fade-up" data-aos-delay="600">
-                    <a href="./contact" class="primary-button">Contact Us</a>
-                    <a href="./about-us" class="secondary-button">About Polysmart</a>
-                </div>
             </div>
         </div>
-        <img :src="backgroundimg" alt="herobackground" class="homebg" height="100" width="100">
+        <video autoplay loop :style="{'background-image': `url(${backgroundimg})`, 'background-repeat':'no-repeat', 'background-size': 'cover'}" muted playsinline data-wf-ignore="true" data-object-fit="cover" height="1000" width="1000">
+            <source :src="backgroundvideo" data-wf-ignore="true">
+        </video>
         <div class="background-cover"></div>
     </div>
     <div class="about-section">

@@ -40,6 +40,7 @@ const app = Vue.createApp({
 
             //home hero section
             backgroundimg: "./images/homebackground.webp",
+            backgroundvideo: "./images/video8.mp4",
             subtitle: "Packaging company",
             header: "Packaging is our business. We are Polysmart",
             aboutext: "Best Quality Always! <br/> Polysmart Packaging Limited is among the top 5 in the industry with about 250 manufacturers.",
@@ -235,13 +236,6 @@ const app = Vue.createApp({
         html.appendChild(head);
         html.insertBefore(head, html.children[0]);
         AOS.init();
-        var image = document.querySelector(".homebg");
-        var bigImg = document.createElement("img");
-        var srcs = image.src;
-        bigImg.onload = function() {
-            image.src = this.src;
-        }
-        bigImg.src = srcs;
         document.querySelectorAll(".scrollstop").forEach(function(e) {
             e.addEventListener('keydown', preventKeyBoardScroll, false);
 
@@ -325,7 +319,7 @@ app.component("nav-bar", {
                         </li>
                     </ul>
                 </div>
-                <a class="header-button contact2" href="./contact"> Contact us </a>
+                <a class="header-button contact2" href="./contact"> Order now </a>
             </div>
         </nav>
 

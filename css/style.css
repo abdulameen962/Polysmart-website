@@ -275,8 +275,8 @@ nav {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding-top: 34px;
-    padding-bottom: 34px; }
+    padding-top: 25px;
+    padding-bottom: 25px; }
     nav div.container-fluid a.navbar-brand {
       display: flex;
       justify-content: center;
@@ -286,15 +286,15 @@ nav {
         transform: scale(0.95); }
     @media screen and (min-width: 0px) and (max-width: 991px) {
       nav div.container-fluid {
-        padding-top: 25px;
-        padding-bottom: 25px; } }
+        padding-top: 20px;
+        padding-bottom: 20px; } }
     nav div.container-fluid div.responsive-nav {
       display: flex;
       justify-content: center;
       align-items: center;
       justify-content: space-between; }
     nav div.container-fluid div ul li.nav-li {
-      margin-right: 20px; }
+      margin-right: 35px; }
     nav div.container-fluid div ul li {
       list-style-type: none; }
       nav div.container-fluid div ul li a {
@@ -328,6 +328,7 @@ nav {
 div.hero {
   color: white;
   width: 100%;
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -335,7 +336,7 @@ div.hero {
   flex-direction: column;
   overflow: hidden;
   justify-content: unset; }
-  div.hero img {
+  div.hero video {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -356,32 +357,12 @@ div.hero {
         padding-bottom: 130px; } }
     div.hero div.container-hero > div {
       max-width: 566px; }
-      div.hero div.container-hero > div > div div.subtitle-line {
-        background: white; }
       @media screen and (min-width: 0px) and (max-width: 991px) {
         div.hero div.container-hero > div > p {
           padding: 20px 0px; } }
       @media screen and (min-width: 0em) and (max-width: 479px) {
         div.hero div.container-hero > div > p {
           padding: 10px 0px; } }
-      div.hero div.container-hero > div div.buttons {
-        padding: 30px 0px; }
-        div.hero div.container-hero > div div.buttons a.secondary-button {
-          background: transparent;
-          color: white;
-          border: 1px solid white; }
-          div.hero div.container-hero > div div.buttons a.secondary-button:hover {
-            color: #FFD3B9;
-            transform: translateY(-5px);
-            border: 1px solid #FFD3B9; }
-        div.hero div.container-hero > div div.buttons a.primary-button {
-          color: white;
-          color: white;
-          background: #343472; }
-          div.hero div.container-hero > div div.buttons a.primary-button:hover {
-            color: #FFD3B9;
-            transform: translateY(-5px);
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
 
 div.about-section {
   padding: 110px 0px;
