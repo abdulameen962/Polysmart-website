@@ -19,7 +19,7 @@ const app = Vue.createApp({
                     href: "./index",
                 },
                 {
-                    name: "About",
+                    name: "About Us",
                     href: "./about-us",
                 },
                 {
@@ -128,7 +128,6 @@ const app = Vue.createApp({
             //summary
             summarysub: "OUR SUMMARY",
             summaryheader: "Polysmart in a few sentences",
-            summarytext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit eque dolor ipsum odio justo amet, urna, auctor dolor ist amenor.",
             summarys: [{
                     number: "5",
                     shape: "",
@@ -216,12 +215,12 @@ const app = Vue.createApp({
 
             //about section
             aboutheader: "WE ARE THE BEST AT WHAT WE DO!",
-            aboutparagraph: "We are a packaging and shopping bags production company and our products are mainly shopping bags for domestic uses.",
+            aboutparagraph: "Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness.",
             aboutimg: "./images/aboutimg.webp",
 
             //history and mission section
-            historysubtitle: "Our History",
-            historyheader: "How Poly-smart came to existence",
+            historysubtitle: "Our Vision",
+            historyheader: "How Polysmart came to existence",
             history: "We produce Small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Fashion bags, Packing bags for pure water and poly bags. All our poly bags are 100% waste recycled. Polysmart Packaging Limited is one of the groups of companies that form the Polysmart Group. Polysmart Packaging Limited started operations in January 2013 at Ota, Ogun State Nigeria. Currently, Polysmart Group is divided into three companies:<br/>•	Polysmart Packaging Limited <br/>•	Switch Recycling Innovations <br/>•	Crystal Packaging Limited <br/>Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness.",
             historyimage: "./images/history1.webp",
             missionsubtitle: "Our Mission",
@@ -426,10 +425,6 @@ app.component("foot-er", {
                     <div class="col-sm-12 col-md-12 col-lg-5 footer-left" data-aos="fade-up" data-aos-duration="500">
                         <img :src="footerlogo" alt="logo" width="100" height="100">
                         <p> {{ footersummary }} </p>
-                        <div class="buttons">
-                            <a href="#" class="primary-button">Contact Us</a>
-                            <a href="#" class="secondary-button"> About Us </a>
-                        </div>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-7 footer-right" data-aos="fade-up" data-aos-duration="500">
                         <ul>

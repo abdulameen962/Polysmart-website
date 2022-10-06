@@ -188,6 +188,10 @@ div.hero {
             padding-top: 200px;
             padding-bottom: 200px;
         }
+        @include respond(tab) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
         &>div {
             max-width: 566px;
             &>p {
@@ -203,7 +207,7 @@ div.hero {
 }
 
 div.about-section {
-    padding: 110px 0px;
+    padding: 110px 0px 40px;
     width: 100%;
     &>div.container {
         div.row {

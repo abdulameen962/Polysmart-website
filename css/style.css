@@ -355,6 +355,10 @@ div.hero {
       div.hero div.container-hero {
         padding-top: 200px;
         padding-bottom: 200px; } }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.hero div.container-hero {
+        padding-top: 100px;
+        padding-bottom: 100px; } }
     div.hero div.container-hero > div {
       max-width: 566px; }
       @media screen and (min-width: 0px) and (max-width: 991px) {
@@ -365,7 +369,7 @@ div.hero {
           padding: 10px 0px; } }
 
 div.about-section {
-  padding: 110px 0px;
+  padding: 110px 0px 40px;
   width: 100%; }
   @media screen and (min-width: 0px) and (max-width: 767px) {
     div.about-section > div.container div.row div.abouthead {
