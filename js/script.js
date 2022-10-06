@@ -219,14 +219,32 @@ const app = Vue.createApp({
             aboutimg: "./images/aboutimg.webp",
 
             //history and mission section
-            historysubtitle: "Our History",
+            historysubtitle: "WHERE WE WERE",
             historyheader: "How Polysmart came to existence",
-            history: "We produce: small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Large shopping bags and poly bags (100% waste recycled).Polysmart Packaging Limited is one of the groups of companies that form the Polysmart Group. Polysmart Packaging Limited started operations in January 2013 at Ota, Ogun State Nigeria. Currently, Polysmart Group is divided into three companies: <br/>•	Polysmart Packaging Limited <br/>•	Switch Recycling Innovations <br/> •	Crystal Packaging Limited <br/> Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness.",
+            history: "Polysmart Packaging Limited started operations in January 2013 at Ota, Ogun State Nigeria. Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness.",
             historyimage: "./images/history1.webp",
-            missionsubtitle: "Our Mission",
+            missionsubtitle: "WHERE WE ARE",
             missionheader: "Our achieved milestones along the way",
-            mission: "Our main objective is to make all our products mainly from Post Consumer waste material starting with Polyethylene. Our vision is to to be the reference point for packaging business in Nigeria. Our mission is to be the best in the eyes of our customers, employees, and shareholders and contribute to the environment where it operates.",
+            mission: "We produce: small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Large shopping bags and poly bags (100% waste recycled).Polysmart Packaging Limited is one of the groups of companies that form the Polysmart Group. Currently, Polysmart Group is divided into three companies:<br/>•	Polysmart Packaging Limited <br/>•	Switch Recycling Innovations <br/> •	Crystal Packaging Limited",
             missionimage: "./images/history2.webp",
+
+            //mission,vision and objectives
+            missionvision: [{
+                    image: "./images/objective.svg",
+                    header: "OUR MISSION",
+                    summary: "Our mission is to be the best in the eyes of our customers, employees, and shareholders and contribute to the environment where it operates.",
+                },
+                {
+                    image: "./images/objective.svg",
+                    header: "OUR OBJECTIVES",
+                    summary: "Our main objective is to make all our products mainly from Post Consumer waste material starting with Polyethylene",
+                },
+                {
+                    image: "./images/objective.svg",
+                    header: "OUR VISION",
+                    summary: "Our vision is to to be the reference point for packaging business in Nigeria",
+                },
+            ],
         }
     },
     mounted() {
@@ -479,5 +497,26 @@ app.component("achieve-ment", {
             </div>
         </div>
     `
+})
+app.component("mv-o", {
+    props: {
+        mvo: Array,
+    },
+    template: `
+    <div class="mvo main-extend">
+        <div class="mvo-grid resize">
+            <div class="mvo-single" v-for="main in mvo" data-aos="fade-up" data-aos-duration="500">
+                <div class="image">
+                    <img :src="main.image" :alt="main.header"/>
+                </div>
+                <div class="text">
+                    <h3 v-html="main.header"> {{ main.header }} </h3>
+                    <p> {{ main.summary }} </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+`
 })
 app.mount("body");
