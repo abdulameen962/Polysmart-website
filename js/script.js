@@ -245,6 +245,8 @@ const app = Vue.createApp({
             ],
 
             //team section
+            teamsubtitle: "Team Section",
+            teamheader: "Our Team",
             teams: [{
                     title: "CEO/MD",
                     image: "",
@@ -341,6 +343,18 @@ const app = Vue.createApp({
             e.loading = "lazy";
         })
         const darksvg = document.querySelector(".lightpath");
+        document.querySelectorAll(".member").forEach(function(e) {
+            e.onmouseover = () => {
+                const parent = e;
+                const header = parent.children[1].children[0];
+                header.style.color = "#343472";
+            }
+            e.onmouseout = () => {
+                const parent = e;
+                const header = parent.children[1].children[0];
+                header.style.color = "#292C32";
+            }
+        })
         const box = document.querySelector(".links").children[1];
         box.onmouseover = () => {
             darksvg.style.stroke = "#FFD3B9";
@@ -600,19 +614,21 @@ app.component("team-section", {
     },
     template: `
     <div class="team main-extend">
-        <div class"team-inner resize">
+        <div class="team-inner resize">
             <div class="header-text">
                 <div class="subtitle"> {{ teamsubtitle }} </div>
                 <h2> {{ teamheader }} </h2>
             </div>
-            <div class="member" v-for="team in teams">
-                <div class="image">
-                    <img :src="team.image" :alt="team.title"/>
-                    <p> {{ team.title }} </p>
-                </div>
-                <div class="text">
-                    <h3> {{ team.name }} </h3>
-                    <p> {{ team.summary }} </p>
+            <div class="team-grid">
+                <div class="member" v-for="team in teams">
+                    <div class="image">
+                        <img :src="team.image" :alt="team.title"/>
+                        <p> {{ team.title }} </p>
+                    </div>
+                    <div class="text">
+                        <h3> {{ team.name }} </h3>
+                        <p> {{ team.summary }} </p>
+                    </div>
                 </div>
             </div>
         </div>

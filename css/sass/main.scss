@@ -1177,3 +1177,64 @@ div.mvo {
         }
     }
 }
+
+div.team {
+    div.team-inner {
+        div.header-text {
+            @include flex(yes);
+            margin-bottom: 35px;
+            div.subtitle {
+                color: $blue;
+            }
+            h2 {
+                padding-top: 10px;
+            }
+        }
+        div.team-grid {
+            @include grid(3);
+            gap: 50px 55px;
+            @include respond(tab) {
+                @include grid(2);
+            }
+            @include respond(lphone) {
+                @include grid(1);
+            }
+            div.member {
+                position: relative;
+                @include background;
+                @include transition;
+                cursor: pointer;
+                div.image {
+                    // height: 60%;
+                    position: relative;
+                    background: $darkgrey;
+                    padding: 70px 0px;
+                    @include flex(yes);
+                    border-top-right-radius: 18px;
+                    border-top-left-radius: 18px;
+                    img {
+                        max-width: 90%;
+                        max-height: 90%;
+                    }
+                    p {
+                        font-size: 14px;
+                        background: $white;
+                        padding: 8px 10px;
+                        border-radius: 18px;
+                        position: absolute;
+                        top: 10px;
+                        right: 5px;
+                    }
+                }
+                div.text {
+                    // height: 40%;
+                    padding: 30px 45px 40px 25px;
+                }
+                &:hover {
+                    transform: scale(1.05);
+                    @include border(rgba(41, 44, 50, .5));
+                }
+            }
+        }
+    }
+}
