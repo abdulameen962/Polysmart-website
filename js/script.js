@@ -615,12 +615,12 @@ app.component("team-section", {
     template: `
     <div class="team main-extend">
         <div class="team-inner resize">
-            <div class="header-text">
+            <div class="header-text" data-aos="fade-up" data-aos-duration="500">
                 <div class="subtitle"> {{ teamsubtitle }} </div>
                 <h2> {{ teamheader }} </h2>
             </div>
             <div class="team-grid">
-                <div class="member" v-for="team in teams">
+                <div class="member" v-for="team in teams" data-aos="fade-up" data-aos-duration="500">
                     <div class="image">
                         <img :src="team.image" :alt="team.title"/>
                         <p> {{ team.title }} </p>
