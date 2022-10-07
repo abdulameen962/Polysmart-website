@@ -158,7 +158,7 @@ a.header-button {
 div.buttons {
   width: 100%; }
   div.buttons a.secondary-button {
-    color: #292c32;
+    color: #292C32;
     margin-left: 30px; }
     @media screen and (min-width: 0em) and (max-width: 479px) {
       div.buttons a.secondary-button {
@@ -249,7 +249,7 @@ div.subtitle-main {
   justify-content: flex-start; }
   div.subtitle-main div.subtitle-line {
     width: 50px;
-    background: #292c32;
+    background: #292C32;
     height: 2px;
     margin-right: 15px; }
   @media screen and (min-width: 0em) and (max-width: 479px) {
@@ -298,7 +298,7 @@ nav {
     nav div.container-fluid div ul li {
       list-style-type: none; }
       nav div.container-fluid div ul li a {
-        color: #292c32;
+        color: #292C32;
         font-size: 18px;
         text-decoration: none; }
         nav div.container-fluid div ul li a:hover {
@@ -394,8 +394,8 @@ div.about-section {
       div.about-section > div.container div.row div.aboutaction {
         justify-content: center; } }
     div.about-section > div.container div.row div.aboutaction a.secondary-button {
-      color: #292c32;
-      border: 1px solid #292c32; }
+      color: #292C32;
+      border: 1px solid #292C32; }
       div.about-section > div.container div.row div.aboutaction a.secondary-button:hover {
         color: #FFD3B9;
         transform: translateY(-5px);
@@ -587,9 +587,9 @@ div.subtext {
       align-items: center; }
       div.subtext > div div.buttons a.primary-button {
         background: white;
-        color: #292c32; }
+        color: #292C32; }
         div.subtext > div div.buttons a.primary-button:hover {
-          color: #292c32;
+          color: #292C32;
           transform: translateY(-5px);
           background: #FFD3B9;
           font-weight: 550;
@@ -959,7 +959,7 @@ div.touch {
           font-size: 18px;
           border-radius: 10px; } }
       div.touch div.touch-inner > div.links a:nth-child(1) {
-        color: #292c32;
+        color: #292C32;
         background: white; }
         div.touch div.touch-inner > div.links a:nth-child(1):hover {
           background: #FFD3B9;
@@ -1005,8 +1005,8 @@ footer {
     footer div > div.footer-top div.footer-left div.buttons {
       padding: 45px 0px 0px; }
       footer div > div.footer-top div.footer-left div.buttons a.secondary-button {
-        color: #292c32;
-        border: 1px solid #292c32; }
+        color: #292C32;
+        border: 1px solid #292C32; }
         footer div > div.footer-top div.footer-left div.buttons a.secondary-button:hover {
           color: #FFD3B9;
           transform: translateY(-5px);
@@ -1130,7 +1130,7 @@ div.about {
         align-items: center; }
         div.about div.resize div.text div.buttons a.primary-button {
           background: white;
-          color: #292c32; }
+          color: #292C32; }
           div.about div.resize div.text div.buttons a.primary-button:hover {
             background: #FFD3B9; }
         div.about div.resize div.text div.buttons a.secondary-button {
@@ -1389,3 +1389,64 @@ div.team div.team-inner div.team-grid {
     div.team div.team-inner div.team-grid div.member:hover {
       transform: scale(1.05);
       border: 1px solid rgba(41, 44, 50, 0.5); }
+
+div.values {
+  background: #FBF9F8;
+  padding: 110px 0px 60px; }
+  div.values div.top div.subtitle-main div.subtitle-line {
+    background: #343472; }
+  div.values div.top div.subtitle-main div.subtitle {
+    color: #343472; }
+  div.values div.value-grid {
+    margin-top: 50px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 50px; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.values div.value-grid {
+        gap: 25px 25px; } }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      div.values div.value-grid {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+    div.values div.value-grid div.value-single {
+      background: white;
+      box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+      border-radius: 18px;
+      border: 1px solid #E7E9EE;
+      padding: 35px 30px; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.values div.value-grid div.value-single {
+          padding: 35px 15px; } }
+      div.values div.value-grid div.value-single div.image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-items: flex-start; }
+        div.values div.value-grid div.value-single div.image img {
+          max-width: 100%;
+          max-height: 100%; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.values div.value-grid div.value-single div.image {
+            justify-content: flex-start; } }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          div.values div.value-grid div.value-single div.image {
+            justify-content: center; } }
+      div.values div.value-grid div.value-single div.text {
+        padding-left: 20px; }
+        div.values div.value-grid div.value-single div.text p {
+          color: #6F7278; }
+          @media screen and (min-width: 0px) and (max-width: 767px) {
+            div.values div.value-grid div.value-single div.text p {
+              text-align: center; } }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          div.values div.value-grid div.value-single div.text h3 {
+            text-align: center; } }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          div.values div.value-grid div.value-single div.text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; } }
