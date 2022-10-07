@@ -23,7 +23,7 @@ const app = Vue.createApp({
                     href: "./about-us",
                 },
                 {
-                    name: "Our Product",
+                    name: "Our Products",
                     href: "./products",
                 },
                 {
@@ -215,17 +215,15 @@ const app = Vue.createApp({
 
             //about section
             aboutheader: "WE ARE THE BEST AT WHAT WE DO!",
-            aboutparagraph: "Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness.",
+            aboutparagraph: "We have amassed a large client base over the years and continue to put forth considerable effort to maintain excellent client relationships and first-rate customer service",
             aboutimg: "./images/aboutimg.webp",
 
             //history and mission section
-            historysubtitle: "WHERE WE WERE",
-            historyheader: "How Polysmart came to existence",
-            history: "Polysmart Packaging Limited started operations in January 2013 at Ota, Ogun State Nigeria. Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness.",
+            historysubtitle: "Who We Are",
+            history: "Polysmart Packaging Limited started operations in January 2013 at Ota, Ogun State Nigeria. <br/> Currently, Polysmart Packaging Limited is one of the groups of companies under Polysmart Group. <br/> Polysmart Group is a fusion of three companies:<br/>•	Polysmart Packaging Limited <br/>•	Switch Recycling Innovations Ltd <br/> •	Crystal Packaging Limited",
             historyimage: "./images/history1.webp",
-            missionsubtitle: "WHERE WE ARE",
-            missionheader: "Our achieved milestones along the way",
-            mission: "We produce: small Black Shopping bags, Medium black shopping bags, Double color shopping bags, Large shopping bags and poly bags (100% waste recycled).Polysmart Packaging Limited is one of the groups of companies that form the Polysmart Group. Currently, Polysmart Group is divided into three companies:<br/>•	Polysmart Packaging Limited <br/>•	Switch Recycling Innovations <br/> •	Crystal Packaging Limited",
+            missionsubtitle: "What We Do",
+            mission: "We produce small shopping bags, medium shopping bags, Large shopping bags, double color shopping bags and 100% recycled poly bags. <br/> Polysmart Packaging Limited has developed into one of the largest suppliers of plastic bag goods in Nigeria, thanks to our unwavering dedication to quality, dependability, exceptional value for our customers, and environmental awareness. ",
             missionimage: "./images/history2.webp",
 
             //mission,vision and objectives
@@ -243,6 +241,81 @@ const app = Vue.createApp({
                     image: "./images/objective.svg",
                     header: "OUR VISION",
                     summary: "Our vision is to to be the reference point for packaging business in Nigeria",
+                },
+            ],
+
+            //team section
+            teams: [{
+                    title: "CEO/MD",
+                    image: "",
+                    name: "Wasiu Balogun",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Chief Financial Officer",
+                    image: "",
+                    name: "Yemi Akingbehin",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Group Head, Internal Control & Compliance",
+                    image: "",
+                    name: "Jide Amoo",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Head of Finance & Accounts",
+                    image: "",
+                    name: "Rukayat Yousuph",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Chief Operating Officer",
+                    image: "",
+                    name: "Adeola Bankole",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Director, Switch Recycling Innovations Group Head, Material Recovery & Supply Chain",
+                    image: "",
+                    name: "Ime Akpan",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Head of Internal Control Unit",
+                    image: "",
+                    name: "Adenike Adelana",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Group Head, Human Resources",
+                    image: "",
+                    name: "Kelechi Onwubiko",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Head, Legal Unit",
+                    image: "",
+                    name: "Ifeanyi Obi",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Group Head, Quality Control",
+                    image: "",
+                    name: "Ernest Ubasineke",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Group Head, Health Safety & Environment",
+                    image: "",
+                    name: "Awoyode Abiodun",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
+                },
+                {
+                    title: "Head, Mechanical Maintenance",
+                    image: "",
+                    name: "Adewunmi Taiwo",
+                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
             ],
         }
@@ -517,6 +590,34 @@ app.component("mv-o", {
             </div>
         </div>
     </div>
+`
+})
+app.component("team-section", {
+    props: {
+        teams: Array,
+        teamsubtitle: String,
+        teamheader: String,
+    },
+    template: `
+    <div class="team main-extend">
+        <div class"team-inner resize">
+            <div class="header-text">
+                <div class="subtitle"> {{ teamsubtitle }} </div>
+                <h2> {{ teamheader }} </h2>
+            </div>
+            <div class="member" v-for="team in teams">
+                <div class="image">
+                    <img :src="team.image" :alt="team.title"/>
+                    <p> {{ team.title }} </p>
+                </div>
+                <div class="text">
+                    <h3> {{ team.name }} </h3>
+                    <p> {{ team.summary }} </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 `
 })
 app.mount("body");
