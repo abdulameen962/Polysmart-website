@@ -245,85 +245,71 @@ const app = Vue.createApp({
             ],
 
             //team section
-            teamsubtitle: "Team Section",
-            teamheader: "Our Team",
+            teamsubtitle: "Our Team",
             teams: [{
                     title: "CEO/MD",
                     image: "",
                     name: "Wasiu Balogun",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Chief Operating Officer",
                     image: "",
                     name: "Adeola Bankole",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Chief Financial Officer",
                     image: "",
                     name: "Yemi Akingbehin",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Group Head, Internal Control & Compliance",
                     image: "",
                     name: "Jide Amoo",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Group Head, Quality Control",
                     image: "",
                     name: "Ernest Ubasineke",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Group Head, Health Safety & Environment",
                     image: "",
                     name: "Awoyode Abiodun",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Group Head, Human Resources",
                     image: "",
                     name: "Kelechi Onwubiko",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Director, Switch Recycling Innovations Group Head, Material Recovery & Supply Chain",
                     image: "",
                     name: "Ime Akpan",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Head, Legal Unit",
                     image: "",
                     name: "Ifeanyi Obi",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Head of Finance & Accounts",
                     image: "",
                     name: "Rukayat Yousuph",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Head of Internal Control Unit",
                     image: "",
                     name: "Adenike Adelana",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
                 {
                     title: "Head, Mechanical Maintenance",
                     image: "",
                     name: "Adewunmi Taiwo",
-                    summary: "Lorem ipsum dolor sit amet consectetur dolorili adipiscing elit.",
                 },
             ],
 
             //values section
-            valuesub: "",
-            valueheader: "Our values that has kept us in existence over the years",
+            // valuesub: "OUR VALUES",
             values: [{
                     image: "./images/value1.svg",
                     header: "Passion for customers",
@@ -652,8 +638,10 @@ app.component("team-section", {
     <div class="team main-extend">
         <div class="team-inner resize">
             <div class="header-text" data-aos="fade-up" data-aos-duration="500">
+            <div class="subtitle-main" data-aos="fade-up" data-aos-duration="500">
+                <div class="subtitle-line"></div>
                 <div class="subtitle"> {{ teamsubtitle }} </div>
-                <h2> {{ teamheader }} </h2>
+            </div>
             </div>
             <div class="team-grid">
                 <div class="member" v-for="team in teams" data-aos="fade-up" data-aos-duration="500">

@@ -1331,15 +1331,9 @@ div.mvo div.mvo-grid {
         color: #6F7278; }
 
 div.team div.team-inner div.header-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-bottom: 35px; }
   div.team div.team-inner div.header-text div.subtitle {
     color: #343472; }
-  div.team div.team-inner div.header-text h2 {
-    padding-top: 10px; }
 
 div.team div.team-inner div.team-grid {
   display: grid;

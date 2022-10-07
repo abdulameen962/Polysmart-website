@@ -1181,13 +1181,9 @@ div.mvo {
 div.team {
     div.team-inner {
         div.header-text {
-            @include flex(yes);
             margin-bottom: 35px;
             div.subtitle {
                 color: $blue;
-            }
-            h2 {
-                padding-top: 10px;
             }
         }
         div.team-grid {
