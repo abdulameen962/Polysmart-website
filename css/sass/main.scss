@@ -1310,6 +1310,7 @@ div.values {
 
 div.contact-us {
     background: linear-gradient(180deg, #343472 62%, #FFFFFF 62%);
+    overflow: hidden;
     div.contact-inner {
         position: relative;
         @include flex(yes);
@@ -1449,6 +1450,7 @@ div.contact-us {
 }
 
 div.contact-form {
+    overflow: hidden;
     background: linear-gradient(90deg, #FBF9F8 0%, #FBF9F8 50%, #343472 50%);
     padding-top: 180px;
     padding-bottom: 180px;
@@ -1461,6 +1463,14 @@ div.contact-form {
     }
     &>div {
         @include flex(no);
+        div.orange {
+            position: absolute;
+            bottom: -250px;
+            right: -270px;
+            @include respond(tab) {
+                display: none;
+            }
+        }
         div.left {
             padding-right: 40px;
             @include respond(tab) {
@@ -1512,11 +1522,22 @@ div.contact-form {
         }
         div.right {
             padding-left: 20px;
+            position: relative;
             @include respond(tab) {
                 padding: 0;
             }
+            svg {
+                position: absolute;
+                top: -130px;
+                left: 120px;
+                @include animate;
+                @include respond(tab) {
+                    display: none;
+                }
+            }
             form {
                 background: $white;
+                z-index: 2;
                 @include background;
                 padding: 56px;
                 max-width: 675px;
