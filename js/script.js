@@ -12,6 +12,12 @@ const app = Vue.createApp({
             aboutlink: "https://polysmartgroup.com/about-us",
             aboutdescription: "Visit the post for more.",
 
+
+            //head tag for contact page
+            contacttitle: "Contact Us",
+            contactlink: "https://polysmartgroup.com/contact-us",
+            contactdescr: "Visit the post for more.",
+
             //navigation bar data
             logo: "./images/polysmart.svg",
             navbar: [{
@@ -342,6 +348,30 @@ const app = Vue.createApp({
                 },
             ],
             valuesub: "OUR VALUES",
+
+
+            //contact us page
+
+            //contactmain section
+            contactheader: "Contact",
+            contactsummary: "Lorem ipsum dolor sit amet consectetur adipisc elit viverra dignissim pellentesque in ac.",
+            contactblocks: [{
+                    image: "./images/support.svg",
+                    header: "Support",
+                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing.",
+                    email: "enquiry@polysmartgroup.com",
+                    number: "+234 8080367744",
+                    mail: "mailto:enquiry@polysmartgroup.com?&subject='I want to make an enquiry from Polysmart about...'",
+                },
+                {
+                    image: "./images/feedback.svg",
+                    header: "Feedback",
+                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing.",
+                    email: "enquiry@polysmartgroup.com",
+                    number: "+234 8080367744",
+                    mail: "mailto:enquiry@polysmartgroup.com?&subject='I want to make an enquiry from Polysmart about...'",
+                },
+            ],
         }
     },
     mounted() {
@@ -675,6 +705,31 @@ app.component("value-section", {
                 <p> {{ value.summary }} </p>
             </div>
           </div>
+       </div>
+    `
+})
+app.component("contact-block", {
+    props: {
+        contactblocks: Array,
+
+    },
+    template: `
+       <div class="bottom row">
+           <div class="col-sm-12 col-md-12 col-lg-6 block" v-for="block in contactblocks">
+                <div class="block-inner row" data-aos="fade-up" data-aos-duration="500">
+                       <div class="col-sm-12 col-md-4 col-lg-12 image">
+                          <img :src="block.image" :alt="block.header" width="100" height="100"/>
+                       </div>
+                       <div class="col-sm-12 col-md-8 col-lg-12 text">
+                            <h3> {{ block.header }} </h3>
+                            <p> {{ block.summary }} </p>
+                            <div class="line">
+                                <a :href="block.mail"> {{ block.email }} </a>
+                                <p> {{ block.number }} </p>
+                            </div>
+                       </div>
+                </div>
+           </div>
        </div>
     `
 })

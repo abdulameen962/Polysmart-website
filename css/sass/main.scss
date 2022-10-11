@@ -22,6 +22,14 @@ a.header-button {
     @include transition;
 }
 
+div.orange {
+    border-radius: 50%;
+    width: 277px;
+    height: 277px;
+    background: $orange;
+    position: absolute;
+}
+
 div.buttons {
     width: 100%;
     a.secondary-button {
@@ -1295,6 +1303,142 @@ div.values {
                 @include respond(lphone) {
                     @include flex(yes);
                 }
+            }
+        }
+    }
+}
+
+div.contact-us {
+    background: linear-gradient(180deg, #343472 62%, #FFFFFF 62%);
+    div.contact-inner {
+        position: relative;
+        @include flex(yes);
+        svg {
+            position: absolute;
+            top: -280px;
+            left: -310px;
+            @include animate;
+            height: 450px;
+            width: 450px;
+            @include respond(lphone) {
+                top: 20%;
+                left: -150px;
+            }
+        }
+        div.header {
+            max-width: 585px;
+            @include flex(yes);
+            color: $white;
+            p {
+                text-align: center;
+                font-size: 18px;
+                @include respond(phone) {
+                    font-size: 16px;
+                }
+            }
+        }
+        div.bottom {
+            margin-top: 35px;
+            @include respond(tab) {
+                margin-top: 10px;
+            }
+            div.block {
+                z-index: 3;
+                @include respond(tab) {
+                    @include mp;
+                    margin-top: 30px;
+                }
+                &-inner {
+                    max-width: 400px;
+                    @include background;
+                    @include transition;
+                    background: $white;
+                    padding: 51px 30px 35px;
+                    @include flex(yes);
+                    @include respond(tab) {
+                        max-width: 100%;
+                        @include flex(no);
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }
+                    @include respond(lphone) {
+                        @include flex(yes);
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    @include respond(phone) {
+                        padding: 40px 30px 35px;
+                    }
+                    div.image {
+                        @include flex(yes);
+                        @include respond(tab) {
+                            display: block;
+                        }
+                        @include respond(lphone) {
+                            display: flex;
+                        }
+                        img {
+                            height: auto;
+                            width: auto;
+                            max-width: 150px;
+                            @include respond(lphone) {
+                                max-width: 105px;
+                            }
+                        }
+                    }
+                    div.text {
+                        @include flex(yes);
+                        padding-top: 20px;
+                        @include respond(tab) {
+                            display: block;
+                            padding: 0;
+                        }
+                        @include respond(lphone) {
+                            display: flex;
+                            padding-top: 20px;
+                        }
+                        p {
+                            text-align: center;
+                            @include respond(tab) {
+                                text-align: left;
+                            }
+                            @include respond(lphone) {
+                                text-align: center;
+                            }
+                        }
+                        &>p {
+                            color: $grey;
+                        }
+                        div.line {
+                            margin-top: 15px;
+                            padding-top: 25px;
+                            width: 100%;
+                            @include flex(yes);
+                            border-top: 1px solid #CACCD1;
+                            @include respond(tab) {
+                                display: block;
+                            }
+                            @include respond(lphone) {
+                                display: flex;
+                            }
+                        }
+                    }
+                    &:hover {
+                        @include border($blue);
+                        transform: translateY(-7px);
+                    }
+                }
+            }
+        }
+        div.orange {
+            position: absolute;
+            right: -180px;
+            top: 30px;
+            @include respond(tab) {
+                top: 50%;
+                right: 0px;
             }
         }
     }
