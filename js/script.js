@@ -38,7 +38,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: "Contact Us",
-                    href: "../contact-us",
+                    href: "./contact-us",
                 },
             ],
 
