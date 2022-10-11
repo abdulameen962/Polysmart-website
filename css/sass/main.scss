@@ -1452,10 +1452,25 @@ div.contact-form {
     background: linear-gradient(90deg, #FBF9F8 0%, #FBF9F8 50%, #343472 50%);
     padding-top: 180px;
     padding-bottom: 180px;
+    @include respond(tab) {
+        background: linear-gradient(180deg, #FBF9F8 0%, #FBF9F8 50%, #343472 50%);
+    }
+    @include respond(phone) {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
     &>div {
         @include flex(no);
         div.left {
             padding-right: 40px;
+            @include respond(tab) {
+                @include flex(yes);
+                margin-bottom: 30px;
+                padding: 0px;
+            }
+            @include respond(lphone) {
+                display: block;
+            }
             div.subtitle-main {
                 div.subtitle-line {
                     background: $blue;
@@ -1464,9 +1479,23 @@ div.contact-form {
                     color: $blue;
                 }
             }
+            h2 {
+                @include respond(tab) {
+                    text-align: center;
+                }
+                @include respond(lphone) {
+                    text-align: left;
+                }
+            }
             p {
                 @include size;
-                color: $grey
+                color: $grey;
+                @include respond(tab) {
+                    text-align: center;
+                }
+                @include respond(lphone) {
+                    text-align: left;
+                }
             }
             a {
                 @include flex(no);
@@ -1483,11 +1512,20 @@ div.contact-form {
         }
         div.right {
             padding-left: 20px;
+            @include respond(tab) {
+                padding: 0;
+            }
             form {
                 background: $white;
                 @include background;
                 padding: 56px;
                 max-width: 675px;
+                @include respond(lphone) {
+                    padding: 56px 35px;
+                }
+                @include respond(phone) {
+                    padding: 56px 25px;
+                }
                 input {
                     @include input;
                 }
@@ -1507,6 +1545,9 @@ div.contact-form {
                     margin-bottom: $formbottom;
                     @include grid(2);
                     gap: 20px;
+                    @include respond(lphone) {
+                        @include grid(1);
+                    }
                     div.half {
                         @include mp;
                         input {
