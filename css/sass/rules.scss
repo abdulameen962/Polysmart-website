@@ -127,3 +127,13 @@ a {
     @extend .font;
     text-decoration: none;
 }
+
+input {
+    font-size: 16px;
+    @extend .font;
+}
+
+textarea {
+    font-size: 16px;
+    @extend .font;
+}

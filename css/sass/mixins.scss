@@ -153,6 +153,23 @@
     height: auto;
 }
 
+@mixin size {
+    font-size: 18px;
+    line-height: 33px;
+    @include respond(phone) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@mixin input {
+    min-height: 68px;
+    padding: 20px 22px 20px 40px;
+    border-radius: 14px;
+    outline: none;
+    @include border(#E7E9EE);
+}
+
 @mixin animate {
     animation: twirl 50s infinite ease-in;
 }
@@ -197,3 +214,4 @@ $greyback: #FBF9F8;
 $lightblue:#E8E9FD;
 $blueborder: #E7E9EE;
 $darkgrey: #F8F7F2;
+$formbottom: 30px;

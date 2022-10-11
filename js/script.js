@@ -353,7 +353,7 @@ const app = Vue.createApp({
             //contact us page
 
             //contactmain section
-            contactheader: "Contact",
+            contactheader: "Contact Us",
             contactsummary: "Lorem ipsum dolor sit amet consectetur adipisc elit viverra dignissim pellentesque in ac.",
             contactblocks: [{
                     image: "./images/support.svg",
@@ -414,6 +414,21 @@ const app = Vue.createApp({
                 const parent = e;
                 const header = parent.children[1].children[0];
                 header.style.color = "#292C32";
+            }
+        })
+        document.querySelectorAll(".formlink").forEach(function(e) {
+            console.log(e);
+            e.onmouseover = () => {
+                const parent = e;
+                const text = parent.children[1];
+                text.style.marginLeft = "25px";
+                text.style.color = "#FFD3B9";
+            }
+            e.onmouseout = () => {
+                const parent = e;
+                const text = parent.children[1];
+                text.style.marginLeft = "15px";
+                text.style.color = "#292C32";
             }
         })
         const box = document.querySelector(".links").children[1];

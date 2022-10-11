@@ -1,4 +1,4 @@
-.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, .medtext, a, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
+.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, .medtext, a, input, textarea, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
   font-family: regular; }
 
 .font-weight, h1, h2, h3, h4, h5, h6, button, .subtitle {
@@ -14,7 +14,7 @@ div.main-extend, div.about, div.history {
     div.main-extend, div.about, div.history {
       padding: 80px 0px; } }
 
-.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, .medtext, a, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
+.font, h1, h2, h3, h4, h5, h6, p, button, .subtitle, .medtext, a, input, textarea, a.header-button, .primary-button, .secondary-button, nav div.container-fluid div ul li a {
   font-family: regular; }
 
 .font-weight, h1, h2, h3, h4, h5, h6, button, .subtitle {
@@ -127,6 +127,12 @@ button {
 a {
   font-size: 16px;
   text-decoration: none; }
+
+input {
+  font-size: 16px; }
+
+textarea {
+  font-size: 16px; }
 
 * {
   margin: 0;
@@ -1561,8 +1567,21 @@ div.contact-us {
               div.contact-us div.contact-inner div.bottom div.block-inner div.text {
                 display: flex;
                 padding-top: 20px; } }
+            div.contact-us div.contact-inner div.bottom div.block-inner div.text a {
+              font-size: 18px;
+              line-height: 33px; }
+              @media screen and (min-width: 0em) and (max-width: 479px) {
+                div.contact-us div.contact-inner div.bottom div.block-inner div.text a {
+                  font-size: 16px;
+                  line-height: 25px; } }
             div.contact-us div.contact-inner div.bottom div.block-inner div.text p {
+              font-size: 18px;
+              line-height: 33px;
               text-align: center; }
+              @media screen and (min-width: 0em) and (max-width: 479px) {
+                div.contact-us div.contact-inner div.bottom div.block-inner div.text p {
+                  font-size: 16px;
+                  line-height: 25px; } }
               @media screen and (min-width: 0px) and (max-width: 991px) {
                 div.contact-us div.contact-inner div.bottom div.block-inner div.text p {
                   text-align: left; } }
@@ -1599,4 +1618,93 @@ div.contact-us {
           right: 0px; } }
 
 div.contact-form {
-  background: linear-gradient(90deg, #FBF9F8 0%, #FBF9F8 50%, #343472 50%); }
+  background: linear-gradient(90deg, #FBF9F8 0%, #FBF9F8 50%, #343472 50%);
+  padding-top: 180px;
+  padding-bottom: 180px; }
+  div.contact-form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    div.contact-form > div div.left {
+      padding-right: 40px; }
+      div.contact-form > div div.left div.subtitle-main div.subtitle-line {
+        background: #343472; }
+      div.contact-form > div div.left div.subtitle-main div.subtitle {
+        color: #343472; }
+      div.contact-form > div div.left p {
+        font-size: 18px;
+        line-height: 33px;
+        color: #6F7278; }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.contact-form > div div.left p {
+            font-size: 16px;
+            line-height: 25px; } }
+      div.contact-form > div div.left a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 25px;
+        color: #292C32;
+        font-size: 18px;
+        line-height: 33px;
+        transition: all 0.3s ease; }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.contact-form > div div.left a {
+            font-size: 16px;
+            line-height: 25px; } }
+        div.contact-form > div div.left a span {
+          margin-left: 15px;
+          transition: all 0.3s ease; }
+    div.contact-form > div div.right {
+      padding-left: 20px; }
+      div.contact-form > div div.right form {
+        background: white;
+        box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+        border-radius: 18px;
+        border: 1px solid #E7E9EE;
+        padding: 56px;
+        max-width: 675px; }
+        div.contact-form > div div.right form input {
+          min-height: 68px;
+          padding: 20px 22px 20px 40px;
+          border-radius: 14px;
+          outline: none;
+          border: 1px solid #E7E9EE; }
+        div.contact-form > div div.right form textarea {
+          min-height: 68px;
+          padding: 20px 22px 20px 40px;
+          border-radius: 14px;
+          outline: none;
+          border: 1px solid #E7E9EE;
+          min-height: 160px;
+          resize: none;
+          width: 100%; }
+        div.contact-form > div div.right form div.block-row {
+          margin-bottom: 30px; }
+          div.contact-form > div div.right form div.block-row input {
+            width: 100%; }
+        div.contact-form > div div.right form div.flex-row {
+          margin-bottom: 30px;
+          display: grid;
+          justify-content: space-between;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 20px; }
+          div.contact-form > div div.right form div.flex-row div.half {
+            margin: 0;
+            padding: 0; }
+            div.contact-form > div div.right form div.flex-row div.half input {
+              width: 100%; }
+        div.contact-form > div div.right form input[type="submit"] {
+          background: #343472;
+          transition: all 0.3s ease;
+          color: white;
+          cursor: pointer;
+          border-radius: 80px;
+          text-align: center;
+          font-size: 18px;
+          padding: 25px 45px; }
+          div.contact-form > div div.right form input[type="submit"]:hover {
+            color: #FFD3B9;
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
