@@ -372,6 +372,15 @@ const app = Vue.createApp({
                     mail: "mailto:enquiry@polysmartgroup.com?&subject='I want to make an enquiry from Polysmart about...'",
                 },
             ],
+
+            //form section
+            formsubtitle: "CONTACT US",
+            formheader: "Get in touch with us today!",
+            formsummary: "Lorem ipsum dolor sit amet consectetur adipiscing elit eque ipsum odio justo amet urna, auctor. At congue vulputate augue.",
+            formemail: "enquiry@polysmartgroup.com",
+            formphone: "(+234)-0700-POLYSMART",
+            formtel: "tel:(+234)-0700-POLYSMART",
+            formmail: "mailto:enquiry@polysmartgroup.com",
         }
     },
     mounted() {

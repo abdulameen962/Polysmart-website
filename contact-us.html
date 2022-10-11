@@ -60,6 +60,73 @@
             <div class="orange" data-aos="zoom-in" data-aos-duration="500"></div>
         </div>
     </div>
+    <!-- <div class="contact-form main-extend">
+        <div class="resize row form-inner">
+            <div class="col-sm-12 col-md-12 col-lg-5">
+                <div class="subtitle-main" data-aos="fade-up" data-aos-duration="500">
+                    <div class="subtitle-line"></div>
+                    <div class="subtitle"> {{ formsubtitle }} </div>
+                </div>
+                <h2> {{ formheader }} </h2>
+                <p> {{ formsummary }} </p>
+                <a class="email" :href="formmail">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_13_1872)">
+                    <path d="M56 0H0V56H56V0Z" fill="#343472"/>
+                    <path d="M42.6674 23.9135C42.5665 23.8574 42.4523 23.8294 42.3368 23.8326C42.2214 23.8358 42.1089 23.87 42.0112 23.9316L30.5797 31.8833C29.6552 32.4573 28.5886 32.7614 27.5003 32.7614C26.4121 32.7614 25.3455 32.4573 24.4209 31.8833L12.9894 23.9316C12.8917 23.8702 12.7792 23.8361 12.6637 23.8329C12.5483 23.8297 12.4341 23.8575 12.3331 23.9134C12.232 23.9694 12.1478 24.0514 12.0893 24.1509C12.0307 24.2504 11.9999 24.3638 12 24.4793V35.4303C12 36.458 12.4083 37.4437 13.135 38.1704C13.8617 38.8971 14.8473 39.3054 15.8751 39.3054H39.1256C40.1533 39.3054 41.139 38.8971 41.8657 38.1704C42.5924 37.4437 43.0007 36.458 43.0007 35.4303V24.4793C43.0011 24.3638 42.9703 24.2502 42.9117 24.1507C42.853 24.0511 42.7687 23.9692 42.6674 23.9135Z" fill="white"/>
+                    <path d="M43.0007 19.8751C43.0007 18.8473 42.5924 17.8617 41.8657 17.135C41.139 16.4083 40.1533 16 39.1256 16H15.8751C14.8473 16 13.8617 16.4083 13.135 17.135C12.4083 17.8617 12 18.8473 12 19.8751C12 19.9077 12.0082 19.9397 12.0241 19.9682C12.0399 19.9967 12.0627 20.0207 12.0904 20.0378L26.467 29.834C26.7748 30.0254 27.1301 30.1268 27.4926 30.1268C27.8551 30.1268 28.2103 30.0254 28.5182 29.834L42.9025 20.0378C42.9315 20.0214 42.9557 19.9978 42.9729 19.9693C42.9901 19.9408 42.9997 19.9084 43.0007 19.8751Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_13_1872">
+                    <rect width="56" height="56" rx="28" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    <p> {{ formemail }} </p>
+                </a>
+                <a class="phone" :href="formtel">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_13_1877)">
+                    <path d="M56 0H0V56H56V0Z" fill="#343472"/>
+                    <path d="M34.7526 11H20.3275C19.1798 11 18.0791 11.4559 17.2675 12.2675C16.4559 13.0791 16 14.1798 16 15.3275V41.1945C16 42.3422 16.4559 43.443 17.2675 44.2545C18.0791 45.0661 19.1798 45.522 20.3275 45.522H34.7526C35.9003 45.522 37.001 45.0661 37.8126 44.2545C38.6242 43.443 39.0801 42.3422 39.0801 41.1945V15.3275C39.0801 14.1798 38.6242 13.0791 37.8126 12.2675C37.001 11.4559 35.9003 11 34.7526 11ZM27.54 43.3583C27.2547 43.3583 26.9758 43.2737 26.7386 43.1152C26.5014 42.9567 26.3165 42.7314 26.2073 42.4678C26.0982 42.2042 26.0696 41.9142 26.1253 41.6344C26.1809 41.3545 26.3183 41.0975 26.52 40.8958C26.7218 40.694 26.9788 40.5566 27.2586 40.501C27.5384 40.4453 27.8285 40.4739 28.0921 40.5831C28.3556 40.6922 28.5809 40.8771 28.7394 41.1144C28.8979 41.3516 28.9825 41.6305 28.9825 41.9158C28.9825 42.2983 28.8306 42.6653 28.56 42.9358C28.2895 43.2063 27.9226 43.3583 27.54 43.3583ZM36.1951 36.867C36.1951 37.2496 36.0431 37.6165 35.7726 37.887C35.5021 38.1575 35.1351 38.3095 34.7526 38.3095H20.3275C19.9449 38.3095 19.578 38.1575 19.3075 37.887C19.037 37.6165 18.885 37.2496 18.885 36.867V16.0488C18.885 15.6662 19.037 15.2993 19.3075 15.0288C19.578 14.7582 19.9449 14.6063 20.3275 14.6063H34.7526C35.1351 14.6063 35.5021 14.7582 35.7726 15.0288C36.0431 15.2993 36.1951 15.6662 36.1951 16.0488V36.867Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_13_1877">
+                    <rect width="56" height="56" rx="28" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    <p> {{ formphone }} </p>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-7">
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <input type="text" name="text" placeholder="Name" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <input type="email" name="email" placeholder="Email address" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <input type="tel" name="phone number" placeholder="Phone number" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <input type="text" name="Company" placeholder="Company" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="text" name="help" required placeholder="How can we help you?">
+                    </div>
+                    <div class="row">
+                        <textarea name="message" required placeholder="What is your message"></textarea>
+                    </div> <input type="submit" value="Send message">
+                </form>
+            </div>
+        </div>
+    </div> -->
     <foot-er :quicklinks="quicklinks" :legals="legals" :getstarted="getstarted" :header1="footerlistheader1" :header2="footerlistheader2" :header3="footerlistheader3" :socialinks="socialinks" :footerlogo="footerlogo" :footersummary="footersummary" :copyright="copyright"></foot-er>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.40/vue.global.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>

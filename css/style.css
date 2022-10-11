@@ -1467,10 +1467,10 @@ div.contact-us {
       animation: twirl 50s infinite ease-in;
       height: 450px;
       width: 450px; }
-      @media screen and (min-width: 0px) and (max-width: 767px) {
+      @media screen and (min-width: 0em) and (max-width: 479px) {
         div.contact-us div.contact-inner svg {
-          top: 20%;
-          left: -150px; } }
+          top: -300px;
+          left: -340px; } }
     div.contact-us div.contact-inner div.header {
       max-width: 585px;
       display: flex;
@@ -1597,3 +1597,6 @@ div.contact-us {
         div.contact-us div.contact-inner div.orange {
           top: 50%;
           right: 0px; } }
+
+div.contact-form {
+  background: linear-gradient(90deg, #FBF9F8 0%, #FBF9F8 50%, #343472 50%); }
