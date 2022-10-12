@@ -1449,6 +1449,67 @@ div.contact-us {
     }
 }
 
+form {
+    background: $white;
+    z-index: 2;
+    @include background;
+    padding: 56px 40px;
+    max-width: 675px;
+    @include respond(lphone) {
+        padding: 56px 30px;
+    }
+    @include respond(phone) {
+        padding: 56px 25px;
+    }
+    input {
+        @include input;
+    }
+    textarea {
+        @include input;
+        min-height: 160px;
+        resize: none;
+        width: 100%;
+    }
+    div.block-row {
+        margin-bottom: $formbottom;
+        input {
+            width: 100%;
+        }
+    }
+    div.flex-row {
+        margin-bottom: $formbottom;
+        @include grid(2);
+        gap: 20px;
+        @include respond(lphone) {
+            @include grid(1);
+        }
+        div.half {
+            @include mp;
+            input {
+                width: 100%;
+            }
+        }
+    }
+    input[type="submit"] {
+        background: $blue;
+        @include transition;
+        color: $white;
+        cursor: pointer;
+        border-radius: 80px;
+        text-align: center;
+        font-size: 18px;
+        padding: 25px 45px;
+        &:hover {
+            color: $orange;
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, .05);
+        }
+        @include respond(phone) {
+            width: 100%;
+        }
+    }
+}
+
 div.contact-form {
     overflow: hidden;
     background: linear-gradient(90deg, #FBF9F8 0%, #FBF9F8 50%, #343472 50%);
@@ -1539,64 +1600,122 @@ div.contact-form {
                     display: none;
                 }
             }
+        }
+    }
+}
+
+div.order-now {
+    background: linear-gradient(90deg, #343472 58.3%, rgba(255, 255, 255, 0) 58.3%);
+    border-top: 1px solid #E7E9EE;
+    border-bottom: 1px solid #E7E9EE;
+    position: relative;
+    @include respond(tab) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 57%, #343472 57%);
+    }
+    div.order-inner {
+        position: relative;
+        @include respond(tab) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        h2 {
+            font-weight: 400;
+        }
+        p {
+            color: $grey;
+            @include size;
+        }
+        h4 {
+            font-weight: 400;
+        }
+        div.left {
+            position: relative;
+            @include mp;
+            @include respond(tab) {
+                margin-top: 30px;
+            }
+            svg {
+                position: absolute;
+                right: -20px;
+                max-width: 340px;
+                max-height: 340px;
+                @include animate;
+                bottom: -90px;
+                @include respond(tab) {
+                    display: none;
+                }
+            }
+            div.orange {
+                position: absolute;
+                left: -80px;
+                top: -70px;
+                @include respond(tab) {
+                    display: none;
+                }
+            }
+            h2 {
+                margin-bottom: 25px;
+            }
             form {
-                background: $white;
-                z-index: 2;
-                @include background;
-                padding: 56px;
-                max-width: 675px;
-                @include respond(lphone) {
-                    padding: 56px 35px;
-                }
-                @include respond(phone) {
-                    padding: 56px 25px;
-                }
-                input {
-                    @include input;
-                }
-                textarea {
-                    @include input;
-                    min-height: 160px;
-                    resize: none;
-                    width: 100%;
-                }
-                div.block-row {
-                    margin-bottom: $formbottom;
-                    input {
-                        width: 100%;
-                    }
-                }
                 div.flex-row {
-                    margin-bottom: $formbottom;
-                    @include grid(2);
-                    gap: 20px;
-                    @include respond(lphone) {
-                        @include grid(1);
+                    h5 {
+                        font-weight: 400;
                     }
-                    div.half {
-                        @include mp;
-                        input {
-                            width: 100%;
+                    div.check {
+                        margin-top: 25px;
+                        border-radius: 14px;
+                        outline: none;
+                        // display: flex;
+                        @include border(#E7E9EE);
+                        padding: 20px 10px 20px;
+                        &-left {
+                            display: flex;
+                            align-items: center;
+                            h5 {
+                                padding-left: 15px;
+                            }
+                            img {
+                                max-width: 55px;
+                            }
+                        }
+                        &-right {
+                            input {
+                                cursor: pointer;
+                                max-width: 25px;
+                                max-height: 25px;
+                                border: 1px solid #CACCD1;
+                                border-radius: 2px;
+                                box-sizing: border-box;
+                            }
                         }
                     }
                 }
                 input[type="submit"] {
-                    background: $blue;
-                    @include transition;
-                    color: $white;
-                    cursor: pointer;
-                    border-radius: 80px;
-                    text-align: center;
-                    font-size: 18px;
-                    padding: 25px 45px;
-                    &:hover {
-                        color: $orange;
-                        transform: translateY(-5px);
-                        box-shadow: 0px 0px 30px rgba(0, 0, 0, .05);
-                    }
-                    @include respond(phone) {
-                        width: 100%;
-                    }
+                    width: 100%;
+                }
+            }
+        }
+        div.right {
+            @include mp;
+            padding-left: 90px;
+            padding-top: 65px;
+            @include respond(tab) {
+                padding-left: 0px;
+                padding-top: 0px;
+            }
+            ul {
+                margin-top: 15px;
+                li {
+                    @include mp;
+                    background: url('/images/list.svg') no-repeat left center;
+                    padding: 5px 10px 5px 35px;
+                    list-style: none;
+                    margin: 10px 0px 0px 0px;
+                    color: $grey;
+                    @include size;
+                    vertical-align: middle;
                 }
             }
         }

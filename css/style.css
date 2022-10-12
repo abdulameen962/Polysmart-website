@@ -83,19 +83,17 @@ h4 {
   line-height: 1.091em; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
     h4 {
-      font-size: 20px;
-      line-height: 20px; } }
+      font-size: 20px; } }
   @media screen and (min-width: 0px) and (max-width: 767px) {
-    h4 {
-      font-size: 18px;
-      line-height: 18px; } }
-  @media screen and (min-width: 0em) and (max-width: 479px) {
     h4 {
       font-size: 18px; } }
 
 h5 {
   line-height: 1.389em;
   font-size: 18px; }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    h5 {
+      font-size: 16px; } }
 
 h6 {
   font-size: 16px;
@@ -1618,6 +1616,72 @@ div.contact-us {
           top: 50%;
           right: 0px; } }
 
+form {
+  background: white;
+  z-index: 2;
+  box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+  border-radius: 18px;
+  border: 1px solid #E7E9EE;
+  padding: 56px 40px;
+  max-width: 675px; }
+  @media screen and (min-width: 0px) and (max-width: 767px) {
+    form {
+      padding: 56px 30px; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    form {
+      padding: 56px 25px; } }
+  form input {
+    min-height: 68px;
+    padding: 20px 22px 20px 40px;
+    border-radius: 14px;
+    outline: none;
+    border: 1px solid #E7E9EE; }
+  form textarea {
+    min-height: 68px;
+    padding: 20px 22px 20px 40px;
+    border-radius: 14px;
+    outline: none;
+    border: 1px solid #E7E9EE;
+    min-height: 160px;
+    resize: none;
+    width: 100%; }
+  form div.block-row {
+    margin-bottom: 30px; }
+    form div.block-row input {
+      width: 100%; }
+  form div.flex-row {
+    margin-bottom: 30px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px; }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      form div.flex-row {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+    form div.flex-row div.half {
+      margin: 0;
+      padding: 0; }
+      form div.flex-row div.half input {
+        width: 100%; }
+  form input[type="submit"] {
+    background: #343472;
+    transition: all 0.3s ease;
+    color: white;
+    cursor: pointer;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 18px;
+    padding: 25px 45px; }
+    form input[type="submit"]:hover {
+      color: #FFD3B9;
+      transform: translateY(-5px);
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
+    @media screen and (min-width: 0em) and (max-width: 479px) {
+      form input[type="submit"] {
+        width: 100%; } }
+
 div.contact-form {
   overflow: hidden;
   background: linear-gradient(90deg, #FBF9F8 0%, #FBF9F8 50%, #343472 50%);
@@ -1716,68 +1780,108 @@ div.contact-form {
         @media screen and (min-width: 0px) and (max-width: 991px) {
           div.contact-form > div div.right svg {
             display: none; } }
-      div.contact-form > div div.right form {
-        background: white;
-        z-index: 2;
-        box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
-        border-radius: 18px;
+
+div.order-now {
+  background: linear-gradient(90deg, #343472 58.3%, rgba(255, 255, 255, 0) 58.3%);
+  border-top: 1px solid #E7E9EE;
+  border-bottom: 1px solid #E7E9EE;
+  position: relative; }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    div.order-now {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 57%, #343472 57%); } }
+  div.order-now div.order-inner {
+    position: relative; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.order-now div.order-inner {
+        display: flex;
+        flex-direction: column-reverse; } }
+    div.order-now div.order-inner h2 {
+      font-weight: 400; }
+    div.order-now div.order-inner p {
+      color: #6F7278;
+      font-size: 18px;
+      line-height: 33px; }
+      @media screen and (min-width: 0em) and (max-width: 479px) {
+        div.order-now div.order-inner p {
+          font-size: 16px;
+          line-height: 25px; } }
+    div.order-now div.order-inner h4 {
+      font-weight: 400; }
+    div.order-now div.order-inner div.left {
+      position: relative;
+      margin: 0;
+      padding: 0; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.order-now div.order-inner div.left {
+          margin-top: 30px; } }
+      div.order-now div.order-inner div.left svg {
+        position: absolute;
+        right: -20px;
+        max-width: 340px;
+        max-height: 340px;
+        animation: twirl 50s infinite ease-in;
+        bottom: -90px; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.order-now div.order-inner div.left svg {
+            display: none; } }
+      div.order-now div.order-inner div.left div.orange {
+        position: absolute;
+        left: -80px;
+        top: -70px; }
+        @media screen and (min-width: 0px) and (max-width: 991px) {
+          div.order-now div.order-inner div.left div.orange {
+            display: none; } }
+      div.order-now div.order-inner div.left h2 {
+        margin-bottom: 25px; }
+      div.order-now div.order-inner div.left form div.flex-row h5 {
+        font-weight: 400; }
+      div.order-now div.order-inner div.left form div.flex-row div.check {
+        margin-top: 25px;
+        border-radius: 14px;
+        outline: none;
         border: 1px solid #E7E9EE;
-        padding: 56px;
-        max-width: 675px; }
-        @media screen and (min-width: 0px) and (max-width: 767px) {
-          div.contact-form > div div.right form {
-            padding: 56px 35px; } }
-        @media screen and (min-width: 0em) and (max-width: 479px) {
-          div.contact-form > div div.right form {
-            padding: 56px 25px; } }
-        div.contact-form > div div.right form input {
-          min-height: 68px;
-          padding: 20px 22px 20px 40px;
-          border-radius: 14px;
-          outline: none;
-          border: 1px solid #E7E9EE; }
-        div.contact-form > div div.right form textarea {
-          min-height: 68px;
-          padding: 20px 22px 20px 40px;
-          border-radius: 14px;
-          outline: none;
-          border: 1px solid #E7E9EE;
-          min-height: 160px;
-          resize: none;
-          width: 100%; }
-        div.contact-form > div div.right form div.block-row {
-          margin-bottom: 30px; }
-          div.contact-form > div div.right form div.block-row input {
-            width: 100%; }
-        div.contact-form > div div.right form div.flex-row {
-          margin-bottom: 30px;
-          display: grid;
-          justify-content: space-between;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 20px; }
-          @media screen and (min-width: 0px) and (max-width: 767px) {
-            div.contact-form > div div.right form div.flex-row {
-              display: grid;
-              justify-content: space-between;
-              grid-template-columns: repeat(1, minmax(0, 1fr)); } }
-          div.contact-form > div div.right form div.flex-row div.half {
-            margin: 0;
-            padding: 0; }
-            div.contact-form > div div.right form div.flex-row div.half input {
-              width: 100%; }
-        div.contact-form > div div.right form input[type="submit"] {
-          background: #343472;
-          transition: all 0.3s ease;
-          color: white;
+        padding: 20px 10px 20px; }
+        div.order-now div.order-inner div.left form div.flex-row div.check-left {
+          display: flex;
+          align-items: center; }
+          div.order-now div.order-inner div.left form div.flex-row div.check-left h5 {
+            padding-left: 15px; }
+          div.order-now div.order-inner div.left form div.flex-row div.check-left img {
+            max-width: 55px; }
+        div.order-now div.order-inner div.left form div.flex-row div.check-right input {
           cursor: pointer;
-          border-radius: 80px;
-          text-align: center;
+          max-width: 25px;
+          max-height: 25px;
+          border: 1px solid #CACCD1;
+          border-radius: 2px;
+          box-sizing: border-box; }
+      div.order-now div.order-inner div.left form input[type="submit"] {
+        width: 100%; }
+    div.order-now div.order-inner div.right {
+      margin: 0;
+      padding: 0;
+      padding-left: 90px;
+      padding-top: 65px; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.order-now div.order-inner div.right {
+          padding-left: 0px;
+          padding-top: 0px; } }
+      div.order-now div.order-inner div.right ul {
+        margin-top: 15px; }
+        div.order-now div.order-inner div.right ul li {
+          margin: 0;
+          padding: 0;
+          background: url("/images/list.svg") no-repeat left center;
+          padding: 5px 10px 5px 35px;
+          list-style: none;
+          margin: 10px 0px 0px 0px;
+          color: #6F7278;
           font-size: 18px;
-          padding: 25px 45px; }
-          div.contact-form > div div.right form input[type="submit"]:hover {
-            color: #FFD3B9;
-            transform: translateY(-5px);
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05); }
+          line-height: 33px;
+          vertical-align: middle; }
           @media screen and (min-width: 0em) and (max-width: 479px) {
-            div.contact-form > div div.right form input[type="submit"] {
-              width: 100%; } }
+            div.order-now div.order-inner div.right ul li {
+              font-size: 16px;
+              line-height: 25px; } }

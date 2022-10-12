@@ -64,15 +64,11 @@ h4 {
     line-height: 1.091em;
     @include respond(tab) {
         font-size: 20px;
-        line-height: 20px;
     }
     @include respond(lphone) {
         font-size: 18px;
-        line-height: 18px;
     }
-    @include respond(phone) {
-        font-size: 18px;
-    }
+    @include respond(phone) {}
 }
 
 h5 {
@@ -80,6 +76,9 @@ h5 {
     @extend .font-weight;
     line-height: 1.389em;
     font-size: 18px;
+    @include respond(phone) {
+        font-size: 16px;
+    }
 }
 
 h6 {

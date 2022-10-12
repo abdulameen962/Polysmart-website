@@ -18,6 +18,11 @@ const app = Vue.createApp({
             contactlink: "https://polysmartgroup.com/contact-us",
             contactdescr: "Visit the post for more.",
 
+            //head tag for order now page
+            ordertitle: "Order now",
+            orderlink: "https://polysmartgroup.com/order-now",
+            orderdescr: "Visit the post for more.",
+
             //navigation bar data
             logo: "./images/polysmart.svg",
             navbar: [{
@@ -381,6 +386,46 @@ const app = Vue.createApp({
             formphone: "(+234)-0700-POLYSMART",
             formtel: "tel:(+234)-0700-POLYSMART",
             formmail: "mailto:enquiry@polysmartgroup.com",
+            orderformheader: "Make an Order Request",
+            orderrightheader: "Order products now and our sales team will get back to you soon",
+            orderformsummary: "Make your order requests using the provided form and a member of our Sales team will reach out to you to confirm your order and engage you further.",
+            orderlisheader: "What should I expect?",
+            orderlist: [{
+                    list: "Response within 24 hours (Monday - Friday)",
+                },
+                {
+                    list: "Response within 48 hours (Saturday - Sunday)",
+                },
+                {
+                    list: "Easy and secure payment methods",
+                },
+            ],
+            formproducts: [{
+                    name: "Double Colour Shopping Bag",
+                    image: "./images/testimg.svg",
+
+                },
+                {
+                    name: "Medium Black Shopping Bag",
+                    image: "./images/testimg.svg",
+
+                },
+                {
+                    name: "Poly bags (100% recycled)",
+                    image: "./images/testimg.svg",
+
+                },
+                {
+                    name: "Small Black Shopping Bag",
+                    image: "./images/testimg.svg",
+
+                },
+                {
+                    name: "	Fashion Bags",
+                    image: "./images/testimg.svg",
+
+                },
+            ],
         }
     },
     mounted() {
@@ -499,7 +544,7 @@ app.component("nav-bar", {
                         </li>
                     </ul>
                 </div>
-                <a class="header-button contact2" href="./contact"> Order now </a>
+                <a class="header-button contact2" href="./order-now"> Order now </a>
             </div>
         </nav>
 
