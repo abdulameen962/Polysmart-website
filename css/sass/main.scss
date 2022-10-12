@@ -1525,6 +1525,10 @@ div.contact-form {
             position: relative;
             @include respond(tab) {
                 padding: 0;
+                @include flex(yes);
+            }
+            @include respond(lphone) {
+                display: block;
             }
             svg {
                 position: absolute;
@@ -1589,6 +1593,9 @@ div.contact-form {
                         color: $orange;
                         transform: translateY(-5px);
                         box-shadow: 0px 0px 30px rgba(0, 0, 0, .05);
+                    }
+                    @include respond(phone) {
+                        width: 100%;
                     }
                 }
             }
