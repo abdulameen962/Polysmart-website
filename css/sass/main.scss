@@ -374,8 +374,10 @@ div.product {
                         }
                         &:nth-child(2) {
                             padding: 30px;
+                            height: 80%;
                             @include respond(lphone) {
                                 padding: 35px 30px;
+                                height: auto;
                             }
                         }
                     }

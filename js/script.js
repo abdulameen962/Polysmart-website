@@ -98,12 +98,12 @@ const app = Vue.createApp({
                 },
                 {
                     img: "./images/nylon2.webp",
-                    name: "Medium Black Shopping Bag",
-                    summary: "They are a perfect use for groceries, supermarkets, restaurants and takeout. The bags are packed in 100's and the pack contain approximately 500 carrier bags. <br/> •	Available in black or white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
+                    name: "Medium Shopping Bag",
+                    summary: "They are a perfect use for groceries, supermarkets, restaurants and takeout. The bags are packed in 100's and the pack contain approximately 500 carrier bags. <br/> •	Availabor white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
                 },
                 {
                     img: "./images/nylon4.webp",
-                    name: "Small Black Shopping Bag",
+                    name: "Small Shopping Bag",
                     summary: "The small shopping bags are designed for retail and groceries with a variety of uses including groceries and more. The bags are packed in 100's and the pack contain approximately 1000 carrier bags. <br/> •	Available in black or white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
                 },
                 {
@@ -186,10 +186,6 @@ const app = Vue.createApp({
 
             ],
             legals: [{
-                    list: "Cookie Policy",
-                    link: "#",
-                },
-                {
                     list: "Terms and Conditions",
                     link: "#",
                 },
@@ -330,7 +326,7 @@ const app = Vue.createApp({
                 {
                     image: "./images/value2.svg",
                     header: "Leadership",
-                    summary: "Our employees are instilled leadership value to help improve their cohesiveness and willingness to work together as a team",
+                    summary: "Our employees are instilled leadership values to help improve their cohesiveness and willingness to work together as a productive team.",
                 },
                 {
                     image: "./images/value3.svg",
@@ -409,7 +405,7 @@ const app = Vue.createApp({
 
                 },
                 {
-                    name: "Medium Black Shopping Bag",
+                    name: "Medium Shopping Bag",
                     image: "./images/testimg.svg",
 
                 },
@@ -419,12 +415,12 @@ const app = Vue.createApp({
 
                 },
                 {
-                    name: "Small Black Shopping Bag",
+                    name: "Small Shopping Bag",
                     image: "./images/testimg.svg",
 
                 },
                 {
-                    name: "	Fashion Bags",
+                    name: "Large Shopping Bags",
                     image: "./images/testimg.svg",
 
                 },
