@@ -45,6 +45,11 @@ const app = Vue.createApp({
                     name: "Contact Us",
                     href: "./contact-us",
                 },
+                {
+                    name: "Order now",
+                    href: "./order-now",
+                    class: "contact-responsive",
+                },
             ],
 
             //home page data
@@ -387,7 +392,7 @@ const app = Vue.createApp({
             formtel: "tel:(+234)-0700-POLYSMART",
             formmail: "mailto:enquiry@polysmartgroup.com",
             orderformheader: "Make an Order Request",
-            orderrightheader: "Order products now and our sales team will get back to you soon",
+            orderrightheader: "Description",
             orderformsummary: "Make your order requests using the provided form and a member of our Sales team will reach out to you to confirm your order and engage you further.",
             orderlisheader: "What should I expect?",
             orderlist: [{
