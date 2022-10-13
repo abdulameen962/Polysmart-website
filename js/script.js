@@ -35,7 +35,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: "Our Products",
-                    href: "./products",
+                    href: "./index#products",
                 },
                 {
                     name: "Major Distributors",
@@ -94,27 +94,27 @@ const app = Vue.createApp({
             products: [{
                     img: "./images/nylon1.webp",
                     name: "Double Colour Shopping Bag",
-                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                    summary: "They are suitable for many uses in the retail environment. The bags are packed in 100's and the pack contain approximately 1000 carrier bags. <br/> •	Available in black or white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
                 },
                 {
                     img: "./images/nylon2.webp",
                     name: "Medium Black Shopping Bag",
-                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
-                },
-                {
-                    img: "./images/nylon3.webp",
-                    name: "Poly bags (100% recycled)",
-                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                    summary: "They are a perfect use for groceries, supermarkets, restaurants and takeout. The bags are packed in 100's and the pack contain approximately 500 carrier bags. <br/> •	Available in black or white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
                 },
                 {
                     img: "./images/nylon4.webp",
                     name: "Small Black Shopping Bag",
-                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                    summary: "The small shopping bags are designed for retail and groceries with a variety of uses including groceries and more. The bags are packed in 100's and the pack contain approximately 1000 carrier bags. <br/> •	Available in black or white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
                 },
                 {
                     img: "./images/nylon4.webp",
                     name: "Large Shopping Bags",
-                    summary: "Lorem ipsum dolor sit amet, dol si consectetur adipiscing elit. Sit odio olo erat donec sed non. Lectus eu vel.",
+                    summary: "The medium shopping bags are a perfect use for groceries, supermarkets, restaurants and takeout. The bags are packed in 100's and the pack contain approximately 500 carrier bags. <br/> •	Available in black or white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
+                },
+                {
+                    img: "./images/nylon3.webp",
+                    name: "Poly bags (100% recycled)",
+                    summary: "They are also known as jumbo plastic shopping bags. It serves as a great merchandise bag for retail stores and is the perfect bagging solution for groceries, large items, bakeries, restaurants, home use, retail stores and shops. The bags are packed in 100's and the pack contain approximately 200 carrier bags.",
                 },
             ],
             //step section
@@ -122,23 +122,19 @@ const app = Vue.createApp({
             stepheader: "Step by step on how to order from Polysmart groups",
             steps: [{
                     number: "1",
-                    name: "Lorem ipsum dolor sit amet consectetur ",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipisci elit eque ips odio justo.",
+                    summary: "Select 'Order Now' on Polysmart Packaging website",
                 },
                 {
                     number: "2",
-                    name: "Lorem ipsum dolor sit",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipisci elit eque ips odio justo.",
+                    summary: "Input your details: Name, phone number, email address and company",
                 },
                 {
                     number: "3",
-                    name: "Lorem ipsum dolor sit amet consectetur ",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipisci elit eque ips odio justo.",
+                    summary: "Select the products that you intend to order and input quantity of each in the provided space",
                 },
                 {
                     number: "4",
-                    name: "Lorem ipsum dolor sit amet",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipisci elit eque ips odio justo.",
+                    summary: "Select submit and a member of our Sales team will get back to you as soon as possible.",
                 },
             ],
             //summary
@@ -329,32 +325,32 @@ const app = Vue.createApp({
             values: [{
                     image: "./images/value1.svg",
                     header: "Passion for customers",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing elit sodales dictum purus vitae at non phasellus ultrices sit at.",
+                    summary: "At Polysmart Packaging, we are passionate, enthusiastic and committed to our customers in attaining their business goals or target.",
                 },
                 {
                     image: "./images/value2.svg",
                     header: "Leadership",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing elit sodales dictum purus vitae at non phasellus ultrices sit at.",
+                    summary: "Our employees are instilled leadership value to help improve their cohesiveness and willingness to work together as a team",
                 },
                 {
                     image: "./images/value3.svg",
                     header: "Integrity & Innovation",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing elit sodales dictum purus vitae at non phasellus ultrices sit at.",
+                    summary: "We are honest, transparent and committed to applying innovative thinking to our work. As a company, our culture and attitude to work is innovative.",
                 },
                 {
                     image: "./images/value4.svg",
                     header: "Excellence",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing elit sodales dictum purus vitae at non phasellus ultrices sit at.",
+                    summary: "At Polysmart, we always strive to do more. Learning, growing, evolving and mistakes will lead to great executions. Great executions lead to excellence.",
                 },
                 {
                     image: "./images/value5.svg",
                     header: "Resilience",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing elit sodales dictum purus vitae at non phasellus ultrices sit at.",
+                    summary: "At Polysmart, we understand the importance of trying and making mistakes. We utilize grit to manage our fear over failure. We build courage, adapt and learn from setbacks.",
                 },
                 {
                     image: "./images/value6.svg",
                     header: "Teamwork",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing elit sodales dictum purus vitae at non phasellus ultrices sit at.",
+                    summary: "Teamwork is the core of our work at Polysmart. We encourage our employees to cooperate, use their individual skills collectively and trust each other, no matter the circumstances.",
                 },
             ],
             valuesub: "OUR VALUES",
@@ -368,7 +364,7 @@ const app = Vue.createApp({
             contactblocks: [{
                     image: "./images/support.svg",
                     header: "Support",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing.",
+                    summary: "<a href='./contact-us#form'> Click here </a> to to fill our support <br/> form.",
                     email: "enquiry@polysmartgroup.com",
                     number: "+234 8080367744",
                     mail: "mailto:enquiry@polysmartgroup.com?&subject='I want to make an enquiry from Polysmart about...'",
@@ -376,7 +372,7 @@ const app = Vue.createApp({
                 {
                     image: "./images/feedback.svg",
                     header: "Feedback",
-                    summary: "Lorem ipsum dolor sit amet consectetur adipiscing.",
+                    summary: "<a href='./contact-us#form'> Click here </a> to to fill our feedback form.",
                     email: "enquiry@polysmartgroup.com",
                     number: "+234 8080367744",
                     mail: "mailto:enquiry@polysmartgroup.com?&subject='I want to make an enquiry from Polysmart about...'",
@@ -386,11 +382,13 @@ const app = Vue.createApp({
             //form section
             formsubtitle: "CONTACT US",
             formheader: "Get in touch with us today!",
-            formsummary: "Lorem ipsum dolor sit amet consectetur adipiscing elit eque ipsum odio justo amet urna, auctor. At congue vulputate augue.",
             formemail: "enquiry@polysmartgroup.com",
             formphone: "(+234)-0700-POLYSMART",
             formtel: "tel:(+234)-0700-POLYSMART",
             formmail: "mailto:enquiry@polysmartgroup.com",
+            formaddress: " 7, Polysmart Avenue, Ogun State Industrial Estate, Ota, Ogun state, Nigeria",
+
+            //order now page
             orderformheader: "Make an Order Request",
             orderrightheader: "Description",
             orderformsummary: "Make your order requests using the provided form and a member of our Sales team will reach out to you to confirm your order and engage you further.",
@@ -590,8 +588,8 @@ app.component("product-grid", {
                                 <img class="img" :src="product.img" :alt="product.name" width="100" height="100"/>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                                <h3> {{ product.name }} </h3>
-                                <p> {{ product.summary }} </p>
+                                <h3 v-html="product.name"> {{ product.name }} </h3>
+                                <p v-html="product.summary"> {{ product.summary }} </p>
                         </div>
                     </div>
                 </div>
@@ -614,7 +612,6 @@ app.component("step-grid", {
                                 </div>
                         </div>
                         <div class="second">
-                                <h3> {{ step.name }} </h3>
                                 <p> {{ step.summary }} </p>
                         </div>
                     </div>
@@ -796,7 +793,7 @@ app.component("contact-block", {
                        </div>
                        <div class="col-sm-12 col-md-8 col-lg-12 text">
                             <h3> {{ block.header }} </h3>
-                            <p> {{ block.summary }} </p>
+                            <p v-html="block.summary"> {{ block.summary }} </p>
                             <div class="line">
                                 <a :href="block.mail"> {{ block.email }} </a>
                                 <p> {{ block.number }} </p>

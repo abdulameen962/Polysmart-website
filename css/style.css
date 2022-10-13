@@ -517,7 +517,7 @@ div.product {
           div.product div.containerx div.product-grid div.col div.row > div:first-child {
             background: #E8E9FD;
             padding: 30px 60px;
-            height: 55%;
+            height: 356px;
             border-top-left-radius: 18px;
             border-top-right-radius: 18px;
             display: flex;
@@ -732,10 +732,12 @@ div.steps {
                   width: 100%; } }
             div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) p {
               text-align: center;
-              color: #6F7278; }
+              color: #6F7278;
+              font-size: 20px; }
               @media screen and (min-width: 0px) and (max-width: 767px) {
                 div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) p {
-                  text-align: left; } }
+                  text-align: left;
+                  font-size: 18px; } }
             @media screen and (min-width: 0px) and (max-width: 767px) {
               div.steps div.step-grid div.inner-grid div.row > div:nth-child(2) {
                 width: 75%; } }
@@ -1341,59 +1343,60 @@ div.mvo div.mvo-grid {
         text-align: center;
         color: #6F7278; }
 
-div.team div.team-inner div.header-text {
-  margin-bottom: 35px; }
-  div.team div.team-inner div.header-text div.subtitle {
-    color: #343472; }
-
-div.team div.team-inner div.team-grid {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 50px 55px; }
-  @media screen and (min-width: 0px) and (max-width: 991px) {
-    div.team div.team-inner div.team-grid {
-      display: grid;
-      justify-content: space-between;
-      grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media screen and (min-width: 0px) and (max-width: 767px) {
-    div.team div.team-inner div.team-grid {
-      display: grid;
-      justify-content: space-between;
-      grid-template-columns: repeat(1, minmax(0, 1fr)); } }
-  div.team div.team-inner div.team-grid div.member {
-    position: relative;
-    box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
-    border-radius: 18px;
-    border: 1px solid #E7E9EE;
-    transition: all 0.3s ease;
-    cursor: pointer; }
-    div.team div.team-inner div.team-grid div.member div.image {
+div.team {
+  background: linear-gradient(360deg, #FFFFFF 37.5%, #FAFAFC 37.51%); }
+  div.team div.team-inner div.header-text {
+    margin-bottom: 35px; }
+    div.team div.team-inner div.header-text div.subtitle {
+      color: #343472; }
+  div.team div.team-inner div.team-grid {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px 55px; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.team div.team-inner div.team-grid {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      div.team div.team-inner div.team-grid {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); } }
+    div.team div.team-inner div.team-grid div.member {
       position: relative;
-      background: #F8F7F2;
-      padding: 70px 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      border-top-right-radius: 18px;
-      border-top-left-radius: 18px; }
-      div.team div.team-inner div.team-grid div.member div.image img {
-        max-width: 90%;
-        max-height: 90%; }
-      div.team div.team-inner div.team-grid div.member div.image p {
-        font-size: 14px;
-        background: white;
-        padding: 8px 10px;
-        border-radius: 18px;
-        position: absolute;
-        top: 10px;
-        right: 5px; }
-    div.team div.team-inner div.team-grid div.member div.text {
-      padding: 30px 45px 40px 25px; }
-    div.team div.team-inner div.team-grid div.member:hover {
-      transform: scale(1.05);
-      border: 1px solid rgba(41, 44, 50, 0.5); }
+      box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+      border-radius: 18px;
+      border: 1px solid #E7E9EE;
+      transition: all 0.3s ease;
+      cursor: pointer; }
+      div.team div.team-inner div.team-grid div.member div.image {
+        position: relative;
+        background: #F8F7F2;
+        padding: 70px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top-right-radius: 18px;
+        border-top-left-radius: 18px; }
+        div.team div.team-inner div.team-grid div.member div.image img {
+          max-width: 90%;
+          max-height: 90%; }
+        div.team div.team-inner div.team-grid div.member div.image p {
+          font-size: 14px;
+          background: white;
+          padding: 8px 10px;
+          border-radius: 18px;
+          position: absolute;
+          top: 10px;
+          right: 5px; }
+      div.team div.team-inner div.team-grid div.member div.text {
+        padding: 30px 45px 40px 25px; }
+      div.team div.team-inner div.team-grid div.member:hover {
+        transform: scale(1.05);
+        border: 1px solid rgba(41, 44, 50, 0.5); }
 
 div.values {
   background: #FBF9F8;
@@ -1715,6 +1718,11 @@ div.contact-form {
           flex-direction: column;
           margin-bottom: 30px;
           padding: 0px; } }
+      div.contact-form > div div.left a.formlink svg {
+        min-width: 56px;
+        min-height: 56px;
+        max-width: 56px;
+        max-height: 56px; }
       @media screen and (min-width: 0px) and (max-width: 767px) {
         div.contact-form > div div.left {
           display: block; } }

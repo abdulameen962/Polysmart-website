@@ -356,7 +356,7 @@ div.product {
                         &:first-child {
                             background: $lightblue;
                             padding: 30px 60px;
-                            height: 55%;
+                            height: 356px;
                             border-top-left-radius: 18px;
                             border-top-right-radius: 18px;
                             @include flex(no);
@@ -556,8 +556,10 @@ div.steps {
                         p {
                             text-align: center;
                             color: $grey;
+                            font-size: 20px;
                             @include respond(lphone) {
                                 text-align: left;
+                                font-size: 18px;
                             }
                         }
                         @include respond(lphone) {
@@ -1187,6 +1189,7 @@ div.mvo {
 }
 
 div.team {
+    background: linear-gradient(360deg, #FFFFFF 37.5%, #FAFAFC 37.51%);
     div.team-inner {
         div.header-text {
             margin-bottom: 35px;
@@ -1538,6 +1541,14 @@ div.contact-form {
                 @include flex(yes);
                 margin-bottom: 30px;
                 padding: 0px;
+            }
+            a.formlink {
+                svg {
+                    min-width: 56px;
+                    min-height: 56px;
+                    max-width: 56px;
+                    max-height: 56px;
+                }
             }
             @include respond(lphone) {
                 display: block;
