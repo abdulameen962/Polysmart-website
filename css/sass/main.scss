@@ -88,6 +88,7 @@ div.subtitle-main {
 
 nav {
     width: 100%;
+    border-bottom: 1px solid $lightgrey;
     img {
         width: auto;
         height: auto;
@@ -341,43 +342,54 @@ div.product {
             }
             div.col {
                 @include max-width;
-                div.row {
-                    background: $white;
-                    height: 100%;
-                    @include bradius;
-                    @include border($blueborder);
-                    &>div {
-                        img {
-                            width: 100%;
-                            height: auto;
-                            max-width: 90%;
-                            max-height: 90%;
+                &>a {
+                    color: $dark;
+                    text-decoration: none;
+                    div.row {
+                        background: $white;
+                        height: 100%;
+                        @include bradius;
+                        @include transition;
+                        @include border($blueborder);
+                        &:hover {
+                            transform: scale(1.02);
+                            transform: translateY(-10px);
                         }
-                        &:first-child {
-                            background: $lightblue;
-                            padding: 30px 60px;
-                            height: 356px;
-                            border-top-left-radius: 18px;
-                            border-top-right-radius: 18px;
-                            @include flex(no);
-                            @include respond(tab) {
-                                padding: 35px 30px;
-                            }
-                            @include respond(lphone) {
+                        &>div {
+                            img {
+                                width: 100%;
                                 height: auto;
-                                padding: 35px 70px;
+                                max-width: 100%;
+                                max-height: 95%;
                             }
-                            @include respond(phone) {
-                                height: auto;
-                                padding: 35px 30px;
+                            &:first-child {
+                                overflow: hidden;
+                                background: $lightblue;
+                                padding: 30px 60px;
+                                height: 326px;
+                                border-top-left-radius: 18px;
+                                border-top-right-radius: 18px;
+                                @include flex(yes);
+                                position: relative;
+                                @include respond(tab) {
+                                    padding: 35px 30px;
+                                }
+                                @include respond(lphone) {
+                                    height: auto;
+                                    padding: 35px 70px;
+                                }
+                                @include respond(phone) {
+                                    height: auto;
+                                    padding: 35px 30px;
+                                }
                             }
-                        }
-                        &:nth-child(2) {
-                            padding: 30px;
-                            height: 80%;
-                            @include respond(lphone) {
-                                padding: 35px 30px;
-                                height: auto;
+                            &:nth-child(2) {
+                                padding: 30px;
+                                height: 80%;
+                                @include respond(lphone) {
+                                    padding: 35px 30px;
+                                    height: auto;
+                                }
                             }
                         }
                     }
@@ -1619,7 +1631,6 @@ div.contact-form {
 
 div.order-now {
     background: linear-gradient(90deg, #343472 58.3%, rgba(255, 255, 255, 0) 58.3%);
-    border-top: 1px solid #E7E9EE;
     border-bottom: 1px solid #E7E9EE;
     position: relative;
     @include respond(tab) {
@@ -1733,4 +1744,104 @@ div.order-now {
             }
         }
     }
+}
+
+div.product-listing {
+    @include mp;
+    &_inner {
+        div.list-single {
+            padding: 100px 0px;
+            border-bottom: 1px solid $lightgrey;
+            @include respond(tab) {
+                display: flex;
+                flex-direction: column-reverse;
+                padding: 40px 0px;
+            }
+            div.left {
+                @include mp;
+                @include respond(tab) {
+                    margin-top: 35px;
+                }
+                section {
+                    div.splide__track {
+                        ul.splide__list {
+                            @include transition;
+                            li {
+                                @include transition;
+                                background: $lightblue;
+                                @include bradius;
+                                @include flex(no);
+                                padding: 70px 0px;
+                                img {
+                                    min-width: 50%;
+                                    max-width: 90%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            div.right {
+                padding: 25px 0px 0px 60px;
+                @include respond(tab) {
+                    padding: 0px;
+                }
+                p {
+                    color: $grey;
+                    font-size: 20px;
+                    @include respond(lphone) {
+                        font-size: 18px;
+                    }
+                    @include respond(phone) {
+                        font-size: 16px;
+                    }
+                }
+                div.buttons {
+                    margin: 30px 0px;
+                }
+            }
+        }
+    }
+}
+
+.thumbnails {
+    display: flex;
+    margin: 1.5rem auto 0;
+    padding: 0;
+    // justify-content: center;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    @include transition;
+    opacity: 0.3;
+    &:hover {
+        opacity: 1;
+        transform: scale(1.02);
+        box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
+    }
+    @include respond(tab) {
+        width: 100px;
+        height: 100px;
+    }
+    @include respond(phone) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail.is-active {
+    opacity: 1;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03);
 }

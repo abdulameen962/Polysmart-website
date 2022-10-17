@@ -23,6 +23,11 @@ const app = Vue.createApp({
             orderlink: "https://polysmartgroup.com/order-now",
             orderdescr: "Visit the post for more.",
 
+            //head tag for products page
+            producttitle: "Our Products",
+            productlink: "https://polysmartgroup.com/products",
+            productdescr: "Visit the post for more.",
+
             //navigation bar data
             logo: "./images/polysmart.svg",
             navbar: [{
@@ -35,7 +40,7 @@ const app = Vue.createApp({
                 },
                 {
                     name: "Our Products",
-                    href: "./index#products",
+                    href: "./products",
                 },
                 {
                     name: "Major Distributors",
@@ -93,28 +98,53 @@ const app = Vue.createApp({
             productsub: "Our Products",
             products: [{
                     img: "./images/nylon1.webp",
+                    img2: "./images/nylon1.webp",
+                    img3: "./images/nylon1.webp",
+                    img4: "",
                     name: "Double Colour Shopping Bag",
-                    summary: "They are suitable for many uses in the retail environment. The bags are packed in 100's and the pack contain approximately 1000 carrier bags. <br/> •	Available in black or white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
+                    class: "splide slider1",
+                    thumb: "thumbnails thumbnails1",
+                    summary: "The double colour shopping bags are suitable for many uses in the retail environment. <br/>•	Available in blue and black, black and white or yellow and black colours <br/>•	Available in medium size.",
                 },
                 {
                     img: "./images/nylon2.webp",
-                    name: "Medium Shopping Bag",
-                    summary: "They are a perfect use for groceries, supermarkets, restaurants and takeout. The bags are packed in 100's and the pack contain approximately 500 carrier bags. <br/> •	Availabor white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
+                    img2: "./images/nylon2.webp",
+                    img3: "./images/nylon2.webp",
+                    img4: "./images/nylon2.webp",
+                    name: "Black Shopping Bags",
+                    class: "splide slider2",
+                    thumb: "thumbnails thumbnails2",
+                    summary: "The black shopping bags are designed for retail and groceries with a variety of uses. <br/>•	Available in small or medium sizes.",
                 },
                 {
                     img: "./images/nylon4.webp",
-                    name: "Small Shopping Bag",
-                    summary: "The small shopping bags are designed for retail and groceries with a variety of uses including groceries and more. The bags are packed in 100's and the pack contain approximately 1000 carrier bags. <br/> •	Available in black or white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
+                    img2: "./images/nylon4.webp",
+                    img3: "./images/nylon4.webp",
+                    img4: "./images/nylon4.webp",
+                    name: "White Shopping Bags",
+                    thumb: "thumbnails thumbnails3",
+                    class: "splide slider3",
+                    summary: "The white shopping bags are a perfect use for groceries, supermarkets, restaurants and takeout. <br/>•	Available in small or medium sizes.",
                 },
                 {
                     img: "./images/nylon4.webp",
-                    name: "Large Shopping Bags",
-                    summary: "The medium shopping bags are a perfect use for groceries, supermarkets, restaurants and takeout. The bags are packed in 100's and the pack contain approximately 500 carrier bags. <br/> •	Available in black or white colours <br/>•	() mil Thick (weight)<br/> •	Dimensions are …",
+                    img2: "./images/nylon4.webp",
+                    img3: "./images/nylon4.webp",
+                    img4: "./images/nylon4.webp",
+                    name: "Packing Bags ",
+                    thumb: "thumbnails thumbnails4",
+                    class: "splide slider4",
+                    summary: "The packing bags are used for goods packaging. It can come in various colours.<br/>•	Printing is acceptable on the bags with logos or text.",
                 },
                 {
                     img: "./images/nylon3.webp",
+                    img2: "./images/nylon3.webp",
+                    img3: "./images/nylon3.webp",
+                    img4: "./images/nylon3.webp",
                     name: "Poly bags (100% recycled)",
-                    summary: "They are also known as jumbo plastic shopping bags. It serves as a great merchandise bag for retail stores and is the perfect bagging solution for groceries, large items, bakeries, restaurants, home use, retail stores and shops. The bags are packed in 100's and the pack contain approximately 200 carrier bags.",
+                    thumb: "thumbnails thumbnails5",
+                    class: "splide slider5",
+                    summary: "The poly bag is made from 100% recycled materials. It is presentable and easy to carry. <br/>•	Available in black colour",
                 },
             ],
             //step section
@@ -475,13 +505,6 @@ const app = Vue.createApp({
                 text.style.color = "#292C32";
             }
         })
-        const box = document.querySelector(".links").children[1];
-        box.onmouseover = () => {
-            darksvg.style.stroke = "#FFD3B9";
-        }
-        box.onmouseout = () => {
-            darksvg.style.stroke = "rgb(255, 255, 255)";
-        }
     },
     methods: {
 
@@ -579,15 +602,17 @@ app.component("product-grid", {
         <div class="containerx">
             <div class="product-grid">
                 <div class="col" v-for="product in products" data-aos="fade-up" data-aos-duration="500">
-                    <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                                <img class="img" :src="product.img" :alt="product.name" width="100" height="100"/>
+                    <a href="./products">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <img class="img" :src="product.img" :alt="product.name" width="100" height="100"/>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <h3 v-html="product.name"> {{ product.name }} </h3>
+                                    <p v-html="product.summary"> {{ product.summary }} </p>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12">
-                                <h3 v-html="product.name"> {{ product.name }} </h3>
-                                <p v-html="product.summary"> {{ product.summary }} </p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>

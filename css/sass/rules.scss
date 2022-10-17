@@ -5,6 +5,32 @@
     font-display: swap;
 }
 
+// .splide__pagination {
+//     position: absolute;
+//     bottom: 15px;
+//     @include flex(no);
+//     li {
+//         width: 20px;
+//         height: 20px;
+//         @include border($white);
+//         border-radius: 50%;
+//         @include transition;
+//         margin-right: 20px;
+//         cursor: pointer;
+//         .is-active {
+//             background: $blue;
+//             border: none;
+//         }
+//         &:hover {
+//             background: $blue;
+//             border: none;
+//         }
+//     }
+// }
+.splide__arrow {
+    display: none;
+}
+
 h1 {
     @extend .font;
     @extend .font-weight;

@@ -35,6 +35,9 @@ div.main-extend, div.about, div.history {
   src: url("./fonts/PlusJakartaSans-Regular.ttf"), local("Courier New");
   font-display: swap; }
 
+.splide__arrow {
+  display: none; }
+
 h1 {
   line-height: 1.308em;
   font-size: 52px;
@@ -268,7 +271,8 @@ div.subtitle-main {
       margin-bottom: 10px; } }
 
 nav {
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid #E7E9EE; }
   nav img {
     width: auto;
     height: auto; }
@@ -504,43 +508,53 @@ div.product {
           grid-template-columns: auto; } }
       div.product div.containerx div.product-grid div.col {
         max-width: 580px; }
-        div.product div.containerx div.product-grid div.col div.row {
-          background: white;
-          height: 100%;
-          border-radius: 18px;
-          border: 1px solid #E7E9EE; }
-          div.product div.containerx div.product-grid div.col div.row > div img {
-            width: 100%;
-            height: auto;
-            max-width: 90%;
-            max-height: 90%; }
-          div.product div.containerx div.product-grid div.col div.row > div:first-child {
-            background: #E8E9FD;
-            padding: 30px 60px;
-            height: 356px;
-            border-top-left-radius: 18px;
-            border-top-right-radius: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center; }
-            @media screen and (min-width: 0px) and (max-width: 991px) {
-              div.product div.containerx div.product-grid div.col div.row > div:first-child {
-                padding: 35px 30px; } }
-            @media screen and (min-width: 0px) and (max-width: 767px) {
-              div.product div.containerx div.product-grid div.col div.row > div:first-child {
-                height: auto;
-                padding: 35px 70px; } }
-            @media screen and (min-width: 0em) and (max-width: 479px) {
-              div.product div.containerx div.product-grid div.col div.row > div:first-child {
-                height: auto;
-                padding: 35px 30px; } }
-          div.product div.containerx div.product-grid div.col div.row > div:nth-child(2) {
-            padding: 30px;
-            height: 80%; }
-            @media screen and (min-width: 0px) and (max-width: 767px) {
-              div.product div.containerx div.product-grid div.col div.row > div:nth-child(2) {
-                padding: 35px 30px;
-                height: auto; } }
+        div.product div.containerx div.product-grid div.col > a {
+          color: #292C32;
+          text-decoration: none; }
+          div.product div.containerx div.product-grid div.col > a div.row {
+            background: white;
+            height: 100%;
+            border-radius: 18px;
+            transition: all 0.3s ease;
+            border: 1px solid #E7E9EE; }
+            div.product div.containerx div.product-grid div.col > a div.row:hover {
+              transform: scale(1.02);
+              transform: translateY(-10px); }
+            div.product div.containerx div.product-grid div.col > a div.row > div img {
+              width: 100%;
+              height: auto;
+              max-width: 100%;
+              max-height: 95%; }
+            div.product div.containerx div.product-grid div.col > a div.row > div:first-child {
+              overflow: hidden;
+              background: #E8E9FD;
+              padding: 30px 60px;
+              height: 326px;
+              border-top-left-radius: 18px;
+              border-top-right-radius: 18px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              position: relative; }
+              @media screen and (min-width: 0px) and (max-width: 991px) {
+                div.product div.containerx div.product-grid div.col > a div.row > div:first-child {
+                  padding: 35px 30px; } }
+              @media screen and (min-width: 0px) and (max-width: 767px) {
+                div.product div.containerx div.product-grid div.col > a div.row > div:first-child {
+                  height: auto;
+                  padding: 35px 70px; } }
+              @media screen and (min-width: 0em) and (max-width: 479px) {
+                div.product div.containerx div.product-grid div.col > a div.row > div:first-child {
+                  height: auto;
+                  padding: 35px 30px; } }
+            div.product div.containerx div.product-grid div.col > a div.row > div:nth-child(2) {
+              padding: 30px;
+              height: 80%; }
+              @media screen and (min-width: 0px) and (max-width: 767px) {
+                div.product div.containerx div.product-grid div.col > a div.row > div:nth-child(2) {
+                  padding: 35px 30px;
+                  height: auto; } }
 
 div.subtext {
   width: 100%;
@@ -1793,7 +1807,6 @@ div.contact-form {
 
 div.order-now {
   background: linear-gradient(90deg, #343472 58.3%, rgba(255, 255, 255, 0) 58.3%);
-  border-top: 1px solid #E7E9EE;
   border-bottom: 1px solid #E7E9EE;
   position: relative; }
   @media screen and (min-width: 0px) and (max-width: 991px) {
@@ -1895,3 +1908,86 @@ div.order-now {
             div.order-now div.order-inner div.right ul li {
               font-size: 16px;
               line-height: 25px; } }
+
+div.product-listing {
+  margin: 0;
+  padding: 0; }
+  div.product-listing_inner div.list-single {
+    padding: 100px 0px;
+    border-bottom: 1px solid #E7E9EE; }
+    @media screen and (min-width: 0px) and (max-width: 991px) {
+      div.product-listing_inner div.list-single {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px 0px; } }
+    div.product-listing_inner div.list-single div.left {
+      margin: 0;
+      padding: 0; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.product-listing_inner div.list-single div.left {
+          margin-top: 35px; } }
+      div.product-listing_inner div.list-single div.left section div.splide__track ul.splide__list {
+        transition: all 0.3s ease; }
+        div.product-listing_inner div.list-single div.left section div.splide__track ul.splide__list li {
+          transition: all 0.3s ease;
+          background: #E8E9FD;
+          border-radius: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 70px 0px; }
+          div.product-listing_inner div.list-single div.left section div.splide__track ul.splide__list li img {
+            min-width: 50%;
+            max-width: 90%; }
+    div.product-listing_inner div.list-single div.right {
+      padding: 25px 0px 0px 60px; }
+      @media screen and (min-width: 0px) and (max-width: 991px) {
+        div.product-listing_inner div.list-single div.right {
+          padding: 0px; } }
+      div.product-listing_inner div.list-single div.right p {
+        color: #6F7278;
+        font-size: 20px; }
+        @media screen and (min-width: 0px) and (max-width: 767px) {
+          div.product-listing_inner div.list-single div.right p {
+            font-size: 18px; } }
+        @media screen and (min-width: 0em) and (max-width: 479px) {
+          div.product-listing_inner div.list-single div.right p {
+            font-size: 16px; } }
+      div.product-listing_inner div.list-single div.right div.buttons {
+        margin: 30px 0px; }
+
+.thumbnails {
+  display: flex;
+  margin: 1.5rem auto 0;
+  padding: 0; }
+
+.thumbnail {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.3; }
+  .thumbnail:hover {
+    opacity: 1;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03); }
+  @media screen and (min-width: 0px) and (max-width: 991px) {
+    .thumbnail {
+      width: 100px;
+      height: 100px; } }
+  @media screen and (min-width: 0em) and (max-width: 479px) {
+    .thumbnail {
+      width: 80px;
+      height: 80px; } }
+
+.thumbnail img {
+  width: 100%;
+  height: auto; }
+
+.thumbnail.is-active {
+  opacity: 1;
+  transform: scale(1.02);
+  box-shadow: 0px 4px 10px rgba(41, 44, 50, 0.03); }
