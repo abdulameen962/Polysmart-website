@@ -100,7 +100,7 @@ const app = Vue.createApp({
                     img: "./images/nylon1.webp",
                     img2: "./images/nylon1.webp",
                     img3: "./images/nylon1.webp",
-                    img4: "",
+                    // img4: "",
                     name: "Double Colour Shopping Bag",
                     class: "splide slider1",
                     thumb: "thumbnails thumbnails1",
