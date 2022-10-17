@@ -359,7 +359,9 @@ div.product {
                             img {
                                 width: 100%;
                                 height: auto;
+                                // min-width: 80%;
                                 max-width: 100%;
+                                min-height: 80%;
                                 max-height: 95%;
                             }
                             &:first-child {
@@ -1771,7 +1773,7 @@ div.product-listing {
                                 background: $lightblue;
                                 @include bradius;
                                 @include flex(no);
-                                padding: 70px 0px;
+                                padding: 50px 0px;
                                 img {
                                     min-width: 50%;
                                     max-width: 90%;
@@ -1820,6 +1822,7 @@ div.product-listing {
     cursor: pointer;
     @include transition;
     opacity: 0.3;
+    @include flex(no);
     &:hover {
         opacity: 1;
         transform: scale(1.02);
