@@ -30,28 +30,6 @@ const app = Vue.createApp({
 
             //navigation bar data
             logo: "./images/polysmart.svg",
-            navbar: [{
-                    name: "Home",
-                    href: "./index",
-                },
-                {
-                    name: "About Us",
-                    href: "./about-us",
-                },
-                {
-                    name: "Our Products",
-                    href: "./products",
-                },
-                {
-                    name: "Contact Us",
-                    href: "./contact-us",
-                },
-                {
-                    name: "Order now",
-                    href: "./order-now",
-                    class: "contact-responsive",
-                },
-            ],
 
             //home page data
 
@@ -235,11 +213,11 @@ const app = Vue.createApp({
                     img: "./images/facebook.svg",
                 },
                 {
-                    link: "#",
+                    link: "https://twitter.com/polysmartgroup",
                     img: "./images/twitter.svg",
                 },
                 {
-                    link: "#",
+                    link: "https://www.instagram.com/polysmartgroup/",
                     img: "./images/instagram.svg",
                 },
             ],
@@ -530,11 +508,22 @@ app.component("nav-bar", {
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul v-for="nav in navbar" class="nav-ul">
-                        <li class="nav-item nav-li">
-                            <a :href="nav.href" :class="nav.class">{{ nav.name }}</a>
-                        </li>
-                    </ul>
+                <ul class="nav-ul navbar-nav">
+                    <li class="nav-item nav-li"><a href="./index" class="">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./about-us#who">Who we are</a></li>
+                            <li><a class="dropdown-item" href="./about-us#team"> Our Team </a></li>
+                            <li><a class="dropdown-item" href="./about-us#values">Core values</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-li"><a href="./products" class="">Our Products</a></li>
+                    <li class="nav-item nav-li"><a href="./contact-us" class="">Contact Us</a></li>
+                    <li class="nav-item nav-li"><a href="./order-now" class="contact-responsive">Order now</a></li>
+                </ul>
                 </div>
                 <a class="header-button contact2" href="./order-now"> Order now </a>
             </div>

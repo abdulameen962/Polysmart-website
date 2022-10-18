@@ -127,13 +127,43 @@ nav {
                 }
                 li {
                     list-style-type: none;
+                    @include transition;
                     a {
                         color: $dark;
                         font-size: 18px;
+                        vertical-align: middle;
                         text-decoration: none;
                         @extend .font;
                         &:hover {
                             @include linkhover;
+                        }
+                        &#navbarDropdown {
+                            margin-right: 30px;
+                        }
+                    }
+                    ul.dropdown-menu {
+                        @include transition;
+                        margin-top: 10px;
+                        @include border($lightgrey);
+                        @include respond(tab) {
+                            border: none;
+                            @include mp;
+                            padding: 6px 0px;
+                        }
+                        li {
+                            a {
+                                color: $dark;
+                                margin: 8px 0px;
+                                @extend .font;
+                                &:hover {
+                                    @include linkhover;
+                                    background: none;
+                                }
+                                @include respond(tab) {
+                                    @include mp;
+                                    padding-left: 7px;
+                                }
+                            }
                         }
                     }
                     @include respond(tab) {
