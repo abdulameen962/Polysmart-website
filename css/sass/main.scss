@@ -700,6 +700,10 @@ div.summary {
                 max-width: 90%;
                 width: 100%;
                 @include mp;
+                // display: none;
+                @include respond(phone) {
+                    max-width: 100%;
+                }
             }
             &:nth-child(3) {
                 @include flex(yes);
@@ -1253,6 +1257,7 @@ div.team {
                 @include grid(1);
             }
             div.member {
+                background: white;
                 position: relative;
                 @include background;
                 @include transition;
@@ -1268,6 +1273,7 @@ div.team {
                         max-width: 93%;
                         max-height: 95%;
                         height: 311px;
+                        min-width: 262px;
                     }
                     p {
                         font-size: 14px;

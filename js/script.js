@@ -142,7 +142,7 @@ const app = Vue.createApp({
                 },
             ],
             //summary
-            summarysub: "OUR SUMMARY",
+            summarysub: "SUMMARY",
             summaryheader: "Polysmart in a few sentences",
             summarys: [{
                     number: "5",
@@ -209,7 +209,7 @@ const app = Vue.createApp({
             ],
             copyright: "Copyright © 2018 - 2022 All Rights Reserved | Polysmart Group Limited",
             socialinks: [{
-                    link: "#",
+                    link: "https://web.facebook.com/profile.php?id=100086518857573",
                     img: "./images/facebook.svg",
                 },
                 {
@@ -260,62 +260,62 @@ const app = Vue.createApp({
             teamsubtitle: "Our Team",
             teams: [{
                     title: "CEO/MD",
-                    image: "#",
+                    image: "./images/ceo.webp",
                     name: "Wasiu Balogun",
                 },
                 {
                     title: "Chief Operating Officer",
-                    image: "./images/coo.png",
+                    image: "./images/coo.webp",
                     name: "Adeola Bankole",
                 },
                 {
                     title: "Chief Financial Officer",
-                    image: "#",
+                    image: "./images/cfo.webp",
                     name: "Yemi Akingbehin",
                 },
                 {
                     title: "Group Head, Internal Control & Compliance",
-                    image: "#",
+                    image: "./images/guy3.webp",
                     name: "Jide Amoo",
                 },
                 {
                     title: "Group Head, Quality Control",
-                    image: "#",
+                    image: "./images/quality.webp",
                     name: "Ernest Ubasineke",
                 },
                 {
                     title: "Group Head, Health Safety & Environment",
-                    image: "#",
+                    image: "./images/guy2.webp",
                     name: "Awoyode Abiodun",
                 },
                 {
                     title: "Group Head, Human Resources",
-                    image: "#",
+                    image: "./images/hr.webp",
                     name: "Kelechi Onwubiko",
                 },
                 {
                     title: "Director, Switch Recycling Innovations Group Head, Material Recovery & Supply Chain",
-                    image: "#",
+                    image: "./images/guy3.webp",
                     name: "Ime Akpan",
                 },
                 {
                     title: "Head, Legal Unit",
-                    image: "#",
+                    image: "./images/guy.webp",
                     name: "Ifeanyi Obi",
                 },
                 {
                     title: "Head of Finance & Accounts",
-                    image: "#",
+                    image: "./images/finance.webp",
                     name: "Rukayat Yousuph",
                 },
                 {
                     title: "Head of Internal Control Unit",
-                    image: "#",
+                    image: "./images/guy2.webp",
                     name: "Adenike Adelana",
                 },
                 {
                     title: "Head, Mechanical Maintenance",
-                    image: "#",
+                    image: "./images/guy3.webp",
                     name: "Adewunmi Taiwo",
                 },
             ],
