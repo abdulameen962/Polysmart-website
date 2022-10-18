@@ -1258,16 +1258,16 @@ div.team {
                 @include transition;
                 cursor: pointer;
                 div.image {
-                    // height: 60%;
                     position: relative;
                     background: $darkgrey;
-                    padding: 70px 0px;
+                    padding: 40px 0px 1px 0px;
                     @include flex(yes);
                     border-top-right-radius: 18px;
                     border-top-left-radius: 18px;
                     img {
-                        max-width: 90%;
-                        max-height: 90%;
+                        max-width: 93%;
+                        max-height: 95%;
+                        height: 311px;
                     }
                     p {
                         font-size: 14px;
