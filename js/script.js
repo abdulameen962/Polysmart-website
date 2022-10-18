@@ -285,7 +285,7 @@ const app = Vue.createApp({
                 },
                 {
                     title: "Group Head, Health Safety & Environment",
-                    image: "./images/guy2.webp",
+                    image: "./images/hsc.webp",
                     name: "Awoyode Abiodun",
                 },
                 {
@@ -299,9 +299,9 @@ const app = Vue.createApp({
                     name: "Ime Akpan",
                 },
                 {
-                    title: "Head, Legal Unit",
+                    title: "Company Secretary/Legal Advisor",
                     image: "./images/guy.webp",
-                    name: "Ifeanyi Obi",
+                    name: "Ifeanyi Dickson Obi Esq.",
                 },
                 {
                     title: "Head of Finance & Accounts",
