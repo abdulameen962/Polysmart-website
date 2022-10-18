@@ -295,7 +295,7 @@ const app = Vue.createApp({
                 },
                 {
                     title: "Company Secretary/Legal Advisor",
-                    image: "./images/guy.webp",
+                    image: "./images/legal.webp",
                     name: "Ifeanyi Dickson Obi Esq.",
                 },
                 {
