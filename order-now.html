@@ -40,9 +40,11 @@
                     </div>
                     <label for="checkbox"> <h4> Choose products </h4> </label>
                     <div class="flex-row">
-                        <div class="half row check" v-for="pro in formproducts">
+                        <div class="half row check" v-for="pro in products">
                             <div class="check-left col-sm-10 col-md-10 col-lg-10">
-                                <img :src="pro.image" alt="pro.name">
+                                <div class="cover">
+                                    <img :src="pro.img" alt="pro.name">
+                                </div>
                                 <h5> {{ pro.name }} </h5>
                             </div>
                             <div class="check-right col-sm-2 col-md-2 col-lg-2">

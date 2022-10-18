@@ -43,10 +43,6 @@ const app = Vue.createApp({
                     href: "./products",
                 },
                 {
-                    name: "Major Distributors",
-                    href: "./distributors",
-                },
-                {
                     name: "Contact Us",
                     href: "./contact-us",
                 },
@@ -211,7 +207,7 @@ const app = Vue.createApp({
                 },
                 {
                     list: "Contact",
-                    link: "#",
+                    link: "./contact",
                 },
 
             ],
@@ -226,11 +222,11 @@ const app = Vue.createApp({
             ],
             getstarted: [{
                     list: "Our Team",
-                    link: "#",
+                    link: "./about-us#team",
                 },
                 {
                     list: "Online Orders",
-                    link: "#",
+                    link: "./order-now",
                 },
             ],
             copyright: "Copyright © 2018 - 2022 All Rights Reserved | Polysmart Group Limited",
@@ -427,32 +423,6 @@ const app = Vue.createApp({
                 },
                 {
                     list: "Easy and secure payment methods",
-                },
-            ],
-            formproducts: [{
-                    name: "Double Colour Shopping Bag",
-                    image: "./images/testimg.svg",
-
-                },
-                {
-                    name: "Medium Shopping Bag",
-                    image: "./images/testimg.svg",
-
-                },
-                {
-                    name: "Poly bags (100% recycled)",
-                    image: "./images/testimg.svg",
-
-                },
-                {
-                    name: "Small Shopping Bag",
-                    image: "./images/testimg.svg",
-
-                },
-                {
-                    name: "Large Shopping Bags",
-                    image: "./images/testimg.svg",
-
                 },
             ],
         }
@@ -757,7 +727,7 @@ app.component("team-section", {
         teamheader: String,
     },
     template: `
-    <div class="team main-extend">
+    <div class="team main-extend" id="team">
         <div class="team-inner resize">
             <div class="header-text" data-aos="fade-up" data-aos-duration="500">
             <div class="subtitle-main" data-aos="fade-up" data-aos-duration="500">

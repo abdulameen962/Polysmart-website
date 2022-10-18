@@ -1701,9 +1701,19 @@ div.order-now {
                             align-items: center;
                             h5 {
                                 padding-left: 15px;
+                                width: 60%;
                             }
-                            img {
-                                max-width: 55px;
+                            div.cover {
+                                background: $lightblue;
+                                border-radius: 5px;
+                                @include flex(no);
+                                width: 40%;
+                                height: 80px;
+                                img {
+                                    min-width: 75%;
+                                    max-width: 95%;
+                                    max-height: 85%;
+                                }
                             }
                         }
                         &-right {

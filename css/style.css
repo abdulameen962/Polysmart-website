@@ -1871,9 +1871,20 @@ div.order-now {
           display: flex;
           align-items: center; }
           div.order-now div.order-inner div.left form div.flex-row div.check-left h5 {
-            padding-left: 15px; }
-          div.order-now div.order-inner div.left form div.flex-row div.check-left img {
-            max-width: 55px; }
+            padding-left: 15px;
+            width: 60%; }
+          div.order-now div.order-inner div.left form div.flex-row div.check-left div.cover {
+            background: #E8E9FD;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 80px; }
+            div.order-now div.order-inner div.left form div.flex-row div.check-left div.cover img {
+              min-width: 75%;
+              max-width: 95%;
+              max-height: 85%; }
         div.order-now div.order-inner div.left form div.flex-row div.check-right input {
           cursor: pointer;
           max-width: 25px;
