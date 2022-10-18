@@ -294,11 +294,6 @@ const app = Vue.createApp({
                     name: "Kelechi Onwubiko",
                 },
                 {
-                    title: "Director, Switch Recycling Innovations Group Head, Material Recovery & Supply Chain",
-                    image: "./images/guy3.webp",
-                    name: "Ime Akpan",
-                },
-                {
                     title: "Company Secretary/Legal Advisor",
                     image: "./images/guy.webp",
                     name: "Ifeanyi Dickson Obi Esq.",
@@ -312,11 +307,6 @@ const app = Vue.createApp({
                     title: "Head of Internal Control Unit",
                     image: "./images/guy2.webp",
                     name: "Adenike Adelana",
-                },
-                {
-                    title: "Head, Mechanical Maintenance",
-                    image: "./images/guy3.webp",
-                    name: "Adewunmi Taiwo",
                 },
             ],
 
